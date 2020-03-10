@@ -1,0 +1,2416 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2017.11.16)  3 MAR 2020 11:52
+entering extended mode
+**./0-MIT-Thesis.tex
+(0-MIT-Thesis.tex
+LaTeX2e <2017-04-15>
+Babel <3.15> and hyphenation patterns for 75 language(s) loaded.
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\report.cls"
+Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\size12.clo"
+File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty"
+Package: inputenc 2015/03/17 v1.2c Input encoding file
+\inpenc@prehook=\toks14
+\inpenc@posthook=\toks15
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\longtable.sty"
+Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip43
+\LTright=\skip44
+\LTpre=\skip45
+\LTpost=\skip46
+\LTchunksize=\count88
+\LTcapwidth=\dimen103
+\LT@head=\box26
+\LT@firsthead=\box27
+\LT@foot=\box28
+\LT@lastfoot=\box29
+\LT@cols=\count89
+\LT@rows=\count90
+\c@LT@tables=\count91
+\c@LT@chunks=\count92
+\LT@p@ftn=\toks16
+)
+(C:\Users\BALTESAN\AppData\Roaming\MiKTeX\2.9\tex\latex\xcolor\xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\color.cfg"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def"
+File: pdftex.def 2017/06/24 v1.0g Graphics/color driver for pdftex
+)
+(C:\Users\BALTESAN\AppData\Roaming\MiKTeX\2.9\tex\latex\colortbl\colortbl.sty
+Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\array.sty"
+Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
+\col@sep=\dimen104
+\extrarowheight=\dimen105
+\NC@list=\toks17
+\extratabsurround=\skip47
+\backup@length=\skip48
+)
+\everycr=\toks18
+\minrowclearance=\skip49
+)
+\rownum=\count93
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\pdflscape.sty"
+Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\lscape.sty"
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\graphics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+))
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks19
+)
+\Gin@req@height=\dimen106
+\Gin@req@width=\dimen107
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count94
+\float@exts=\toks20
+\float@box=\box30
+\@float@everytoks=\toks21
+\@floatcapt=\box31
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf.sty"
+Package: epstopdf 2016/05/15 v2.6 Conversion with epstopdf on the fly (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvdefinekeys.sty"
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)))
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty"
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty"
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
+Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\hhline.sty"
+Package: hhline 2014/10/28 v2.03 Table rule package (DPC)
+) (includes.tex
+(C:\Users\BALTESAN\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption.sty
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+
+(C:\Users\BALTESAN\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption3.sty
+Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
+\captionmargin=\dimen108
+\captionmargin@=\dimen109
+\captionwidth=\dimen110
+\caption@tempdima=\dimen111
+\caption@indent=\dimen112
+\caption@parindent=\dimen113
+\caption@hangindent=\dimen114
+)
+\c@ContinuedFloat=\count95
+Package caption Info: float package is loaded.
+Package caption Info: longtable package is loaded.
+
+(C:\Users\BALTESAN\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\ltcaption.sty
+Package: ltcaption 2013/06/09 v1.4-94 longtable captions (AR)
+)) ("C:\Program Files\MiKTeX 2.9\tex\latex\multirow\multirow.sty"
+Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
+\multirow@colwidth=\skip50
+\multirow@cntb=\count96
+\multirow@dima=\skip51
+\bigstrutjot=\dimen115
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\verbatim.sty"
+Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks22
+\verbatim@line=\toks23
+\verbatim@in@stream=\read1
+)
+(C:\Users\BALTESAN\AppData\Roaming\MiKTeX\2.9\tex\latex\framed\framed.sty
+Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
+\OuterFrameSep=\skip52
+\fb@frw=\dimen116
+\fb@frh=\dimen117
+\FrameRule=\dimen118
+\FrameSep=\dimen119
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
+Package: hyperref 2017/03/14 v6.85a Hypertext links for LaTeX
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty"
+Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
+
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-generic.sty"
+Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
+Package hobsub Info: Skipping package `infwarerr' (already loaded).
+Package hobsub Info: Skipping package `ltxcmds' (already loaded).
+Package hobsub Info: Skipping package `ifluatex' (already loaded).
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
+Package hobsub Info: Skipping package `ifpdf' (already loaded).
+Package hobsub Info: Skipping package `etexcmds' (already loaded).
+Package hobsub Info: Skipping package `kvsetkeys' (already loaded).
+Package hobsub Info: Skipping package `kvdefinekeys' (already loaded).
+Package hobsub Info: Skipping package `pdftexcmds' (already loaded).
+Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
+)
+Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
+Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
+Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
+Package: xcolor-patch 2016/05/16 xcolor patch
+Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
+Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty"
+Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
+)
+\@linkdim=\dimen120
+\Hy@linkcounter=\count97
+\Hy@pagecounter=\count98
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
+File: pd1enc.def 2017/03/14 v6.85a Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count99
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Option `plainpages' set `false' on input line 4374.
+Package hyperref Info: Option `colorlinks' set `false' on input line 4374.
+Package hyperref Info: Hyper figures OFF on input line 4498.
+Package hyperref Info: Link nesting OFF on input line 4503.
+Package hyperref Info: Hyper index ON on input line 4506.
+Package hyperref Info: Plain pages OFF on input line 4513.
+Package hyperref Info: Backreferencing OFF on input line 4518.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4751.
+\c@Hy@tempcnt=\count100
+
+(C:\Users\BALTESAN\AppData\Roaming\MiKTeX\2.9\tex\latex\url\url.sty
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5104.
+\XeTeXLinkMargin=\dimen121
+\Fld@menulength=\count101
+\Field@Width=\dimen122
+\Fld@charsize=\dimen123
+Package hyperref Info: Hyper figures OFF on input line 6358.
+Package hyperref Info: Link nesting OFF on input line 6363.
+Package hyperref Info: Hyper index ON on input line 6366.
+Package hyperref Info: backreferencing OFF on input line 6373.
+Package hyperref Info: Link coloring OFF on input line 6378.
+Package hyperref Info: Link coloring with OCG OFF on input line 6383.
+Package hyperref Info: PDF/A mode OFF on input line 6388.
+LaTeX Info: Redefining \ref on input line 6428.
+LaTeX Info: Redefining \pageref on input line 6432.
+\Hy@abspage=\count102
+\c@Item=\count103
+\c@Hfootnote=\count104
+)
+
+Package hyperref Message: Driver (autodetected): hpdftex.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def"
+File: hpdftex.def 2017/03/14 v6.85a Hyperref driver for pdfTeX
+\Fld@listcount=\count105
+\c@bookmark@seq@number=\count106
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
+Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip53
+)
+(C:\Users\BALTESAN\AppData\Roaming\MiKTeX\2.9\tex\latex\fancyhdr\fancyhdr.sty
+Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footer
+s
+\f@nch@headwidth=\skip54
+\f@nch@O@elh=\skip55
+\f@nch@O@erh=\skip56
+\f@nch@O@olh=\skip57
+\f@nch@O@orh=\skip58
+\f@nch@O@elf=\skip59
+\f@nch@O@erf=\skip60
+\f@nch@O@olf=\skip61
+\f@nch@O@orf=\skip62
+)
+(C:\Users\BALTESAN\AppData\Roaming\MiKTeX\2.9\tex\latex\sectsty\sectsty.sty
+Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading sty
+les
+))
+(comments.inc
+(C:\Users\BALTESAN\AppData\Roaming\MiKTeX\2.9\tex\latex\ulem\ulem.sty
+\UL@box=\box32
+\UL@hyphenbox=\box33
+\UL@skip=\skip63
+\UL@hook=\toks24
+\UL@height=\dimen124
+\UL@pe=\count107
+\UL@pixel=\dimen125
+\ULC@box=\box34
+Package: ulem 2012/05/18
+\ULdepth=\dimen126
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(C:\Users\BALTESAN\AppData\Roaming\MiKTeX\2.9\tex\latex\comment\comment.sty
+\CommentStream=\write3
+
+Excluding comment 'comment')) (0-MIT-Thesis.aux)
+\openout1 = `0-MIT-Thesis.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+
+(C:\Users\BALTESAN\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count108
+\scratchdimen=\dimen127
+\scratchbox=\box35
+\nofMPsegments=\count109
+\nofMParguments=\count110
+\everyMPshowfont=\toks25
+\MPscratchCnt=\count111
+\MPscratchDim=\dimen128
+\MPnumerator=\count112
+\makeMPintoPDFobject=\count113
+\everyMPtoPDFconversion=\toks26
+)
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: hyperref package is loaded.
+Package caption Info: End \AtBeginDocument code.
+\AtBeginShipoutBox=\box36
+Package hyperref Info: Link coloring OFF on input line 20.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+)
+\c@section@level=\count114
+)
+LaTeX Info: Redefining \ref on input line 20.
+LaTeX Info: Redefining \pageref on input line 20.
+LaTeX Info: Redefining \nameref on input line 20.
+
+(0-MIT-Thesis.out) (0-MIT-Thesis.out)
+\@outlinefile=\write4
+\openout4 = `0-MIT-Thesis.out'.
+
+<img/logo-icesi.png, id=451, 665.6067pt x 208.3785pt>
+File: img/logo-icesi.png Graphic file (type png)
+<use img/logo-icesi.png>
+Package pdftex.def Info: img/logo-icesi.png  used on input line 51. on input li
+ne 51.
+Package pdftex.def Info: Requested size: 103.28407pt x 32.3333pt on input line 
+51.
+ [1
+
+{C:/Users/BALTESAN/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./img/lo
+go-icesi.png>] (0-MIT-Thesis.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 2.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 2.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 2.
+
+[1
+
+] [2] [3])
+\tf@toc=\write5
+\openout5 = `0-MIT-Thesis.toc'.
+
+ [4]pdfTeX warning (ext4): destination with the same identifier (name{page.1}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.76 	\chapter
+              {Introduction} [1]
+Chapter 1.
+(1-introduction.tex
+Underfull \hbox (badness 10000) in paragraph at lines 5--6
+\OT1/cmr/m/n/12 [[]]
+ []
+
+
+Underfull \hbox (badness 2591) in paragraph at lines 5--6
+\OT1/cmr/m/n/12 Kitchen-ham de-scribed five views in the con-text of evidence-b
+ased soft-ware en-gi-
+ []
+
+
+Underfull \hbox (badness 2503) in paragraph at lines 5--6
+\OT1/cmr/m/n/12 neer-ing, tran-scen-den-tal view, user view, man-u-fac-tur-ing 
+view, prod-uct view, and
+ []
+
+
+Underfull \hbox (badness 4752) in paragraph at lines 5--6
+\OT1/cmr/m/n/12 value-based view. Each view de-fines dif-fer-ent qual-ity mea-s
+ures, how-ever, at
+ []
+
+
+Underfull \hbox (badness 3229) in paragraph at lines 5--6
+\OT1/cmr/m/n/12 least three of them are mea-sured us-ing qual-ity at-tributes. 
+Qual-ity at-tributes
+ []
+
+
+Underfull \hbox (badness 3514) in paragraph at lines 5--6
+\OT1/cmr/m/n/12 are de-sired ca-pa-bil-i-ties which are ad-di-tional to func-ti
+onal re-quire-ments in soft-
+ []
+
+
+Underfull \hbox (badness 1596) in paragraph at lines 5--6
+\OT1/cmr/m/n/12 ware sys-tems, such as avail-abil-ity, per-for-mance, se-cu-rit
+y, re-li-a-bil-ity, among oth-ers
+ []
+
+
+Overfull \hbox (161.76051pt too wide) in paragraph at lines 5--6
+\OT1/cmr/m/n/12 [[]][[]]. 
+ []
+
+[2
+
+] [3] [4]
+Missing character: There is no ‚ in font cmti12!
+Missing character: There is no Ä in font cmti12!
+Missing character: There is no ô in font cmti12!
+ [5] [6] [7]) [8]
+Chapter 2.
+(2-background.tex [9
+
+]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 23.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 23.
+
+[10] [11]
+Missing character: There is no ‚ in font cmti12!
+Missing character: There is no Ä in font cmti12!
+Missing character: There is no ô in font cmti12!
+ [12] [13]
+Underfull \hbox (badness 4048) in paragraph at lines 66--67
+\OT1/cmr/m/n/12 to the com-po-nent 7 ser-vices needed to of-fer the ca-pa-bil-i
+-ties above men-tioned
+ []
+
+[14] [15]
+Underfull \hbox (badness 10000) in paragraph at lines 101--102
+[]\OT1/cmr/m/n/12 The ar-chi-tec-ture pro-posed for im-ple-ment-ing self-manage
+d sys-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 101--102
+\OT1/cmr/m/n/12 tems is based on the feed-back loop model of con-trol the-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 101--102
+\OT1/cmr/m/n/12 ory, and its adap-ta-tion for com-put-ing sys-tems, the MAPE-K 
+loop
+ []
+
+
+Overfull \hbox (1830.78363pt too wide) in paragraph at lines 101--102
+\OT1/cmr/m/n/12 [[]][[]][[]].
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 101--102
+
+ []
+
+<fig/fback-loop-delta-dist.pdf, id=747, pagebox=cropbox, 880.28876pt x 253.9487
+5pt>
+File: fig/fback-loop-delta-dist.pdf Graphic file (type pdf)
+<use fig/fback-loop-delta-dist.pdf>
+Package pdftex.def Info: fig/fback-loop-delta-dist.pdf  used on input line 118.
+ on input line 118.
+Package pdftex.def Info: Requested size: 445.9955pt x 128.65965pt on input line
+ 118.
+
+Overfull \hbox (99.17642pt too wide) in paragraph at lines 124--125
+\OT1/cmr/m/n/12 [[]][[]].
+ []
+
+
+Underfull \hbox (badness 1953) in paragraph at lines 124--125
+\OT1/cmr/m/n/12 MAPE-K loop and tech-nolo-gies re-ly-ing on com-po-nent based a
+r-chi-tec-tures. Self-
+ []
+
+
+Underfull \hbox (badness 1178) in paragraph at lines 124--125
+\OT1/cmr/m/n/12 adaptive sys-tems have been stud-ied and ap-plied in a wide va-
+ri-ety of ar-eas, such
+ []
+
+
+Overfull \hbox (1060.8693pt too wide) in paragraph at lines 124--125
+\OT1/cmr/m/n/12 [[]][[]][[]][[]].
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 124--125
+
+ []
+
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 126--127
+[]\OT1/cmr/m/n/12 Despite of there are nu-mer-ous re-search about the Self-Adap
+tive
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 126--127
+\OT1/cmr/m/n/12 soft-ware sys-tems still there are many chal-lenges around this
+ topic
+ []
+
+
+Overfull \hbox (124.18037pt too wide) in paragraph at lines 126--127
+\OT1/cmr/m/n/12 [[]].
+ []
+
+[17 <./fig/fback-loop-delta-dist.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 143--144
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 145--146
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 147--148
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 149--150
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 151--153
+
+ []
+
+[18]) [19]
+Chapter 3.
+(3-problemModeling.tex
+Underfull \hbox (badness 10000) in paragraph at lines 10--11
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--13
+
+ []
+
+[20
+
+]
+Overfull \hbox (3.80328pt too wide) in alignment at lines 17--22
+ [] [] 
+ []
+
+
+Overfull \hbox (3.80328pt too wide) in alignment at lines 22--28
+ [] [] 
+ []
+
+
+Overfull \hbox (3.80328pt too wide) in alignment at lines 28--30
+ [] [] 
+ []
+
+
+Overfull \hbox (3.80328pt too wide) in alignment at lines 30--32
+ [] [] 
+ []
+
+
+Underfull \hbox (badness 5878) in paragraph at lines 69--69
+[]|\OT1/cmr/m/n/8 Synchronous or Asyn-chronous
+ []
+
+
+Underfull \hbox (badness 1303) in paragraph at lines 71--71
+[]|\OT1/cmr/m/n/8 Batch Size (Coarse, fine, and
+ []
+
+
+Overfull \hbox (3.80328pt too wide) in alignment at lines 32--74
+ [] [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 77--77
+[]|\OT1/cmr/m/n/8 Shared Mem-ory Ar-chi-tec-
+ []
+
+
+Underfull \hbox (badness 4001) in paragraph at lines 77--77
+\OT1/cmr/m/n/8 ture (UMA, NUMA, COMA,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 81--81
+[]|\OT1/cmr/m/n/8 Communication pro-to-col be-
+ []
+
+
+Overfull \hbox (3.80328pt too wide) in alignment at lines 74--85
+ [] [] 
+ []
+
+[21]
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
+\OT1/cmr/m/n/12 To per-form the SLR, we fol-lowed the steps de-fined
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
+\OT1/cmr/m/n/12 in the method-ol-ogy pro-posed by Kitchen-ham et al
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
+\OT1/cmr/m/n/12 [[]],
+ []
+
+[22]
+Underfull \hbox (badness 10000) in paragraph at lines 108--109
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 110--111
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 112--113
+
+ []
+
+[23]
+Underfull \hbox (badness 2460) in paragraph at lines 154--155
+[]\OT1/cmr/m/n/12 (Abstract:performance or Ab-stract:concurrency or Ab-stract:t
+hroughput or Ab-
+ []
+
+
+Underfull \hbox (badness 1184) in paragraph at lines 154--155
+\OT1/cmr/m/n/12 or Ab-stract:measurament or Ab-stract:evaluation or Ab-stract:a
+ssessment or Ab-
+ []
+
+[24]
+Overfull \hbox (249.08739pt too wide) in paragraph at lines 174--175
+[]\OT1/cmr/m/n/12 Pattern-oriented soft-ware ar-chi-tec-ture [[]] 
+ []
+
+
+Overfull \hbox (7.91904pt too wide) in paragraph at lines 175--176
+[]\OT1/cmr/m/n/12 Patterns for par-al-lel pro-gram-ing [[]] 
+ []
+
+[25] [26] [27]
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ú in font cmr12!
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ù in font cmr12!
+ [28]
+Package epstopdf Info: Source file: <fig/filter-process.eps>
+(epstopdf)                    date: 2017-11-16 10:00:27
+(epstopdf)                    size: 160683 bytes
+(epstopdf)             Output file: <fig/filter-process-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-11-16 10:36:23
+(epstopdf)                    size: 43876 bytes
+(epstopdf)             Command: <epstopdf --outfile=fig/filter-process-eps-conv
+erted-to.pdf fig/filter-process.eps>
+(epstopdf)             \includegraphics on input line 324.
+Package epstopdf Info: Output file is already uptodate.
+<fig/filter-process-eps-converted-to.pdf, id=871, pagebox=cropbox, 868.24374pt 
+x 520.94624pt>
+File: fig/filter-process-eps-converted-to.pdf Graphic file (type pdf)
+<use fig/filter-process-eps-converted-to.pdf>
+Package pdftex.def Info: fig/filter-process-eps-converted-to.pdf  used on input
+ line 324. on input line 324.
+Package pdftex.def Info: Requested size: 483.69684pt x 290.22556pt on input lin
+e 324.
+
+Overfull \hbox (14.22638pt too wide) in paragraph at lines 324--325
+ [][] 
+ []
+
+[29]
+Underfull \hbox (badness 10000) in paragraph at lines 340--341
+
+ []
+
+[30 <./fig/filter-process-eps-converted-to.pdf>] (SLR-Designpatterns.tex
+[31]
+Package epstopdf Info: Source file: <fig/image1.eps>
+(epstopdf)                    date: 2017-04-05 01:54:54
+(epstopdf)                    size: 19232 bytes
+(epstopdf)             Output file: <fig/image1-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-11-16 10:36:29
+(epstopdf)                    size: 4112 bytes
+(epstopdf)             Command: <epstopdf --outfile=fig/image1-eps-converted-to
+.pdf fig/image1.eps>
+(epstopdf)             \includegraphics on input line 22.
+Package epstopdf Info: Output file is already uptodate.
+<fig/image1-eps-converted-to.pdf, id=892, pagebox=cropbox, 1315.91624pt x 451.6
+875pt>
+File: fig/image1-eps-converted-to.pdf Graphic file (type pdf)
+<use fig/image1-eps-converted-to.pdf>
+Package pdftex.def Info: fig/image1-eps-converted-to.pdf  used on input line 22
+. on input line 22.
+Package pdftex.def Info: Requested size: 469.47046pt x 161.14622pt on input lin
+e 22.
+ [32 <./fig/image1-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <fig/image3.eps>
+(epstopdf)                    date: 2017-11-16 17:48:56
+(epstopdf)                    size: 18677 bytes
+(epstopdf)             Output file: <fig/image3-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-11-16 17:49:11
+(epstopdf)                    size: 4138 bytes
+(epstopdf)             Command: <epstopdf --outfile=fig/image3-eps-converted-to
+.pdf fig/image3.eps>
+(epstopdf)             \includegraphics on input line 63.
+Package epstopdf Info: Output file is already uptodate.
+<fig/image3-eps-converted-to.pdf, id=908, pagebox=cropbox, 1532.72626pt x 298.1
+1375pt>
+File: fig/image3-eps-converted-to.pdf Graphic file (type pdf)
+<use fig/image3-eps-converted-to.pdf>
+Package pdftex.def Info: fig/image3-eps-converted-to.pdf  used on input line 63
+. on input line 63.
+Package pdftex.def Info: Requested size: 469.47046pt x 91.30893pt on input line
+ 63.
+ [33 <./fig/image3-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 107--108
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 109--110
+
+ []
+
+Package epstopdf Info: Source file: <fig/image4.eps>
+(epstopdf)                    date: 2017-04-05 02:23:20
+(epstopdf)                    size: 16255 bytes
+(epstopdf)             Output file: <fig/image4-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-11-16 10:36:45
+(epstopdf)                    size: 3569 bytes
+(epstopdf)             Command: <epstopdf --outfile=fig/image4-eps-converted-to
+.pdf fig/image4.eps>
+(epstopdf)             \includegraphics on input line 117.
+Package epstopdf Info: Output file is already uptodate.
+<fig/image4-eps-converted-to.pdf, id=925, pagebox=cropbox, 1263.72125pt x 310.1
+5875pt>
+File: fig/image4-eps-converted-to.pdf Graphic file (type pdf)
+<use fig/image4-eps-converted-to.pdf>
+Package pdftex.def Info: fig/image4-eps-converted-to.pdf  used on input line 11
+7. on input line 117.
+Package pdftex.def Info: Requested size: 469.47046pt x 115.22546pt on input lin
+e 117.
+[34 <./fig/image4-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <fig/image32.eps>
+(epstopdf)                    date: 2017-04-05 03:26:24
+(epstopdf)                    size: 15966 bytes
+(epstopdf)             Output file: <fig/image32-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-11-16 10:36:57
+(epstopdf)                    size: 3729 bytes
+(epstopdf)             Command: <epstopdf --outfile=fig/image32-eps-converted-t
+o.pdf fig/image32.eps>
+(epstopdf)             \includegraphics on input line 155.
+Package epstopdf Info: Output file is already uptodate.
+<fig/image32-eps-converted-to.pdf, id=939, pagebox=cropbox, 1357.07pt x 410.533
+75pt>
+File: fig/image32-eps-converted-to.pdf Graphic file (type pdf)
+<use fig/image32-eps-converted-to.pdf>
+Package pdftex.def Info: fig/image32-eps-converted-to.pdf  used on input line 1
+55. on input line 155.
+Package pdftex.def Info: Requested size: 469.47046pt x 142.0164pt on input line
+ 155.
+
+Underfull \hbox (badness 10000) in paragraph at lines 170--171
+
+ []
+
+[35 <./fig/image32-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 219--220
+
+ []
+
+[36]
+Package epstopdf Info: Source file: <fig/image6.eps>
+(epstopdf)                    date: 2017-04-17 22:04:14
+(epstopdf)                    size: 15075 bytes
+(epstopdf)             Output file: <fig/image6-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-11-16 10:37:02
+(epstopdf)                    size: 3565 bytes
+(epstopdf)             Command: <epstopdf --outfile=fig/image6-eps-converted-to
+.pdf fig/image6.eps>
+(epstopdf)             \includegraphics on input line 227.
+Package epstopdf Info: Output file is already uptodate.
+<fig/image6-eps-converted-to.pdf, id=958, pagebox=cropbox, 896.34875pt x 285.06
+5pt>
+File: fig/image6-eps-converted-to.pdf Graphic file (type pdf)
+<use fig/image6-eps-converted-to.pdf>
+Package pdftex.def Info: fig/image6-eps-converted-to.pdf  used on input line 22
+7. on input line 227.
+Package pdftex.def Info: Requested size: 422.52054pt x 134.37204pt on input lin
+e 227.
+Package epstopdf Info: Source file: <fig/StateBehavior.eps>
+(epstopdf)                    date: 2017-09-24 14:08:14
+(epstopdf)                    size: 18544 bytes
+(epstopdf)             Output file: <fig/StateBehavior-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-11-16 10:37:08
+(epstopdf)                    size: 4091 bytes
+(epstopdf)             Command: <epstopdf --outfile=fig/StateBehavior-eps-conve
+rted-to.pdf fig/StateBehavior.eps>
+(epstopdf)             \includegraphics on input line 253.
+Package epstopdf Info: Output file is already uptodate.
+<fig/StateBehavior-eps-converted-to.pdf, id=960, pagebox=cropbox, 1363.0925pt x
+ 626.34pt>
+File: fig/StateBehavior-eps-converted-to.pdf Graphic file (type pdf)
+<use fig/StateBehavior-eps-converted-to.pdf>
+Package pdftex.def Info: fig/StateBehavior-eps-converted-to.pdf  used on input 
+line 253. on input line 253.
+Package pdftex.def Info: Requested size: 469.47046pt x 215.72435pt on input lin
+e 253.
+ [37 <./fig/image6-eps-converted-to.pdf>] [38 <./fig/StateBehavior-eps-converte
+d-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 289--290
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 291--292
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 293--294
+
+ []
+
+Package epstopdf Info: Source file: <fig/image8.eps>
+(epstopdf)                    date: 2017-03-16 20:57:28
+(epstopdf)                    size: 16945 bytes
+(epstopdf)             Output file: <fig/image8-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-11-16 10:37:14
+(epstopdf)                    size: 3616 bytes
+(epstopdf)             Command: <epstopdf --outfile=fig/image8-eps-converted-to
+.pdf fig/image8.eps>
+(epstopdf)             \includegraphics on input line 301.
+Package epstopdf Info: Output file is already uptodate.
+<fig/image8-eps-converted-to.pdf, id=992, pagebox=cropbox, 835.12pt x 466.74374
+pt>
+File: fig/image8-eps-converted-to.pdf Graphic file (type pdf)
+<use fig/image8-eps-converted-to.pdf>
+Package pdftex.def Info: fig/image8-eps-converted-to.pdf  used on input line 30
+1. on input line 301.
+Package pdftex.def Info: Requested size: 328.62788pt x 183.66736pt on input lin
+e 301.
+Package epstopdf Info: Source file: <fig/image30.eps>
+(epstopdf)                    date: 2017-03-17 00:07:30
+(epstopdf)                    size: 17362 bytes
+(epstopdf)             Output file: <fig/image30-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-11-16 11:23:31
+(epstopdf)                    size: 3832 bytes
+(epstopdf)             Command: <epstopdf --outfile=fig/image30-eps-converted-t
+o.pdf fig/image30.eps>
+(epstopdf)             \includegraphics on input line 336.
+Package epstopdf Info: Output file is already uptodate.
+<fig/image30-eps-converted-to.pdf, id=994, pagebox=cropbox, 1320.935pt x 579.16
+376pt>
+File: fig/image30-eps-converted-to.pdf Graphic file (type pdf)
+<use fig/image30-eps-converted-to.pdf>
+Package pdftex.def Info: fig/image30-eps-converted-to.pdf  used on input line 3
+36. on input line 336.
+Package pdftex.def Info: Requested size: 469.47046pt x 205.83876pt on input lin
+e 336.
+[39] [40 <./fig/image8-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 377--378
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 379--380
+
+ []
+
+[41 <./fig/image30-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 381--382
+
+ []
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 383.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 383.
+Package epstopdf Info: Source file: <fig/image7.eps>
+(epstopdf)                    date: 2017-03-28 03:39:16
+(epstopdf)                    size: 13734 bytes
+(epstopdf)             Output file: <fig/image7-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-11-16 10:37:29
+(epstopdf)                    size: 3354 bytes
+(epstopdf)             Command: <epstopdf --outfile=fig/image7-eps-converted-to
+.pdf fig/image7.eps>
+(epstopdf)             \includegraphics on input line 389.
+Package epstopdf Info: Output file is already uptodate.
+<fig/image7-eps-converted-to.pdf, id=1029, pagebox=cropbox, 760.8425pt x 258.96
+75pt>
+File: fig/image7-eps-converted-to.pdf Graphic file (type pdf)
+<use fig/image7-eps-converted-to.pdf>
+Package pdftex.def Info: fig/image7-eps-converted-to.pdf  used on input line 38
+9. on input line 389.
+Package pdftex.def Info: Requested size: 375.57779pt x 127.83958pt on input lin
+e 389.
+Package epstopdf Info: Source file: <fig/image29.eps>
+(epstopdf)                    date: 2017-03-28 04:01:34
+(epstopdf)                    size: 15841 bytes
+(epstopdf)             Output file: <fig/image29-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-11-16 10:37:35
+(epstopdf)                    size: 3697 bytes
+(epstopdf)             Command: <epstopdf --outfile=fig/image29-eps-converted-t
+o.pdf fig/image29.eps>
+(epstopdf)             \includegraphics on input line 414.
+Package epstopdf Info: Output file is already uptodate.
+<fig/image29-eps-converted-to.pdf, id=1031, pagebox=cropbox, 624.3325pt x 555.0
+7375pt>
+File: fig/image29-eps-converted-to.pdf Graphic file (type pdf)
+<use fig/image29-eps-converted-to.pdf>
+Package pdftex.def Info: fig/image29-eps-converted-to.pdf  used on input line 4
+14. on input line 414.
+Package pdftex.def Info: Requested size: 281.68513pt x 250.4415pt on input line
+ 414.
+[42 <./fig/image7-eps-converted-to.pdf>] [43 <./fig/image29-eps-converted-to.pd
+f>]
+Package epstopdf Info: Source file: <fig/image21.eps>
+(epstopdf)                    date: 2017-03-31 01:24:08
+(epstopdf)                    size: 15030 bytes
+(epstopdf)             Output file: <fig/image21-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-11-16 10:37:40
+(epstopdf)                    size: 3562 bytes
+(epstopdf)             Command: <epstopdf --outfile=fig/image21-eps-converted-t
+o.pdf fig/image21.eps>
+(epstopdf)             \includegraphics on input line 477.
+Package epstopdf Info: Output file is already uptodate.
+<fig/image21-eps-converted-to.pdf, id=1061, pagebox=cropbox, 761.84625pt x 507.
+8975pt>
+File: fig/image21-eps-converted-to.pdf Graphic file (type pdf)
+<use fig/image21-eps-converted-to.pdf>
+Package pdftex.def Info: fig/image21-eps-converted-to.pdf  used on input line 4
+77. on input line 477.
+Package pdftex.def Info: Requested size: 375.57779pt x 250.38318pt on input lin
+e 477.
+ [44]
+Package epstopdf Info: Source file: <fig/image22.eps>
+(epstopdf)                    date: 2017-04-02 19:16:30
+(epstopdf)                    size: 18692 bytes
+(epstopdf)             Output file: <fig/image22-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-11-16 10:37:50
+(epstopdf)                    size: 4115 bytes
+(epstopdf)             Command: <epstopdf --outfile=fig/image22-eps-converted-t
+o.pdf fig/image22.eps>
+(epstopdf)             \includegraphics on input line 503.
+Package epstopdf Info: Output file is already uptodate.
+<fig/image22-eps-converted-to.pdf, id=1074, pagebox=cropbox, 1039.885pt x 687.5
+6876pt>
+File: fig/image22-eps-converted-to.pdf Graphic file (type pdf)
+<use fig/image22-eps-converted-to.pdf>
+Package pdftex.def Info: fig/image22-eps-converted-to.pdf  used on input line 5
+03. on input line 503.
+Package pdftex.def Info: Requested size: 422.52054pt x 279.36609pt on input lin
+e 503.
+ [45 <./fig/image21-eps-converted-to.pdf>] [46 <./fig/image22-eps-converted-to.
+pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 600--601
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 602--603
+
+ []
+
+Package epstopdf Info: Source file: <fig/image10.eps>
+(epstopdf)                    date: 2016-12-06 16:27:16
+(epstopdf)                    size: 16060 bytes
+(epstopdf)             Output file: <fig/image10-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-11-16 10:49:36
+(epstopdf)                    size: 3665 bytes
+(epstopdf)             Command: <epstopdf --outfile=fig/image10-eps-converted-t
+o.pdf fig/image10.eps>
+(epstopdf)             \includegraphics on input line 610.
+Package epstopdf Info: Output file is already uptodate.
+<fig/image10-eps-converted-to.pdf, id=1103, pagebox=cropbox, 594.22pt x 367.372
+5pt>
+File: fig/image10-eps-converted-to.pdf Graphic file (type pdf)
+<use fig/image10-eps-converted-to.pdf>
+Package pdftex.def Info: fig/image10-eps-converted-to.pdf  used on input line 6
+10. on input line 610.
+Package pdftex.def Info: Requested size: 281.68513pt x 174.15619pt on input lin
+e 610.
+[47]
+Package epstopdf Info: Source file: <fig/image11.eps>
+(epstopdf)                    date: 2017-11-16 17:48:56
+(epstopdf)                    size: 18275 bytes
+(epstopdf)             Output file: <fig/image11-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-11-16 17:49:13
+(epstopdf)                    size: 4144 bytes
+(epstopdf)             Command: <epstopdf --outfile=fig/image11-eps-converted-t
+o.pdf fig/image11.eps>
+(epstopdf)             \includegraphics on input line 638.
+Package epstopdf Info: Output file is already uptodate.
+<fig/image11-eps-converted-to.pdf, id=1114, pagebox=cropbox, 1247.66125pt x 412
+.54124pt>
+File: fig/image11-eps-converted-to.pdf Graphic file (type pdf)
+<use fig/image11-eps-converted-to.pdf>
+Package pdftex.def Info: fig/image11-eps-converted-to.pdf  used on input line 6
+38. on input line 638.
+Package pdftex.def Info: Requested size: 469.47046pt x 155.23135pt on input lin
+e 638.
+
+Underfull \hbox (badness 10000) in paragraph at lines 653--654
+
+ []
+
+[48 <./fig/image10-eps-converted-to.pdf> <./fig/image11-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 675--676
+
+ []
+
+Package epstopdf Info: Source file: <fig/image12.eps>
+(epstopdf)                    date: 2017-11-16 15:39:32
+(epstopdf)                    size: 19184 bytes
+(epstopdf)             Output file: <fig/image12-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-11-22 11:24:00
+(epstopdf)                    size: 4046 bytes
+(epstopdf)             Command: <epstopdf --outfile=fig/image12-eps-converted-t
+o.pdf fig/image12.eps>
+(epstopdf)             \includegraphics on input line 684.
+Package epstopdf Info: Output file is already uptodate.
+<fig/image12-eps-converted-to.pdf, id=1134, pagebox=cropbox, 767.86874pt x 521.
+95pt>
+File: fig/image12-eps-converted-to.pdf Graphic file (type pdf)
+<use fig/image12-eps-converted-to.pdf>
+Package pdftex.def Info: fig/image12-eps-converted-to.pdf  used on input line 6
+84. on input line 684.
+Package pdftex.def Info: Requested size: 422.52054pt x 287.20877pt on input lin
+e 684.
+[49]
+Package epstopdf Info: Source file: <fig/image13.eps>
+(epstopdf)                    date: 2017-11-15 23:36:21
+(epstopdf)                    size: 19056 bytes
+(epstopdf)             Output file: <fig/image13-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-11-16 10:49:44
+(epstopdf)                    size: 3732 bytes
+(epstopdf)             Command: <epstopdf --outfile=fig/image13-eps-converted-t
+o.pdf fig/image13.eps>
+(epstopdf)             \includegraphics on input line 710.
+Package epstopdf Info: Output file is already uptodate.
+<fig/image13-eps-converted-to.pdf, id=1146, pagebox=cropbox, 745.78625pt x 406.
+51875pt>
+File: fig/image13-eps-converted-to.pdf Graphic file (type pdf)
+<use fig/image13-eps-converted-to.pdf>
+Package pdftex.def Info: fig/image13-eps-converted-to.pdf  used on input line 7
+10. on input line 710.
+Package pdftex.def Info: Requested size: 375.57779pt x 204.72276pt on input lin
+e 710.
+
+Underfull \hbox (badness 10000) in paragraph at lines 730--731
+
+ []
+
+[50 <./fig/image12-eps-converted-to.pdf>] [51 <./fig/image13-eps-converted-to.p
+df>]
+Underfull \hbox (badness 10000) in paragraph at lines 745--746
+
+ []
+
+Package epstopdf Info: Source file: <fig/image14.eps>
+(epstopdf)                    date: 2017-11-16 09:52:14
+(epstopdf)                    size: 23654 bytes
+(epstopdf)             Output file: <fig/image14-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-11-16 10:49:47
+(epstopdf)                    size: 16499 bytes
+(epstopdf)             Command: <epstopdf --outfile=fig/image14-eps-converted-t
+o.pdf fig/image14.eps>
+(epstopdf)             \includegraphics on input line 754.
+Package epstopdf Info: Output file is already uptodate.
+<fig/image14-eps-converted-to.pdf, id=1171, pagebox=cropbox, 407.5225pt x 268.0
+0125pt>
+File: fig/image14-eps-converted-to.pdf Graphic file (type pdf)
+<use fig/image14-eps-converted-to.pdf>
+Package pdftex.def Info: fig/image14-eps-converted-to.pdf  used on input line 7
+54. on input line 754.
+Package pdftex.def Info: Requested size: 422.52054pt x 277.87639pt on input lin
+e 754.
+Package epstopdf Info: Source file: <fig/image15.eps>
+(epstopdf)                    date: 2017-03-28 03:15:52
+(epstopdf)                    size: 23054 bytes
+(epstopdf)             Output file: <fig/image15-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-11-16 10:49:50
+(epstopdf)                    size: 4590 bytes
+(epstopdf)             Command: <epstopdf --outfile=fig/image15-eps-converted-t
+o.pdf fig/image15.eps>
+(epstopdf)             \includegraphics on input line 785.
+Package epstopdf Info: Output file is already uptodate.
+<fig/image15-eps-converted-to.pdf, id=1173, pagebox=cropbox, 1100.11pt x 668.49
+75pt>
+File: fig/image15-eps-converted-to.pdf Graphic file (type pdf)
+<use fig/image15-eps-converted-to.pdf>
+Package pdftex.def Info: fig/image15-eps-converted-to.pdf  used on input line 7
+85. on input line 785.
+Package pdftex.def Info: Requested size: 422.52054pt x 256.745pt on input line 
+785.
+[52] [53 <./fig/image14-eps-converted-to.pdf> <./fig/image15-eps-converted-to.p
+df>]
+Underfull \hbox (badness 10000) in paragraph at lines 819--820
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 821--822
+
+ []
+
+[54]
+Package epstopdf Info: Source file: <fig/image16.eps>
+(epstopdf)                    date: 2017-11-16 17:48:56
+(epstopdf)                    size: 19802 bytes
+(epstopdf)             Output file: <fig/image16-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-11-16 17:49:16
+(epstopdf)                    size: 3887 bytes
+(epstopdf)             Command: <epstopdf --outfile=fig/image16-eps-converted-t
+o.pdf fig/image16.eps>
+(epstopdf)             \includegraphics on input line 829.
+Package epstopdf Info: Output file is already uptodate.
+<fig/image16-eps-converted-to.pdf, id=1207, pagebox=cropbox, 910.40125pt x 459.
+7175pt>
+File: fig/image16-eps-converted-to.pdf Graphic file (type pdf)
+<use fig/image16-eps-converted-to.pdf>
+Package pdftex.def Info: fig/image16-eps-converted-to.pdf  used on input line 8
+29. on input line 829.
+Package pdftex.def Info: Requested size: 375.57779pt x 189.65685pt on input lin
+e 829.
+ [55 <./fig/image16-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <fig/image18.eps>
+(epstopdf)                    date: 2017-11-16 17:48:56
+(epstopdf)                    size: 19452 bytes
+(epstopdf)             Output file: <fig/image18-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-11-16 17:49:18
+(epstopdf)                    size: 4347 bytes
+(epstopdf)             Command: <epstopdf --outfile=fig/image18-eps-converted-t
+o.pdf fig/image18.eps>
+(epstopdf)             \includegraphics on input line 877.
+Package epstopdf Info: Output file is already uptodate.
+<fig/image18-eps-converted-to.pdf, id=1220, pagebox=cropbox, 1488.56125pt x 627
+.34375pt>
+File: fig/image18-eps-converted-to.pdf Graphic file (type pdf)
+<use fig/image18-eps-converted-to.pdf>
+Package pdftex.def Info: fig/image18-eps-converted-to.pdf  used on input line 8
+77. on input line 877.
+Package pdftex.def Info: Requested size: 469.47046pt x 197.85364pt on input lin
+e 877.
+
+Underfull \hbox (badness 10000) in paragraph at lines 896--897
+
+ []
+
+[56 <./fig/image18-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <fig/image19.eps>
+(epstopdf)                    date: 2017-04-17 15:13:08
+(epstopdf)                    size: 14542 bytes
+(epstopdf)             Output file: <fig/image19-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-11-16 10:50:03
+(epstopdf)                    size: 3374 bytes
+(epstopdf)             Command: <epstopdf --outfile=fig/image19-eps-converted-t
+o.pdf fig/image19.eps>
+(epstopdf)             \includegraphics on input line 934.
+Package epstopdf Info: Output file is already uptodate.
+<fig/image19-eps-converted-to.pdf, id=1235, pagebox=cropbox, 548.0475pt x 288.0
+7625pt>
+File: fig/image19-eps-converted-to.pdf Graphic file (type pdf)
+<use fig/image19-eps-converted-to.pdf>
+Package pdftex.def Info: fig/image19-eps-converted-to.pdf  used on input line 9
+34. on input line 934.
+Package pdftex.def Info: Requested size: 281.68513pt x 148.0686pt on input line
+ 934.
+ [57]
+Package epstopdf Info: Source file: <fig/image20.eps>
+(epstopdf)                    date: 2017-04-17 22:19:20
+(epstopdf)                    size: 16262 bytes
+(epstopdf)             Output file: <fig/image20-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-11-16 10:50:07
+(epstopdf)                    size: 3763 bytes
+(epstopdf)             Command: <epstopdf --outfile=fig/image20-eps-converted-t
+o.pdf fig/image20.eps>
+(epstopdf)             \includegraphics on input line 960.
+Package epstopdf Info: Output file is already uptodate.
+<fig/image20-eps-converted-to.pdf, id=1247, pagebox=cropbox, 1042.89626pt x 446
+.66875pt>
+File: fig/image20-eps-converted-to.pdf Graphic file (type pdf)
+<use fig/image20-eps-converted-to.pdf>
+Package pdftex.def Info: fig/image20-eps-converted-to.pdf  used on input line 9
+60. on input line 960.
+Package pdftex.def Info: Requested size: 422.52054pt x 180.96118pt on input lin
+e 960.
+ [58 <./fig/image19-eps-converted-to.pdf> <./fig/image20-eps-converted-to.pdf>]
+
+Underfull \hbox (badness 10000) in paragraph at lines 1003--1004
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1005--1006
+
+ []
+
+Package epstopdf Info: Source file: <fig/image25.eps>
+(epstopdf)                    date: 2016-12-06 16:08:26
+(epstopdf)                    size: 19955 bytes
+(epstopdf)             Output file: <fig/image25-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-11-16 10:50:10
+(epstopdf)                    size: 3996 bytes
+(epstopdf)             Command: <epstopdf --outfile=fig/image25-eps-converted-t
+o.pdf fig/image25.eps>
+(epstopdf)             \includegraphics on input line 1013.
+Package epstopdf Info: Output file is already uptodate.
+<fig/image25-eps-converted-to.pdf, id=1267, pagebox=cropbox, 1221.56375pt x 572
+.1375pt>
+File: fig/image25-eps-converted-to.pdf Graphic file (type pdf)
+<use fig/image25-eps-converted-to.pdf>
+Package pdftex.def Info: fig/image25-eps-converted-to.pdf  used on input line 1
+013. on input line 1013.
+Package pdftex.def Info: Requested size: 469.47046pt x 219.88512pt on input lin
+e 1013.
+[59] [60 <./fig/image25-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <fig/image26.eps>
+(epstopdf)                    date: 2017-11-16 23:57:37
+(epstopdf)                    size: 28111 bytes
+(epstopdf)             Output file: <fig/image26-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-11-22 11:24:03
+(epstopdf)                    size: 5709 bytes
+(epstopdf)             Command: <epstopdf --outfile=fig/image26-eps-converted-t
+o.pdf fig/image26.eps>
+(epstopdf)             \includegraphics on input line 1048.
+Package epstopdf Info: Output file is already uptodate.
+<fig/image26-eps-converted-to.pdf, id=1288, pagebox=cropbox, 1258.7025pt x 1413
+.28pt>
+File: fig/image26-eps-converted-to.pdf Graphic file (type pdf)
+<use fig/image26-eps-converted-to.pdf>
+Package pdftex.def Info: fig/image26-eps-converted-to.pdf  used on input line 1
+048. on input line 1048.
+Package pdftex.def Info: Requested size: 469.47046pt x 527.11058pt on input lin
+e 1048.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1080--1081
+
+ []
+
+[61] [62 <./fig/image26-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <fig/image27.eps>
+(epstopdf)                    date: 2017-03-28 02:09:38
+(epstopdf)                    size: 16031 bytes
+(epstopdf)             Output file: <fig/image27-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-11-16 10:50:16
+(epstopdf)                    size: 3650 bytes
+(epstopdf)             Command: <epstopdf --outfile=fig/image27-eps-converted-t
+o.pdf fig/image27.eps>
+(epstopdf)             \includegraphics on input line 1088.
+Package epstopdf Info: Output file is already uptodate.
+<fig/image27-eps-converted-to.pdf, id=1313, pagebox=cropbox, 796.9775pt x 492.8
+4125pt>
+File: fig/image27-eps-converted-to.pdf Graphic file (type pdf)
+<use fig/image27-eps-converted-to.pdf>
+Package pdftex.def Info: fig/image27-eps-converted-to.pdf  used on input line 1
+088. on input line 1088.
+Package pdftex.def Info: Requested size: 375.57779pt x 232.25206pt on input lin
+e 1088.
+ [63 <./fig/image27-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <fig/image28.eps>
+(epstopdf)                    date: 2016-12-06 16:10:12
+(epstopdf)                    size: 19159 bytes
+(epstopdf)             Output file: <fig/image28-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-11-16 10:50:20
+(epstopdf)                    size: 4235 bytes
+(epstopdf)             Command: <epstopdf --outfile=fig/image28-eps-converted-t
+o.pdf fig/image28.eps>
+(epstopdf)             \includegraphics on input line 1115.
+Package epstopdf Info: Output file is already uptodate.
+<fig/image28-eps-converted-to.pdf, id=1327, pagebox=cropbox, 1236.62pt x 672.51
+25pt>
+File: fig/image28-eps-converted-to.pdf Graphic file (type pdf)
+<use fig/image28-eps-converted-to.pdf>
+Package pdftex.def Info: fig/image28-eps-converted-to.pdf  used on input line 1
+115. on input line 1115.
+Package pdftex.def Info: Requested size: 375.57779pt x 204.24889pt on input lin
+e 1115.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1135--1136
+
+ []
+
+[64 <./fig/image28-eps-converted-to.pdf>])
+Underfull \hbox (badness 10000) in paragraph at lines 354--358
+
+ []
+
+
+Overfull \hbox (11.53133pt too wide) in alignment at lines 358--364
+ [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (11.53133pt too wide) in alignment at lines 364--370
+ [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (11.53133pt too wide) in alignment at lines 370--372
+ [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (11.53133pt too wide) in alignment at lines 372--374
+ [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (11.53133pt too wide) in alignment at lines 374--386
+ [] [] [] [] [] 
+ []
+
+[65] [66]) [67]
+Chapter 4.
+(4-experimentDesign.tex [68
+
+] [69]
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
+
+ []
+
+[70] [71] [72] [73]
+<fig/JCMunozDiagrams.pdf, id=1414, pagebox=cropbox, 794.97pt x 614.295pt>
+File: fig/JCMunozDiagrams.pdf Graphic file (type pdf)
+<use fig/JCMunozDiagrams.pdf>
+Package pdftex.def Info: fig/JCMunozDiagrams.pdf  used on input line 91. on inp
+ut line 91.
+Package pdftex.def Info: Requested size: 709.61005pt x 415.12473pt on input lin
+e 91.
+
+Overfull \hbox (83.64943pt too wide) in paragraph at lines 91--92
+ [][] 
+ []
+
+[74 <./fig/JCMunozDiagrams.pdf, page is rotated 90 degrees>]
+<fig/FileProccess.pdf, id=1425, pagebox=cropbox, 844.95674pt x 597.6729pt>
+File: fig/FileProccess.pdf Graphic file (type pdf)
+<use fig/FileProccess.pdf>
+Package pdftex.def Info: fig/FileProccess.pdf  used on input line 99. on input 
+line 99.
+Package pdftex.def Info: Requested size: 489.90617pt x 170.81688pt on input lin
+e 99.
+
+Overfull \hbox (20.43571pt too wide) in paragraph at lines 99--100
+ [][] 
+ []
+
+[75
+
+
+ <./fig/FileProccess.pdf>] [76]
+Missing character: There is no √ in font cmr12!
+Missing character: There is no © in font cmr12!
+Missing character: There is no √ in font cmr12!
+Missing character: There is no © in font cmr12!
+Missing character: There is no √ in font cmr12!
+Missing character: There is no ≥ in font cmr12!
+ [77]
+Underfull \hbox (badness 3536) in paragraph at lines 162--163
+[]\OT1/cmr/m/n/12 Each dis-tributed mem-ory struc-ture (i.e., UMA,
+ []
+
+[78]
+Underfull \hbox (badness 10000) in paragraph at lines 170--171
+[]\OT1/cmr/m/n/12 The sec-ond se-lected mid-dle-ware/framework is ICE, ac-cord-
+ing to
+ []
+
+
+Underfull \hbox (badness 1881) in paragraph at lines 170--171
+\OT1/cmr/m/n/12 [[]], Ice has the best per-for-mance
+ []
+
+
+LaTeX Warning: Reference `subsubsec:selectdesignpatterns' on page 79 undefined 
+on input line 173.
+
+
+LaTeX Warning: Citation `lea2000javae' on page 79 undefined on input line 174.
+
+[79]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 181.
+
+) [80] [81]
+Chapter 5.
+(5-expExecution.tex
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ì in font cmr12!
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 8.
+
+Missing character: There is no ¬ in font cmr12!
+Missing character: There is no Æ in font cmr12!
+Missing character: There is no ¬ in font cmr12!
+Missing character: There is no Æ in font cmr12!
+[82
+
+] [83] [84] [85]
+<fig/JCMunozOriginalStrategy.pdf, id=1565, pagebox=cropbox, 3382.6375pt x 2392.
+94pt>
+File: fig/JCMunozOriginalStrategy.pdf Graphic file (type pdf)
+<use fig/JCMunozOriginalStrategy.pdf>
+Package pdftex.def Info: fig/JCMunozOriginalStrategy.pdf  used on input line 64
+. on input line 64.
+Package pdftex.def Info: Requested size: 1353.03107pt x 422.25671pt on input li
+ne 64.
+
+Overfull \hbox (727.07045pt too wide) in paragraph at lines 64--65
+ [][] 
+ []
+
+[86 <./fig/JCMunozOriginalStrategy.pdf, page is rotated 90 degrees>]
+Underfull \hbox (badness 10000) in paragraph at lines 71--72
+
+ []
+
+[87
+
+
+]
+<fig/JCMunozMergerSeparated.pdf, id=1590, pagebox=cropbox, 3382.6375pt x 2392.9
+4pt>
+File: fig/JCMunozMergerSeparated.pdf Graphic file (type pdf)
+<use fig/JCMunozMergerSeparated.pdf>
+Package pdftex.def Info: fig/JCMunozMergerSeparated.pdf  used on input line 91.
+ on input line 91.
+Package pdftex.def Info: Requested size: 1353.03107pt x 422.25671pt on input li
+ne 91.
+
+Overfull \hbox (727.07045pt too wide) in paragraph at lines 91--92
+ [][] 
+ []
+
+[88 <./fig/JCMunozMergerSeparated.pdf, page is rotated 90 degrees>] [89
+
+
+]
+[90] [91]
+<fig/JCMunozDistributedFJ.pdf, id=1623, pagebox=cropbox, 3382.6375pt x 2392.94p
+t>
+File: fig/JCMunozDistributedFJ.pdf Graphic file (type pdf)
+<use fig/JCMunozDistributedFJ.pdf>
+Package pdftex.def Info: fig/JCMunozDistributedFJ.pdf  used on input line 147. 
+on input line 147.
+Package pdftex.def Info: Requested size: 1608.38588pt x 446.34445pt on input li
+ne 147.
+
+Overfull \hbox (982.42526pt too wide) in paragraph at lines 147--148
+ [][] 
+ []
+
+
+LaTeX Warning: Float too large for page by 0.47398pt on input line 150.
+
+[92 <./fig/JCMunozDistributedFJ.pdf, page is rotated 90 degrees>]
+<fig/JCMunozLeader-Followers.pdf, id=1641, pagebox=cropbox, 3382.6375pt x 2392.
+94pt>
+File: fig/JCMunozLeader-Followers.pdf Graphic file (type pdf)
+<use fig/JCMunozLeader-Followers.pdf>
+Package pdftex.def Info: fig/JCMunozLeader-Followers.pdf  used on input line 17
+6. on input line 176.
+Package pdftex.def Info: Requested size: 1522.17285pt x 449.4356pt on input lin
+e 176.
+
+Overfull \hbox (1052.7024pt too wide) in paragraph at lines 176--177
+ [][] 
+ []
+
+[93
+
+
+] [94 <./fig/JCMunozLeader-Followers.pdf, page is rotated 90 degrees>]
+[95] [96]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 211.
+
+[97] [98]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 243.
+
+
+Overfull \hbox (54.79417pt too wide) in paragraph at lines 248--276
+ [][] 
+ []
+
+[99]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 283.
+
+
+Overfull \hbox (31.30045pt too wide) in paragraph at lines 289--317
+[][] 
+ []
+
+[100] [101
+
+
+
+
+]
+<fig/PruebaControl.pdf, id=1712, pagebox=cropbox, 844.95674pt x 597.432pt>
+File: fig/PruebaControl.pdf Graphic file (type pdf)
+<use fig/PruebaControl.pdf>
+Package pdftex.def Info: fig/PruebaControl.pdf  used on input line 334. on inpu
+t line 334.
+Package pdftex.def Info: Requested size: 606.81061pt x 384.04039pt on input lin
+e 334.
+ [102 <./fig/PruebaControl.pdf>]) [103
+
+
+]
+Chapter 6.
+(6-analysis.tex
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 13.
+
+[104
+
+] [105] [106]
+Package epstopdf Info: Source file: <fig/JCUmaRmi498Behavior.eps>
+(epstopdf)                    date: 2017-11-29 15:46:21
+(epstopdf)                    size: 209110 bytes
+(epstopdf)             Output file: <fig/JCUmaRmi498Behavior-eps-converted-to.p
+df>
+(epstopdf)                    date: 2017-11-29 15:47:56
+(epstopdf)                    size: 71094 bytes
+(epstopdf)             Command: <epstopdf --outfile=fig/JCUmaRmi498Behavior-eps
+-converted-to.pdf fig/JCUmaRmi498Behavior.eps>
+(epstopdf)             \includegraphics on input line 105.
+Package epstopdf Info: Output file is already uptodate.
+<fig/JCUmaRmi498Behavior-eps-converted-to.pdf, id=1761, pagebox=cropbox, 668.49
+75pt x 387.4475pt>
+File: fig/JCUmaRmi498Behavior-eps-converted-to.pdf Graphic file (type pdf)
+<use fig/JCUmaRmi498Behavior-eps-converted-to.pdf>
+Package pdftex.def Info: fig/JCUmaRmi498Behavior-eps-converted-to.pdf  used on 
+input line 105. on input line 105.
+Package pdftex.def Info: Requested size: 589.43877pt x 286.71257pt on input lin
+e 105.
+
+Overfull \hbox (119.9683pt too wide) in paragraph at lines 105--106
+ [][] 
+ []
+
+[107 <./fig/JCUmaRmi498Behavior-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <fig/JCUmaRest190Behavior.eps>
+(epstopdf)                    date: 2017-11-16 10:00:27
+(epstopdf)                    size: 934652 bytes
+(epstopdf)             Output file: <fig/JCUmaRest190Behavior-eps-converted-to.
+pdf>
+(epstopdf)                    date: 2017-11-16 10:50:29
+(epstopdf)                    size: 49446 bytes
+(epstopdf)             Command: <epstopdf --outfile=fig/JCUmaRest190Behavior-ep
+s-converted-to.pdf fig/JCUmaRest190Behavior.eps>
+(epstopdf)             \includegraphics on input line 122.
+Package epstopdf Info: Output file is already uptodate.
+<fig/JCUmaRest190Behavior-eps-converted-to.pdf, id=1776, pagebox=cropbox, 574.1
+45pt x 820.06375pt>
+File: fig/JCUmaRest190Behavior-eps-converted-to.pdf Graphic file (type pdf)
+<use fig/JCUmaRest190Behavior-eps-converted-to.pdf>
+Package pdftex.def Info: fig/JCUmaRest190Behavior-eps-converted-to.pdf  used on
+ input line 122. on input line 122.
+Package pdftex.def Info: Requested size: 631.95834pt x 277.12021pt on input lin
+e 122.
+
+Overfull \hbox (162.48788pt too wide) in paragraph at lines 122--123
+ [][] 
+ []
+
+Package epstopdf Info: Source file: <fig/JCUmaIce226Behavior.eps>
+(epstopdf)                    date: 2017-11-29 15:59:15
+(epstopdf)                    size: 164856 bytes
+(epstopdf)             Output file: <fig/JCUmaIce226Behavior-eps-converted-to.p
+df>
+(epstopdf)                    date: 2017-11-29 16:00:01
+(epstopdf)                    size: 59694 bytes
+(epstopdf)             Command: <epstopdf --outfile=fig/JCUmaIce226Behavior-eps
+-converted-to.pdf fig/JCUmaIce226Behavior.eps>
+(epstopdf)             \includegraphics on input line 137.
+Package epstopdf Info: Output file is already uptodate.
+<fig/JCUmaIce226Behavior-eps-converted-to.pdf, id=1778, pagebox=cropbox, 668.49
+75pt x 387.4475pt>
+File: fig/JCUmaIce226Behavior-eps-converted-to.pdf Graphic file (type pdf)
+<use fig/JCUmaIce226Behavior-eps-converted-to.pdf>
+Package pdftex.def Info: fig/JCUmaIce226Behavior-eps-converted-to.pdf  used on 
+input line 137. on input line 137.
+Package pdftex.def Info: Requested size: 589.43877pt x 286.71257pt on input lin
+e 137.
+
+Overfull \hbox (119.9683pt too wide) in paragraph at lines 137--138
+ [][] 
+ []
+
+[108 <./fig/JCUmaRest190Behavior-eps-converted-to.pdf>] [109 <./fig/JCUmaIce226
+Behavior-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <fig/MSNormaIce162Behavior.eps>
+(epstopdf)                    date: 2017-11-16 10:01:39
+(epstopdf)                    size: 890850 bytes
+(epstopdf)             Output file: <fig/MSNormaIce162Behavior-eps-converted-to
+.pdf>
+(epstopdf)                    date: 2017-11-16 10:50:36
+(epstopdf)                    size: 53447 bytes
+(epstopdf)             Command: <epstopdf --outfile=fig/MSNormaIce162Behavior-e
+ps-converted-to.pdf fig/MSNormaIce162Behavior.eps>
+(epstopdf)             \includegraphics on input line 163.
+Package epstopdf Info: Output file is already uptodate.
+<fig/MSNormaIce162Behavior-eps-converted-to.pdf, id=1800, pagebox=cropbox, 574.
+145pt x 820.06375pt>
+File: fig/MSNormaIce162Behavior-eps-converted-to.pdf Graphic file (type pdf)
+<use fig/MSNormaIce162Behavior-eps-converted-to.pdf>
+Package pdftex.def Info: fig/MSNormaIce162Behavior-eps-converted-to.pdf  used o
+n input line 163. on input line 163.
+Package pdftex.def Info: Requested size: 631.95834pt x 277.12021pt on input lin
+e 163.
+
+Overfull \hbox (162.48788pt too wide) in paragraph at lines 163--164
+ [][] 
+ []
+
+Package epstopdf Info: Source file: <fig/MSUmaRest282Behavior.eps>
+(epstopdf)                    date: 2017-11-16 10:00:27
+(epstopdf)                    size: 793142 bytes
+(epstopdf)             Output file: <fig/MSUmaRest282Behavior-eps-converted-to.
+pdf>
+(epstopdf)                    date: 2017-11-16 10:50:40
+(epstopdf)                    size: 59493 bytes
+(epstopdf)             Command: <epstopdf --outfile=fig/MSUmaRest282Behavior-ep
+s-converted-to.pdf fig/MSUmaRest282Behavior.eps>
+(epstopdf)             \includegraphics on input line 178.
+Package epstopdf Info: Output file is already uptodate.
+<fig/MSUmaRest282Behavior-eps-converted-to.pdf, id=1802, pagebox=cropbox, 574.1
+45pt x 820.06375pt>
+File: fig/MSUmaRest282Behavior-eps-converted-to.pdf Graphic file (type pdf)
+<use fig/MSUmaRest282Behavior-eps-converted-to.pdf>
+Package pdftex.def Info: fig/MSUmaRest282Behavior-eps-converted-to.pdf  used on
+ input line 178. on input line 178.
+Package pdftex.def Info: Requested size: 631.95834pt x 277.12021pt on input lin
+e 178.
+
+Overfull \hbox (162.48788pt too wide) in paragraph at lines 178--179
+ [][] 
+ []
+
+[110 <./fig/MSNormaIce162Behavior-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <fig/MSNormaRmi890Behavior.eps>
+(epstopdf)                    date: 2017-11-16 10:01:39
+(epstopdf)                    size: 766131 bytes
+(epstopdf)             Output file: <fig/MSNormaRmi890Behavior-eps-converted-to
+.pdf>
+(epstopdf)                    date: 2017-11-16 10:50:43
+(epstopdf)                    size: 72621 bytes
+(epstopdf)             Command: <epstopdf --outfile=fig/MSNormaRmi890Behavior-e
+ps-converted-to.pdf fig/MSNormaRmi890Behavior.eps>
+(epstopdf)             \includegraphics on input line 193.
+Package epstopdf Info: Output file is already uptodate.
+<fig/MSNormaRmi890Behavior-eps-converted-to.pdf, id=1815, pagebox=cropbox, 574.
+145pt x 820.06375pt>
+File: fig/MSNormaRmi890Behavior-eps-converted-to.pdf Graphic file (type pdf)
+<use fig/MSNormaRmi890Behavior-eps-converted-to.pdf>
+Package pdftex.def Info: fig/MSNormaRmi890Behavior-eps-converted-to.pdf  used o
+n input line 193. on input line 193.
+Package pdftex.def Info: Requested size: 631.95834pt x 277.12021pt on input lin
+e 193.
+
+Overfull \hbox (162.48788pt too wide) in paragraph at lines 193--194
+ [][] 
+ []
+
+[111 <./fig/MSUmaRest282Behavior-eps-converted-to.pdf>] [112 <./fig/MSNormaRmi8
+90Behavior-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <fig/FJNormaIce250Behavior.eps>
+(epstopdf)                    date: 2017-11-16 10:00:27
+(epstopdf)                    size: 788885 bytes
+(epstopdf)             Output file: <fig/FJNormaIce250Behavior-eps-converted-to
+.pdf>
+(epstopdf)                    date: 2017-11-16 10:50:47
+(epstopdf)                    size: 54126 bytes
+(epstopdf)             Command: <epstopdf --outfile=fig/FJNormaIce250Behavior-e
+ps-converted-to.pdf fig/FJNormaIce250Behavior.eps>
+(epstopdf)             \includegraphics on input line 221.
+Package epstopdf Info: Output file is already uptodate.
+<fig/FJNormaIce250Behavior-eps-converted-to.pdf, id=1836, pagebox=cropbox, 574.
+145pt x 820.06375pt>
+File: fig/FJNormaIce250Behavior-eps-converted-to.pdf Graphic file (type pdf)
+<use fig/FJNormaIce250Behavior-eps-converted-to.pdf>
+Package pdftex.def Info: fig/FJNormaIce250Behavior-eps-converted-to.pdf  used o
+n input line 221. on input line 221.
+Package pdftex.def Info: Requested size: 631.95834pt x 277.12021pt on input lin
+e 221.
+
+Overfull \hbox (162.48788pt too wide) in paragraph at lines 221--222
+ [][] 
+ []
+
+Package epstopdf Info: Source file: <fig/FJUmaRest826Behavior.eps>
+(epstopdf)                    date: 2017-11-16 10:00:27
+(epstopdf)                    size: 1017108 bytes
+(epstopdf)             Output file: <fig/FJUmaRest826Behavior-eps-converted-to.
+pdf>
+(epstopdf)                    date: 2017-11-16 10:50:51
+(epstopdf)                    size: 82466 bytes
+(epstopdf)             Command: <epstopdf --outfile=fig/FJUmaRest826Behavior-ep
+s-converted-to.pdf fig/FJUmaRest826Behavior.eps>
+(epstopdf)             \includegraphics on input line 235.
+Package epstopdf Info: Output file is already uptodate.
+<fig/FJUmaRest826Behavior-eps-converted-to.pdf, id=1838, pagebox=cropbox, 574.1
+45pt x 820.06375pt>
+File: fig/FJUmaRest826Behavior-eps-converted-to.pdf Graphic file (type pdf)
+<use fig/FJUmaRest826Behavior-eps-converted-to.pdf>
+Package pdftex.def Info: fig/FJUmaRest826Behavior-eps-converted-to.pdf  used on
+ input line 235. on input line 235.
+Package pdftex.def Info: Requested size: 631.95834pt x 277.12021pt on input lin
+e 235.
+
+Overfull \hbox (162.48788pt too wide) in paragraph at lines 235--236
+ [][] 
+ []
+
+[113 <./fig/FJNormaIce250Behavior-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <fig/FJUmaRmi842Behavior.eps>
+(epstopdf)                    date: 2017-11-16 10:00:27
+(epstopdf)                    size: 1026925 bytes
+(epstopdf)             Output file: <fig/FJUmaRmi842Behavior-eps-converted-to.p
+df>
+(epstopdf)                    date: 2017-11-16 10:50:55
+(epstopdf)                    size: 83554 bytes
+(epstopdf)             Command: <epstopdf --outfile=fig/FJUmaRmi842Behavior-eps
+-converted-to.pdf fig/FJUmaRmi842Behavior.eps>
+(epstopdf)             \includegraphics on input line 251.
+Package epstopdf Info: Output file is already uptodate.
+<fig/FJUmaRmi842Behavior-eps-converted-to.pdf, id=1852, pagebox=cropbox, 574.14
+5pt x 820.06375pt>
+File: fig/FJUmaRmi842Behavior-eps-converted-to.pdf Graphic file (type pdf)
+<use fig/FJUmaRmi842Behavior-eps-converted-to.pdf>
+Package pdftex.def Info: fig/FJUmaRmi842Behavior-eps-converted-to.pdf  used on 
+input line 251. on input line 251.
+Package pdftex.def Info: Requested size: 631.95834pt x 277.12021pt on input lin
+e 251.
+
+Overfull \hbox (162.48788pt too wide) in paragraph at lines 251--252
+ [][] 
+ []
+
+[114 <./fig/FJUmaRest826Behavior-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <fig/FJDNormaIce426Behavior.eps>
+(epstopdf)                    date: 2017-11-16 10:00:27
+(epstopdf)                    size: 976787 bytes
+(epstopdf)             Output file: <fig/FJDNormaIce426Behavior-eps-converted-t
+o.pdf>
+(epstopdf)                    date: 2017-11-16 10:50:58
+(epstopdf)                    size: 78133 bytes
+(epstopdf)             Command: <epstopdf --outfile=fig/FJDNormaIce426Behavior-
+eps-converted-to.pdf fig/FJDNormaIce426Behavior.eps>
+(epstopdf)             \includegraphics on input line 271.
+Package epstopdf Info: Output file is already uptodate.
+<fig/FJDNormaIce426Behavior-eps-converted-to.pdf, id=1867, pagebox=cropbox, 574
+.145pt x 820.06375pt>
+File: fig/FJDNormaIce426Behavior-eps-converted-to.pdf Graphic file (type pdf)
+<use fig/FJDNormaIce426Behavior-eps-converted-to.pdf>
+Package pdftex.def Info: fig/FJDNormaIce426Behavior-eps-converted-to.pdf  used 
+on input line 271. on input line 271.
+Package pdftex.def Info: Requested size: 631.95834pt x 277.12021pt on input lin
+e 271.
+
+Overfull \hbox (162.48788pt too wide) in paragraph at lines 271--272
+ [][] 
+ []
+
+[115 <./fig/FJUmaRmi842Behavior-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <fig/FJDUmaRest218Behavior.eps>
+(epstopdf)                    date: 2017-11-16 10:00:27
+(epstopdf)                    size: 151699 bytes
+(epstopdf)             Output file: <fig/FJDUmaRest218Behavior-eps-converted-to
+.pdf>
+(epstopdf)                    date: 2017-11-16 10:51:01
+(epstopdf)                    size: 23209 bytes
+(epstopdf)             Command: <epstopdf --outfile=fig/FJDUmaRest218Behavior-e
+ps-converted-to.pdf fig/FJDUmaRest218Behavior.eps>
+(epstopdf)             \includegraphics on input line 288.
+Package epstopdf Info: Output file is already uptodate.
+<fig/FJDUmaRest218Behavior-eps-converted-to.pdf, id=1877, pagebox=cropbox, 574.
+145pt x 820.06375pt>
+File: fig/FJDUmaRest218Behavior-eps-converted-to.pdf Graphic file (type pdf)
+<use fig/FJDUmaRest218Behavior-eps-converted-to.pdf>
+Package pdftex.def Info: fig/FJDUmaRest218Behavior-eps-converted-to.pdf  used o
+n input line 288. on input line 288.
+Package pdftex.def Info: Requested size: 631.95834pt x 277.12021pt on input lin
+e 288.
+
+Overfull \hbox (162.48788pt too wide) in paragraph at lines 288--289
+ [][] 
+ []
+
+[116 <./fig/FJDNormaIce426Behavior-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <fig/FJDNormaRmi154Behavior.eps>
+(epstopdf)                    date: 2017-11-16 10:01:39
+(epstopdf)                    size: 135064 bytes
+(epstopdf)             Output file: <fig/FJDNormaRmi154Behavior-eps-converted-t
+o.pdf>
+(epstopdf)                    date: 2017-11-16 10:51:04
+(epstopdf)                    size: 22690 bytes
+(epstopdf)             Command: <epstopdf --outfile=fig/FJDNormaRmi154Behavior-
+eps-converted-to.pdf fig/FJDNormaRmi154Behavior.eps>
+(epstopdf)             \includegraphics on input line 304.
+Package epstopdf Info: Output file is already uptodate.
+<fig/FJDNormaRmi154Behavior-eps-converted-to.pdf, id=1890, pagebox=cropbox, 574
+.145pt x 820.06375pt>
+File: fig/FJDNormaRmi154Behavior-eps-converted-to.pdf Graphic file (type pdf)
+<use fig/FJDNormaRmi154Behavior-eps-converted-to.pdf>
+Package pdftex.def Info: fig/FJDNormaRmi154Behavior-eps-converted-to.pdf  used 
+on input line 304. on input line 304.
+Package pdftex.def Info: Requested size: 631.95834pt x 277.12021pt on input lin
+e 304.
+
+Overfull \hbox (162.48788pt too wide) in paragraph at lines 304--305
+ [][] 
+ []
+
+[117 <./fig/FJDUmaRest218Behavior-eps-converted-to.pdf>] [118 <./fig/FJDNormaRm
+i154Behavior-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <fig/LFUmaIce438Behavior.eps>
+(epstopdf)                    date: 2017-11-16 10:01:39
+(epstopdf)                    size: 891556 bytes
+(epstopdf)             Output file: <fig/LFUmaIce438Behavior-eps-converted-to.p
+df>
+(epstopdf)                    date: 2017-11-16 10:51:08
+(epstopdf)                    size: 62321 bytes
+(epstopdf)             Command: <epstopdf --outfile=fig/LFUmaIce438Behavior-eps
+-converted-to.pdf fig/LFUmaIce438Behavior.eps>
+(epstopdf)             \includegraphics on input line 330.
+Package epstopdf Info: Output file is already uptodate.
+<fig/LFUmaIce438Behavior-eps-converted-to.pdf, id=1911, pagebox=cropbox, 574.14
+5pt x 820.06375pt>
+File: fig/LFUmaIce438Behavior-eps-converted-to.pdf Graphic file (type pdf)
+<use fig/LFUmaIce438Behavior-eps-converted-to.pdf>
+Package pdftex.def Info: fig/LFUmaIce438Behavior-eps-converted-to.pdf  used on 
+input line 330. on input line 330.
+Package pdftex.def Info: Requested size: 631.95834pt x 277.12021pt on input lin
+e 330.
+
+Overfull \hbox (162.48788pt too wide) in paragraph at lines 330--331
+ [][] 
+ []
+
+Package epstopdf Info: Source file: <fig/LFNormaRest242Behavior.eps>
+(epstopdf)                    date: 2017-11-16 10:00:27
+(epstopdf)                    size: 747645 bytes
+(epstopdf)             Output file: <fig/LFNormaRest242Behavior-eps-converted-t
+o.pdf>
+(epstopdf)                    date: 2017-11-16 10:51:11
+(epstopdf)                    size: 66781 bytes
+(epstopdf)             Command: <epstopdf --outfile=fig/LFNormaRest242Behavior-
+eps-converted-to.pdf fig/LFNormaRest242Behavior.eps>
+(epstopdf)             \includegraphics on input line 337.
+Package epstopdf Info: Output file is already uptodate.
+<fig/LFNormaRest242Behavior-eps-converted-to.pdf, id=1912, pagebox=cropbox, 574
+.145pt x 820.06375pt>
+File: fig/LFNormaRest242Behavior-eps-converted-to.pdf Graphic file (type pdf)
+<use fig/LFNormaRest242Behavior-eps-converted-to.pdf>
+Package pdftex.def Info: fig/LFNormaRest242Behavior-eps-converted-to.pdf  used 
+on input line 337. on input line 337.
+Package pdftex.def Info: Requested size: 631.95834pt x 277.12021pt on input lin
+e 337.
+
+Overfull \hbox (162.48788pt too wide) in paragraph at lines 337--338
+ [][] 
+ []
+
+[119 <./fig/LFUmaIce438Behavior-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <fig/LFUmaRmi422Behavior.eps>
+(epstopdf)                    date: 2017-11-16 10:00:27
+(epstopdf)                    size: 845476 bytes
+(epstopdf)             Output file: <fig/LFUmaRmi422Behavior-eps-converted-to.p
+df>
+(epstopdf)                    date: 2017-11-16 10:51:15
+(epstopdf)                    size: 61688 bytes
+(epstopdf)             Command: <epstopdf --outfile=fig/LFUmaRmi422Behavior-eps
+-converted-to.pdf fig/LFUmaRmi422Behavior.eps>
+(epstopdf)             \includegraphics on input line 344.
+Package epstopdf Info: Output file is already uptodate.
+<fig/LFUmaRmi422Behavior-eps-converted-to.pdf, id=1921, pagebox=cropbox, 574.14
+5pt x 820.06375pt>
+File: fig/LFUmaRmi422Behavior-eps-converted-to.pdf Graphic file (type pdf)
+<use fig/LFUmaRmi422Behavior-eps-converted-to.pdf>
+Package pdftex.def Info: fig/LFUmaRmi422Behavior-eps-converted-to.pdf  used on 
+input line 344. on input line 344.
+Package pdftex.def Info: Requested size: 631.95834pt x 277.12021pt on input lin
+e 344.
+
+Overfull \hbox (162.48788pt too wide) in paragraph at lines 344--345
+ [][] 
+ []
+
+[120 <./fig/LFNormaRest242Behavior-eps-converted-to.pdf> <./fig/LFUmaRmi422Beha
+vior-eps-converted-to.pdf>]
+
+Package caption Warning: \label without proper reference on input line 750.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `tab:consolidatedData100MB' on page 121 undefined on i
+nput line 359.
+
+[121]
+Package epstopdf Info: Source file: <fig/variantOriginalStrategyGraph.eps>
+(epstopdf)                    date: 2017-11-16 10:00:27
+(epstopdf)                    size: 1673999 bytes
+(epstopdf)             Output file: <fig/variantOriginalStrategyGraph-eps-conve
+rted-to.pdf>
+(epstopdf)                    date: 2017-11-16 10:51:20
+(epstopdf)                    size: 339571 bytes
+(epstopdf)             Command: <epstopdf --outfile=fig/variantOriginalStrategy
+Graph-eps-converted-to.pdf fig/variantOriginalStrategyGraph.eps>
+(epstopdf)             \includegraphics on input line 366.
+Package epstopdf Info: Output file is already uptodate.
+<fig/variantOriginalStrategyGraph-eps-converted-to.pdf, id=1954, pagebox=cropbo
+x, 574.145pt x 820.06375pt>
+File: fig/variantOriginalStrategyGraph-eps-converted-to.pdf Graphic file (type 
+pdf)
+<use fig/variantOriginalStrategyGraph-eps-converted-to.pdf>
+Package pdftex.def Info: fig/variantOriginalStrategyGraph-eps-converted-to.pdf 
+ used on input line 366. on input line 366.
+Package pdftex.def Info: Requested size: 746.38843pt x 474.26555pt on input lin
+e 366.
+
+Overfull \hbox (120.42781pt too wide) in paragraph at lines 366--367
+[][] 
+ []
+
+
+LaTeX Warning: Float too large for page by 28.39508pt on input line 369.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 374.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 413.
+
+
+Overfull \hbox (54.78647pt too wide) in paragraph at lines 418--448
+ [][] 
+ []
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 453.
+
+
+Overfull \hbox (54.77588pt too wide) in paragraph at lines 458--488
+ [][] 
+ []
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 493.
+
+
+Overfull \hbox (54.7814pt too wide) in paragraph at lines 498--528
+ [][] 
+ []
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 533.
+
+
+Overfull \hbox (54.75pt too wide) in paragraph at lines 538--568
+ [][] 
+ []
+
+[122 <./fig/variantOriginalStrategyGraph-eps-converted-to.pdf>] [123] [124]
+[125] [126] [127]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 577.
+
+Package epstopdf Info: Source file: <fig/fileSize.eps>
+(epstopdf)                    date: 2017-11-16 10:01:39
+(epstopdf)                    size: 252628 bytes
+(epstopdf)             Output file: <fig/fileSize-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-11-16 10:51:24
+(epstopdf)                    size: 38251 bytes
+(epstopdf)             Command: <epstopdf --outfile=fig/fileSize-eps-converted-
+to.pdf fig/fileSize.eps>
+(epstopdf)             \includegraphics on input line 613.
+Package epstopdf Info: Output file is already uptodate.
+<fig/fileSize-eps-converted-to.pdf, id=1989, pagebox=cropbox, 592.2125pt x 769.
+87625pt>
+File: fig/fileSize-eps-converted-to.pdf Graphic file (type pdf)
+<use fig/fileSize-eps-converted-to.pdf>
+Package pdftex.def Info: fig/fileSize-eps-converted-to.pdf  used on input line 
+613. on input line 613.
+Package pdftex.def Info: Requested size: 496.53285pt x 194.80049pt on input lin
+e 613.
+
+Overfull \hbox (27.0624pt too wide) in paragraph at lines 613--614
+ [][] 
+ []
+
+[128
+
+
+]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 627.
+
+Package epstopdf Info: Source file: <fig/availableNodes.eps>
+(epstopdf)                    date: 2017-11-16 10:00:27
+(epstopdf)                    size: 265619 bytes
+(epstopdf)             Output file: <fig/availableNodes-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-11-16 10:51:26
+(epstopdf)                    size: 41924 bytes
+(epstopdf)             Command: <epstopdf --outfile=fig/availableNodes-eps-conv
+erted-to.pdf fig/availableNodes.eps>
+(epstopdf)             \includegraphics on input line 654.
+Package epstopdf Info: Output file is already uptodate.
+<fig/availableNodes-eps-converted-to.pdf, id=2002, pagebox=cropbox, 574.145pt x
+ 820.06375pt>
+File: fig/availableNodes-eps-converted-to.pdf Graphic file (type pdf)
+<use fig/availableNodes-eps-converted-to.pdf>
+Package pdftex.def Info: fig/availableNodes-eps-converted-to.pdf  used on input
+ line 654. on input line 654.
+Package pdftex.def Info: Requested size: 531.4646pt x 251.00806pt on input line
+ 654.
+
+Overfull \hbox (61.99414pt too wide) in paragraph at lines 654--655
+ [][] 
+ []
+
+Package epstopdf Info: Source file: <fig/betterTimesCommunicationProtocol.eps>
+(epstopdf)                    date: 2017-11-16 10:00:27
+(epstopdf)                    size: 196534 bytes
+(epstopdf)             Output file: <fig/betterTimesCommunicationProtocol-eps-c
+onverted-to.pdf>
+(epstopdf)                    date: 2017-11-16 10:51:29
+(epstopdf)                    size: 22582 bytes
+(epstopdf)             Command: <epstopdf --outfile=fig/betterTimesCommunicatio
+nProtocol-eps-converted-to.pdf fig/betterTimesCommunicationProtocol.eps>
+(epstopdf)             \includegraphics on input line 664.
+Package epstopdf Info: Output file is already uptodate.
+<fig/betterTimesCommunicationProtocol-eps-converted-to.pdf, id=2003, pagebox=cr
+opbox, 574.145pt x 820.06375pt>
+File: fig/betterTimesCommunicationProtocol-eps-converted-to.pdf Graphic file (t
+ype pdf)
+<use fig/betterTimesCommunicationProtocol-eps-converted-to.pdf>
+Package pdftex.def Info: fig/betterTimesCommunicationProtocol-eps-converted-to.
+pdf  used on input line 664. on input line 664.
+Package pdftex.def Info: Requested size: 531.4646pt x 251.00806pt on input line
+ 664.
+
+Overfull \hbox (61.99414pt too wide) in paragraph at lines 664--665
+ [][] 
+ []
+
+Package epstopdf Info: Source file: <fig/comparisonCommunicationProtocols.eps>
+(epstopdf)                    date: 2017-11-16 10:00:27
+(epstopdf)                    size: 336313 bytes
+(epstopdf)             Output file: <fig/comparisonCommunicationProtocols-eps-c
+onverted-to.pdf>
+(epstopdf)                    date: 2017-11-16 10:51:32
+(epstopdf)                    size: 31046 bytes
+(epstopdf)             Command: <epstopdf --outfile=fig/comparisonCommunication
+Protocols-eps-converted-to.pdf fig/comparisonCommunicationProtocols.eps>
+(epstopdf)             \includegraphics on input line 671.
+Package epstopdf Info: Output file is already uptodate.
+<fig/comparisonCommunicationProtocols-eps-converted-to.pdf, id=2004, pagebox=cr
+opbox, 574.145pt x 820.06375pt>
+File: fig/comparisonCommunicationProtocols-eps-converted-to.pdf Graphic file (t
+ype pdf)
+<use fig/comparisonCommunicationProtocols-eps-converted-to.pdf>
+Package pdftex.def Info: fig/comparisonCommunicationProtocols-eps-converted-to.
+pdf  used on input line 671. on input line 671.
+Package pdftex.def Info: Requested size: 531.4646pt x 251.00806pt on input line
+ 671.
+
+Overfull \hbox (61.99414pt too wide) in paragraph at lines 671--672
+ [][] 
+ []
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 684.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 709.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 723.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <16> not available
+(Font)              size <17.28> substituted on input line 751.
+
+LaTeX Font Info:    Calculating math sizes for size <16> on input line 775.
+
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <16> not available
+(Font)              size <17.28> substituted on input line 775.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <16> not available
+(Font)              size <17.28> substituted on input line 775.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <16> on input line 775.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <11.19995> on input line 775.
+[129 <./fig/fileSize-eps-converted-to.pdf>] [130 <./fig/availableNodes-eps-conv
+erted-to.pdf> <./fig/betterTimesCommunicationProtocol-eps-converted-to.pdf>]
+[131] [132 <./fig/comparisonCommunicationProtocols-eps-converted-to.pdf>]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 782.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 816.
+
+) [133] [134] [135]
+Chapter 7.
+(7-evaluation.tex) [136
+
+]
+Overfull \vbox (0.95612pt too high) has occurred while \output is active []
+
+
+[137]
+Chapter 8.
+(8-conclusions.tex) [138
+
+]
+Chapter 9.
+(9-appendices.tex [139
+
+] [140] [141] [142
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 97--98
+
+ []
+
+) (0-MIT-Thesis.bbl [143
+
+]
+Overfull \hbox (30.18271pt too wide) in paragraph at lines 23--27
+[]
+ []
+
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ì in font cmr12!
+
+Overfull \hbox (126.79146pt too wide) in paragraph at lines 51--58
+[]
+ []
+
+
+Overfull \hbox (1127.11034pt too wide) in paragraph at lines 64--78
+[]
+ []
+
+[144
+
+]
+Missing character: There is no √ in font cmr12!
+Missing character: There is no © in font cmr12!
+Missing character: There is no √ in font cmr12!
+Missing character: There is no © in font cmr12!
+Missing character: There is no √ in font cmr12!
+Missing character: There is no ≥ in font cmr12!
+Missing character: There is no √ in font cmr12!
+Missing character: There is no © in font cmr12!
+Missing character: There is no √ in font cmr12!
+Missing character: There is no Å in font cmr12!
+Missing character: There is no √ in font cmr12!
+Missing character: There is no ≥ in font cmr12!
+
+Underfull \hbox (badness 2065) in paragraph at lines 122--130
+[]\OT1/cmr/m/n/12 M. A. Jim-nez, . V.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 147--153
+[]
+ []
+
+[145]
+Underfull \hbox (badness 10000) in paragraph at lines 168--177
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 189--193
+[]\OT1/cmr/m/n/12 Timothy Matt-son, Bev-erly
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--203
+[]\OT1/cmr/m/n/12 Raul Mazo,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 214--220
+[]\OT1/cmr/m/n/12 Juan C. Mu~noz, Gabriel
+ []
+
+
+Underfull \hbox (badness 1163) in paragraph at lines 214--220
+\OT1/cmr/m/n/12 Tamura, Norha M. Vil-le-gas, and Hausi A. Muller.  Sur-prise: 
+User-controlled
+ []
+
+
+Underfull \hbox (badness 4108) in paragraph at lines 214--220
+\OT1/cmr/m/n/12 Gran-u-lar Pri-vacy and Se-cu-rity for Per-sonal Data in Smarte
+r-Con-text.  In
+ []
+
+
+Underfull \hbox (badness 7203) in paragraph at lines 214--220
+\OT1/cmr/m/it/12 Procs. of 2012 Conf. of the Cen-ter for Ad-vanced Stud-ies on 
+Col-lab-o-ra-
+ []
+
+
+Underfull \hbox (badness 7047) in paragraph at lines 214--220
+\OT1/cmr/m/it/12 tive Re-search\OT1/cmr/m/n/12 , CAS-CON '12, pages 131--145. I
+BM Corp., 2012.  URL
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 224--232
+[]
+ []
+
+[146]
+Underfull \hbox (badness 10000) in paragraph at lines 249--254
+[]\OT1/cmr/m/n/12 Lionel
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 257--263
+[]\OT1/cmr/m/n/12 Lionel
+ []
+
+
+Underfull \hbox (badness 3701) in paragraph at lines 265--270
+[]\OT1/cmr/m/n/12 Khan Sumair, Kalim Qureshi, and
+ []
+
+[147])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 128.
+ [148]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 128.
+ (0-MIT-Thesis.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 128.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 128.
+Package rerunfilecheck Info: File `0-MIT-Thesis.out' has not changed.
+(rerunfilecheck)             Checksum: 22081CB306E34A5064D9AF3837110147;9000.
+
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 1.28pt have occurred.
+
+
+LaTeX Warning: There were undefined references.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 128.
+ ) 
+Here is how much of TeX's memory you used:
+ 8561 strings out of 493312
+ 137197 string characters out of 3138889
+ 501930 words of memory out of 3000000
+ 11383 multiletter control sequences out of 15000+200000
+ 15331 words of font info for 53 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 42i,19n,49p,2434b,488s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Program Files/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
+lic/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
+nts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
+r17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C
+:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program 
+Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Program Files/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmss17.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
+c/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmt
+i12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti8.pfb><
+C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on 0-MIT-Thesis.pdf (153 pages, 3290576 bytes).
+PDF statistics:
+ 2310 PDF objects out of 2487 (max. 8388607)
+ 507 named destinations out of 1000 (max. 500000)
+ 1327 words of extra memory for PDF output out of 10000 (max. 10000000)
+

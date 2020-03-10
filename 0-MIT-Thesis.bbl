@@ -1,0 +1,324 @@
+\begin{thebibliography}{39}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Barbacci et~al.(1995)Barbacci, Klein, Longstaff, and
+  Weinstock]{barbacci1995quality}
+Mario Barbacci, Mark~H. Klein, Thomas~A. Longstaff, and Charles~B. Weinstock.
+\newblock Quality attributes.
+\newblock Technical Report CMU/SEI-95-TR-021, CMU/SEI, 1995.
+
+\bibitem[Bass et~al.(2003)Bass, Clements, and Kazman]{Bass:2003:SAP:773239}
+Len Bass, Paul Clements, and Rick Kazman.
+\newblock \emph{Software Architecture in Practice}.
+\newblock Addison-Wesley Longman Publishing Co., Inc., Boston, MA, USA, 2
+  edition, 2003.
+\newblock ISBN 0321154959.
+
+\bibitem[Buschmann et~al.(1996)Buschmann, Meunier, Rohnert, Sommerlad, Stal,
+  Sommerlad, and Stal]{Buschmann:1996:PSA}
+Frank Buschmann, Regine Meunier, Hans Rohnert, Peter Sommerlad, Michael Stal,
+  Peter Sommerlad, and Michael Stal.
+\newblock Pattern-oriented software architecture, volume 1: A system of
+  patterns, 1996.
+
+\bibitem[Cisco(2015)]{internet2015}
+Cisco.
+\newblock Cisco visual networking index: Global mobile data traffic forecast
+  update, 2014–2019.
+\newblock \emph{Whitepaper, Cisco Internet Business Solutions Group (IBSG)},
+  2015.
+
+\bibitem[Creswell(2009)]{creswell2009research}
+John~W Creswell.
+\newblock \emph{Research design: Qualitative, quantitative, and mixed methods
+  approaches}.
+\newblock Sage publications, 2009.
+
+\bibitem[Crnkovic et~al.(2011)Crnkovic, Stafford, and
+  Szyperski]{softwareComponents}
+Ivica Crnkovic, Judith Stafford, and Clemens Szyperski.
+\newblock Software components beyond programming: From routines to services.
+\newblock \emph{IEEE Software}, 28\penalty0 (3):\penalty0 22--26, 2011.
+\newblock ISSN 0740-7459.
+\newblock \doi{http://doi.ieeecomputersociety.org/10.1109/MS.2011.62}.
+
+\bibitem[De~Lemos et~al.(2013)De~Lemos, Giese, M{\"u}ller, Shaw, Andersson,
+  Litoiu, Schmerl, Tamura, Villegas, Vogel, et~al.]{de2013software}
+Rog{\'e}rio De~Lemos, Holger Giese, Hausi~A M{\"u}ller, Mary Shaw, Jesper
+  Andersson, Marin Litoiu, Bradley Schmerl, Gabriel Tamura, Norha~M Villegas,
+  Thomas Vogel, et~al.
+\newblock Software engineering for self-adaptive systems: A second research
+  roadmap.
+\newblock In \emph{Software Engineering for Self-Adaptive Systems II}, pages
+  1--32. Springer, 2013.
+
+\bibitem[de~Lemos et~al.(2017)de~Lemos, Garlan, Ghezzi, Giese, Andersson,
+  Litoiu, Schmerl, Weyns, Baresi, Bencomo, Brun, Camara, Calinescu, Cohen,
+  Gorla, Grassi, Grunske, Inverardi, Jezequel, Malek, Mirandola, Mori,
+  M\"{u}ller, Rouvoy, Rubira, Rutten, Shaw, Tamburrelli, Tamura, Villegas,
+  Vogel, and Zambonelli]{SEFSAS3:2017:challenges-assurances}
+Rog\'{e}rio de~Lemos, David Garlan, Carlo Ghezzi, Holger Giese, Jesper
+  Andersson, Marin Litoiu, Bradley Schmerl, Danny Weyns, Luciano Baresi, Nelly
+  Bencomo, Yuriy Brun, Javier Camara, Radu Calinescu, Myra~B. Cohen, Alessandra
+  Gorla, Vincenzo Grassi, Lars Grunske, Paola Inverardi, Jean-Marc Jezequel,
+  Sam Malek, Raffaela Mirandola, Marco Mori, Hausi~A. M\"{u}ller, Romain
+  Rouvoy, Cecilia M.~F. Rubira, Eric Rutten, Mary Shaw, Giordano Tamburrelli,
+  Gabriel Tamura, Norha~M. Villegas, Thomas Vogel, and Franco Zambonelli.
+\newblock Software engineering for self-adaptive systems: Research challenges
+  in the provision of assurances.
+\newblock In Rog\'{e}rio de~Lemos, David Garlan, Carlo Ghezzi, and Holger
+  Giese, editors, \emph{Software Engineering for Self-Adaptive Systems III},
+  volume 9640 of \emph{Lecture Notes in Computer Science (LNCS)}. Springer,
+  2017.
+\newblock In Press.
+
+\bibitem[Dey(2016)]{dey2016context}
+Anind~K Dey.
+\newblock Context-aware computing.
+\newblock In \emph{Ubiquitous Computing Fundamentals}, pages 335--366. Chapman
+  and Hall/CRC, 2016.
+
+\bibitem[Douglass(2003)]{douglass2003real}
+Bruce~Powel Douglass.
+\newblock \emph{Real-time design patterns: robust scalable architecture for
+  real-time systems}, volume~1.
+\newblock Addison-Wesley Professional, 2003.
+
+\bibitem[Erl(2008)]{erl2008soa}
+Thomas Erl.
+\newblock \emph{SOA design patterns}.
+\newblock Pearson Education, 2008.
+
+\bibitem[Gamma et~al.(1995)Gamma, Helm, Johnson, and
+  Vlissides]{Gamma:1995:DesignPatternsBook}
+Erich Gamma, Richard Helm, Ralph Johnson, and John Vlissides.
+\newblock \emph{{Design Patterns: Elements of Reusable Object-Oriented
+  Software}}.
+\newblock Addison-Wesley Longman Publishing, Boston, MA, USA, 1995.
+\newblock ISBN 0-201-63361-2.
+
+\bibitem[Gustavsson et~al.(2002)Gustavsson, Ala-Kurikka, and
+  Rulli]{gustavsson2002domain}
+Richard Gustavsson, Jari Ala-Kurikka, and Stefan Rulli.
+\newblock Domain specific design patterns.
+\newblock 2002.
+
+\bibitem[{IBM Corporation}(2006)]{computing2006architectural}
+{IBM Corporation}.
+\newblock {An Architectural Blueprint for Autonomic Computing}.
+\newblock June 2006.
+
+\bibitem[Jimenez(2016)]{AmeliaMiguelJimenez}
+Miguel Jimenez.
+\newblock Amelia.
+\newblock \url{https://github.com/unicesi/amelia}, 2016.
+
+\bibitem[{Jiménez} et~al.(2014){Jiménez}, {Gómez}, {Villegas}, {Tamura}, and
+  {Duchien}]{6976605}
+M.~A. {Jiménez}, Á.~V. {Gómez}, N.~M. {Villegas}, G.~{Tamura}, and
+  L.~{Duchien}.
+\newblock A framework for automated and composable testing of component-based
+  services.
+\newblock In \emph{2014 IEEE 8th International Symposium on the Maintenance and
+  Evolution of Service-Oriented and Cloud-Based Systems}, pages 1--10, Sep.
+  2014.
+\newblock \doi{10.1109/MESOCA.2014.9}.
+
+\bibitem[Keele(2007)]{keele2007guidelines}
+Staffs Keele.
+\newblock Guidelines for performing systematic literature reviews in software
+  engineering.
+\newblock Technical report, Technical report, EBSE Technical Report
+  EBSE-2007-01, 2007.
+
+\bibitem[Kephart and Chess(2003)]{autonomiccomputing}
+J.O. Kephart and D.M. Chess.
+\newblock The vision of autonomic computing.
+\newblock \emph{Computer}, 36\penalty0 (1):\penalty0 41--50, Jan 2003.
+\newblock ISSN 0018-9162.
+\newblock \doi{10.1109/MC.2003.1160055}.
+
+\bibitem[Kitchenham et~al.(2009)Kitchenham, Brereton, Budgen, Turner, Bailey,
+  and Linkman]{kitchenham2009systematic}
+Barbara Kitchenham, O~Pearl Brereton, David Budgen, Mark Turner, John Bailey,
+  and Stephen Linkman.
+\newblock Systematic literature reviews in software engineering--a systematic
+  literature review.
+\newblock \emph{Information and software technology}, 51\penalty0 (1):\penalty0
+  7--15, 2009.
+
+\bibitem[Kuchana(2004)]{kuchana2004software}
+Partha Kuchana.
+\newblock \emph{Software architecture design patterns in Java}.
+\newblock CRC Press, 2004.
+
+\bibitem[Kumari and Rath(2015)]{kumari2015performance}
+Smita Kumari and Santanu~Kumar Rath.
+\newblock Performance comparison of soap and rest based web services for
+  enterprise application integration.
+\newblock In \emph{2015 International Conference on Advances in Computing,
+  Communications and Informatics (ICACCI)}, pages 1656--1660. IEEE, 2015.
+
+\bibitem[Litoiu et~al.(2017)Litoiu, Shaw, Tamura, Villegas, M\"{u}ller, Giese,
+  Rouvoy, and Rutten]{SEFSAS3:2017:what-can-control}
+Marin Litoiu, Mary Shaw, Gabriel Tamura, Norha~M. Villegas, Hausi~A.
+  M\"{u}ller, Holger Giese, Romain Rouvoy, and Eric Rutten.
+\newblock {What Can Control Theory Teach Us About Assurances in Self-Adaptive
+  Software Systems?}
+\newblock In Rog\'{e}rio de~Lemos, David Garlan, Carlo Ghezzi, and Holger
+  Giese, editors, \emph{Software Engineering for Self-Adaptive Systems III},
+  volume 9640 of \emph{Lecture Notes in Computer Science (LNCS)}. Springer,
+  2017.
+\newblock In Press.
+
+\bibitem[Madey et~al.(2005)Madey, Xiang, Cabaniss, and
+  Huang]{TheTop10Algorithms}
+G.~Madey, X.~Xiang, S.~E. Cabaniss, and Y.~Huang.
+\newblock Agent-based scientific simulation.
+\newblock \emph{Computing in Science \& Engineering}, 2\penalty0 (01):\penalty0
+  22--29, jan 2005.
+\newblock ISSN 1521-9615.
+\newblock \doi{10.1109/MCSE.2005.7}.
+
+\bibitem[Mattson et~al.(2004)Mattson, Sanders, and
+  Massingill]{Mattson:2004:PPP}
+Timothy Mattson, Beverly Sanders, and Berna Massingill.
+\newblock \emph{Patterns for Parallel Programming}.
+\newblock Addison-Wesley Professional, first edition, 2004.
+\newblock ISBN 0321228111.
+
+\bibitem[Mazo et~al.(2015)Mazo, Mu{\~n}oz-Fern{\'a}ndez, Rinc{\'o}n, Salinesi,
+  and Tamura]{Munoz-et-al:2015:variamos-splc}
+Ra{\'u}l Mazo, Juan~C. Mu{\~n}oz-Fern{\'a}ndez, Luisa Rinc{\'o}n, Camille
+  Salinesi, and Gabriel Tamura.
+\newblock {VariaMos: an Extensible Tool for Engineering (dynamic) Product
+  Lines}.
+\newblock In \emph{Procs. of 19th Intl. Conf. Software Product Lines (SPLC)},
+  pages 374--379. {ACM}, 2015.
+\newblock ISBN 978-1-4503-3613-0.
+
+\bibitem[Miller and Ranum(2011)]{Miller:2011:PSA:2073661}
+Bradley~N. Miller and David~L. Ranum.
+\newblock \emph{Problem Solving with Algorithms and Data Structures Using
+  Python SECOND EDITION}.
+\newblock Franklin, Beedle \& Associates Inc., Wilsonville, OR, USA, 2nd
+  edition, 2011.
+\newblock ISBN 1590282574, 9781590282571.
+
+\bibitem[Mu\~{n}oz et~al.(2012)Mu\~{n}oz, Tamura, Villegas, and
+  M\"{u}ller]{Munoz-et-al:2012:surprise-user-controlled}
+Juan~C. Mu\~{n}oz, Gabriel Tamura, Norha~M. Villegas, and Hausi~A. M\"{u}ller.
+\newblock {Surprise: User-controlled Granular Privacy and Security for Personal
+  Data in SmarterContext}.
+\newblock In \emph{Procs. of 2012 Conf. of the Center for Advanced Studies on
+  Collaborative Research}, CASCON '12, pages 131--145. IBM Corp., 2012.
+\newblock URL \url{http://dl.acm.org/citation.cfm?id=2399776.2399789}.
+
+\bibitem[Mu{\~{n}}oz{-}Fern{\'{a}}ndez
+  et~al.(2015)Mu{\~{n}}oz{-}Fern{\'{a}}ndez, Tamura, Raicu, Mazo, and
+  Salinesi]{Munoz-et-al:2015:refas-splc}
+Juan~C. Mu{\~{n}}oz{-}Fern{\'{a}}ndez, Gabriel Tamura, Irina Raicu, Ra{\'{u}}l
+  Mazo, and Camille Salinesi.
+\newblock {REFAS:} a {PLE} approach for simulation of self-adaptive systems
+  requirements.
+\newblock In \emph{Procs. of 19th Intl. Conf. Software Product Lines (SPLC)},
+  pages 121--125. {ACM}, 2015.
+\newblock ISBN 978-1-4503-3613-0.
+\newblock \doi{10.1145/2791060.2791102}.
+
+\bibitem[Pertet and Narasimhan(2005)]{pertet2005causes}
+Soila Pertet and Priya Narasimhan.
+\newblock Causes of failure in web applications (cmu-pdl-05-109).
+\newblock \emph{Parallel Data Laboratory}, page~48, 2005.
+
+\bibitem[Salehie and Tahvildari(2009)]{Salehie:2009:SSL:1516533.1516538}
+Mazeiar Salehie and Ladan Tahvildari.
+\newblock Self-adaptive software: Landscape and research challenges.
+\newblock \emph{ACM Trans. Auton. Adapt. Syst.}, 4\penalty0 (2):\penalty0
+  14:1--14:42, May 2009.
+\newblock ISSN 1556-4665.
+\newblock \doi{10.1145/1516533.1516538}.
+\newblock URL \url{http://doi.acm.org/10.1145/1516533.1516538}.
+
+\bibitem[Seinturier et~al.(2009)Seinturier, Merle, Fournier, Dolet, Schiavoni,
+  and Stefani]{seinturier2009reconfigurable}
+Lionel Seinturier, Philippe Merle, Damien Fournier, Nicolas Dolet, Valerio
+  Schiavoni, and Jean-Bernard Stefani.
+\newblock Reconfigurable sca applications with the frascati platform.
+\newblock In \emph{Services Computing, 2009. SCC'09. IEEE International
+  Conference on}, pages 268--275. IEEE, 2009.
+
+\bibitem[Seinturier et~al.(2012)Seinturier, Merle, Rouvoy, Romero, Schiavoni,
+  and Stefani]{seinturier2012component}
+Lionel Seinturier, Philippe Merle, Romain Rouvoy, Daniel Romero, Valerio
+  Schiavoni, and Jean-Bernard Stefani.
+\newblock A component-based middleware platform for reconfigurable
+  service-oriented architectures.
+\newblock \emph{Software: Practice and Experience}, 42\penalty0 (5):\penalty0
+  559--583, 2012.
+
+\bibitem[Sumair et~al.(2010)Sumair, Qureshi, and Haroon]{articleIce}
+Khan Sumair, Kalim Qureshi, and Rashid Haroon.
+\newblock Performance comparison of ice, horb, corba and dot net remoting
+  middleware technologies.
+\newblock \emph{International Journal of Computer Applications}, 3, 07 2010.
+\newblock \doi{10.5120/781-1105}.
+
+\bibitem[Tamura(2012)]{tamura:2012:QoS-CARE}
+Gabriel Tamura.
+\newblock \emph{{QoS-CARE: A Reliable System for Preserving QoS Contracts
+  through Dynamic Reconfiguration}}.
+\newblock {PhD Thesis}, University of Lille I - Science and Technology and
+  University of Los Andes, May 2012.
+
+\bibitem[Tamura et~al.(2014)Tamura, Casallas, Cleve, and
+  Duchien]{tamura-et-al:2014:QoS-Contract-Preservation}
+Gabriel Tamura, Rubby Casallas, Anthony Cleve, and Laurence Duchien.
+\newblock {QoS Contract Preservation through Dynamic Reconfiguration: A Formal
+  Semantics Approach}.
+\newblock \emph{Science of Computer Programming (SCP)}, 94\penalty0
+  (3):\penalty0 307--332, 2014.
+\newblock ISSN 0167-6423.
+\newblock \doi{http://dx.doi.org/10.1016/j.scico.2013.12.003}.
+\newblock URL
+  \url{http://www.sciencedirect.com/science/article/pii/S0167642313003390}.
+
+\bibitem[Villegas et~al.(2017)Villegas, Tamura, and
+  M{\"u}ller]{villegas-et-al:2017-architecting-SwSystems-for-self-adaptation}
+N.M. Villegas, G.~Tamura, and H.A. M{\"u}ller.
+\newblock Architecting software systems for runtime self-adaptation: Concepts,
+  models, and challenges.
+\newblock In Ivan Mistrik, Nour Ali, Rick Kazman, John Grundy, and Bradley
+  Schmerl, editors, \emph{Managing Trade-Offs in Adaptable Software
+  Architectures}, pages 17 -- 43. Morgan Kaufmann, Boston, 2017.
+\newblock ISBN 978-0-12-802855-1.
+\newblock \doi{https://doi.org/10.1016/B978-0-12-802855-1.00002-2}.
+\newblock URL
+  \url{https://www.sciencedirect.com/science/article/pii/B9780128028551000022}.
+
+\bibitem[Villegas(2013)]{villegas2013context}
+Norha~M. Villegas.
+\newblock \emph{{Context Management and Self-Adaptivity for Situation-Aware
+  Smart Software Systems}}.
+\newblock PhD thesis, University of Victoria, 2013.
+
+\bibitem[Villegas and M{\"u}ller(2010)]{villegas2010managing}
+Norha~M Villegas and Hausi~A M{\"u}ller.
+\newblock Managing dynamic context to optimize smart interactions and services.
+\newblock In \emph{The smart internet}, pages 289--318. Springer, 2010.
+
+\bibitem[Villegas et~al.(2011)Villegas, M\"{u}ller, and
+  Tamura]{villegas-et-al:2011:on-designing}
+Norha~M. Villegas, Hausi~A. M\"{u}ller, and Gabriel Tamura.
+\newblock On designing self-adaptive software systems.
+\newblock \emph{Sistemas \& Telem\'{a}tica}, 9\penalty0 (18):\penalty0 29--51,
+  2011.
+\newblock \doi{10.18046/syt.v9i18.1076}.
+\newblock URL
+  \url{http://www.icesi.edu.co/revistas/index.php/sistemas_telematica/article/view/1076}.
+
+\end{thebibliography}

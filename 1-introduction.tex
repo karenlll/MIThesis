@@ -1,0 +1,153 @@
+
+
+\section{Motivation}
+\label{sec:motivation}
+In recent years there has been a dramatic increase in the number of computing devices and software systems in the world as a result of the explosion of the availability of deployed IT technologies, devices and services, whose rate keeps increasing \cite{internet2015}. Today, it is evident that we are  developing deeper dependencies on computing devices and their software applications, which are increasingly becoming part of our daily lives. This impacts different aspects of software development, among them, software quality, because of two main reasons. First, despite of we are not aware we always are expecting software systems fulfill our needs, and they are not only functionalities including things as "I need that fast" or "It always must be available" or "It must be reliable". This kind of characteristics are translated into quality attributes such as performance, availability, and reliability, and they determine software quality. Second, when there are many options in market that fulfill the same functionalities, quality attributes can be determinant at the time to select which application is better to accomplish our needs. Software quality can be addressed from different views, in \cite{kitchenham2009systematic} Kitchenham described five views in the context of evidence-based software engineering, transcendental view, user view, manufacturing view, product view, and value-based view. Each view defines different quality measures, however, at least three of them are measured using quality attributes. Quality attributes are desired capabilities which are additional to functional requirements in software systems, such as availability, performance, security, reliability, among others \cite{barbacci1995quality}\cite{Munoz-et-al:2012:surprise-user-controlled}. 
+
+One of the most relevant quality attributes for any software system is Performance. Performance is related to how much time takes a system to respond to events. Because of its nature this quality attribute can be measured using sub-attributes or factors such as, (i) throughput, (ii) response time, (iii) deadline, (iv) jitter of response, (v) missing rate, and (vi) unprocessed rate. These factors can be perceived by users, they are product characteristics, and assurance specific values for them are crucial to define the amount a customer is willing to pay. Therefore, if a software system ensures a high level of performance, it could  satisfy some of more commonly needs of the growing amount of software systems users, and improve its competitiveness.
+
+However, to ensure a level of performance on software system is not a trivial task,  there are many strategies to improve performance as argument in the literature. One of these strategies is to apply design patterns. Software engineers have been using design patterns as a design toolbox to achieve the levels of quality required by stakeholders. Design patterns are solutions for known and recurring problems in particular contexts. Moreover, beyond the classic design patterns of Gamma \etal{} \cite{Gamma:1995:DesignPatternsBook}, there exists catalogs of design patterns tailored for specific domains of application.
+
+Despite design patterns can be used to improve performance, selecting one requires to analyze the application context. Different design patterns could improve different performance factors and the impacted factor depend on different context aspects. Usually, in the design phase, software architects analyze the application context in an static way, but when application is in phase of deployment its context turns dynamic. When a software architect is evaluating if a design pattern can be applied, he must analyze the considered context described by the design pattern, but other implicit context variables are not usually considered. In literature of software engineering is very difficult to find how these implicit variables impact systems. Additionally, if considering the context applications variables in static contexts is difficult, considering them in dynamic contexts is more difficult.
+
+%Many variables have impact over any performance system, variables such as; the specific system and its context (according this context design patterns could be selected), sequential or concurrent execution, amount of users, cpu and memory usage, among others. Some varibles imply other variables, for example, concurrent execution implies variables such as; distribution architecture, memory architecture, communication protocols, communication time, among others. Some variables could be controled, others no controled, and others could be irrelevant.
+
+Determining the impact of variables and design patterns on performance is not a trivial task, because of not only the amount of variables and their categorization, but also their measurements, and their combinatorial explosion (i.e., when two or more variables with specific values are applied to a system at same time impact could be different than other values set). However, documenting the impact of variables and design patterns on performance could increase the software engineering knowledge base. This knowledge base  could be used as an step to accomplish important challenges in autonomic computing systems, in addition to allow software architects to build software systems considering more contexts variables and their impact on performance.
+
+Kephart and Chess proposed the autonomic computing vision \cite{autonomiccomputing} along with the challenges needed to achieve it, as a response to the problem raised by this growth in the amount of systems and the complexity of managing each system individually. The main objective of autonomic computing systems is self-management. This means to develop systems that do not require system administrators to perform both trivial and not trivial but necessary maintenance functions. Self-managed systems should be as autonomous as the human autonomous nervous system. The autonomous nervous system is responsible for basic functions such as breathing, digestion, blood circulation, among others, freeing our brain's conscious functions from having to worry about them. The human autonomous nervous system needs different capabilities and structures to carry out its functions, for example, to monitor the body through fibers, nerves, and ganglion. Likewise, self-managed systems require that systems execute several capabilities supported on specific structures. These capabilities include: self-configuration, which allows systems to carry out reconfigurations on themselves; self-optimization, which allows systems to improve their operation in some aspect; self-healing, which allows systems to recover from failures; and self-adaptability, which allows systems to address context changes that affect the fulfillment of their requirements (e.g., level of performance required); among other autonomic abilities.
+
+All self-management capabilities pose challenges related to the knowledge required to overcome them. This knowledge must be captured, stored and managed in a software component indeed called the knowledge base element of the MAPE-K reference model, which was devised by IBM \cite{computing2006architectural}. The MAPE-K reference model comprises the next elements: (i) M - Monitor, this element is responsible to monitor the relevant system variables, (ii) A - Analyzer, this element is responsible to interpret the measures gathered by the monitor element (M) and determine if the system goals are violated, (iii) P - Planner, according to the analysis executed by the analyzer component (A), this element is responsible to plan control actions to keep the system goals according the service level agreement contract, (iv) E - Executor, this element is responsible to execute the plan generated by the planner element (P). The knowledge base element (a.k.a., knowledge source (K)) contains information of managing of the autonomic systems such as, policies, symptoms, change plans, resource identification, relationships, topology information, historical logs, metrics, among others. Information in the knowledge base makes possible for tasks to recognize particular symptoms of events and planing a change or applying certain policies to anticipate adverse effects of that event. Determining the impact of variables and design patterns on performance can increase the knowledge base of a MAPE-K loop making it possible to recognize new symptoms and consequences (the analyze function) or defining new change plans (the plan function).
+
+Thus, determining the impact of variables and design patterns on performance to increase the knowledge base can be used both for improving classic software design or in autonomic computing.
+
+
+%The autonomic nervous system adapts its functionality to face internal or environmental changes. For example, the temperature control performed by the autonomic nervous system allows the human body to adapt to different contexts (i.e., internal or environmental temperature changes) and to continue operating (i.e., if our corporal temperature reaches more than 44$^{\circ}$C or less than 24$^{\circ}$C we can die). This function is similar to the self-adaptation capability of self-managed systems, which is used to face context changes at run-time, which allows the system to be aware of the changes in context that can impact the system’s desired behavior adversely. 
+
+%In \cite{cheng2009software}, Cheng et al. developed a research roadmap for self-adaptive systems. They summarized self-adaptive systems challenges from four views: (i) modelling dimensions, (ii) requirements, (iii) engineering, and (iv) assurances. The modeling dimensions view is related to models that support self-adaptability (i.e., reasoning and decision making). The requirements view is related to support self-adaptive systems uncertainty through new requirements languages. The engineering view is related to models to develop self-adaptive systems such as feedback control loops. The assurance view is related to verification and validation methods.  It is fundamental to solve these challenges for developing reliability and confidence on self-adaptive systems, leveraging their capabilities to maintain functionality and operation without intervention of system administrators.
+
+%In the modeling view, the major challenge is to group a wide range of self-adaptive properties in models that are able to represent them in a general and simple way. These models should be able to support decision making and reasoning at run-time to face context changes. For instance, in an online store system such as Amazon, availability is a relevant quality attribute, because if its servers fall offline, Amazon would loose a lot of money per minute. Context changes can adversely impact system quality attributes. For example, special occasions like Christmas or the Black Friday can increase the amount of users and generate an overload in servers and therefore the system would be unavailable. However, if the system were aware of context changes and it had some solution models to support decision making addressing these changes, the system could try to correct itself. But, how would the system know which is the best solution to apply? The relationship between the context characteristics and solution models can help it to decide, therefore it is fundamental to find this relationship. Hence, if Amazon were aware of context changes, it had solution models, and more importantly, it knew the relationship between them, Amazon could avoid losing money when this kind of context changes occur.
+
+%It is also very plausible that system goals change and performance becomes the most important attribute for Amazon. Amazon may be able to process 100 client requests per minute. However, on special occasions, Amazon needs to process 1000 client requests per minute.  So, as in the previous example, Amazon should respond to changes in context characteristics in order to avoid money losses. The above examples show us that different quality attributes can represent system goals and they can be adversely affected by context changes. 
+
+%However, fulfilling required levels for quality attributes is not only important for self-adaptive systems, but also for traditional software engineering. In the design phase of the traditional software development process, design patterns are usually used to address the stakeholders needs, such as processing 1000 client requests per minute. Design patterns are used as design solutions for well-known problems in specific contexts, therefore they can represent solution models. Nonetheless, these patterns have been applied at design time and self-adaptive systems can change their behavior or structure at run-time in response to context changes. Consequently, implementing design patterns as models that support analysis and planning actions, in order to reconfigure self-adaptive systems at runtime, does not follow the traditional approach, and is not a trivial task.
+
+\section{Problem Context and Challenges}
+%Quality attributes are desired capabilities which are additional to functional requirements in software systems, such as availability, performance, security, reliability, among others. 
+
+Quality attributes should be achieved and assured according to the expected fulfillment levels of system goals. For example, for Amazon, availability could be the most important attribute, hence, this attribute should be achieved in 99.999\% of the time. According to \cite{barbacci1995quality} four important quality attributes are performance, dependability, security, and safety. Each one of these has an important role in a software system. However, due to time constraints the scope of this thesis is limited only to performance. Performance is the degree to which a system accomplishes its functions in conformity with given constraints, such as speed, accuracy, and memory usage \cite{barbacci1995quality}.
+
+%Software engineers have been using design patterns as a design toolbox to achieve the  required levels of quality by stakeholders. 
+Since more a decade ago, design patterns have been used to achieve the required levels of quality by stakeholders. Design patterns are solutions for known and recurring problems in particular contexts. Moreover, beyond the classic design patterns of Gamma \etal{} \cite{Gamma:1995:DesignPatternsBook}, there exist design patterns tailored for specific domains of application. In this thesis, we consider domain-specific design patterns that address performance. These design patterns propose solutions to resolve performance problems.
+
+Each design pattern defines the context for which it is applicable, in addition to other characteristics such as its intent, problem to address, forces, structure, and behavior. However, there are variables that can affect performance and they have not been identified by the design pattern context. Context is defined by Norha Villegas and Hausi Muller in \cite{villegas2010managing} as 
+
+\textit{"Context is any information useful to characterize the state of individual entities and the relationships among them. An entity is any subject which can affect the behavior of the system and/or its interaction with the user. This context must be modeled in such a way that it can be pre-processed after its acquisition from the environment, classified according to the corresponding domain, handled to be provisioned based on the system’s requirements, and maintained to support its dynamic evolution".} 
+
+Taking into account context information is useful to characterize the state of a software system, although this can include a huge amount of context variables that could impact on performance, such as available memory or CPU, network topology, amount of users, libraries, offered services, consumed services, among others. To characterize the impact that domain-specific design patterns and other context variables have on performance is not a trivial task. 
+%However, not only solution models are needed for responding to context, but also to be aware of them. The self-adaptive capability of self-managed systems allows to respond to context changes, being able to modify their structure (i.e., components) and/or behavior (i.e., relations between components) in response to changes in either their context, in themselves, or in their goals.
+
+
+\subsection{Problem Statement}
+\label{sec:ProblemStatement}
+
+\textit{Given a component-based software system, subject to specific context scenarios, characterize the quantitative impact that domain-specif design patterns for performance have on the system's performance factors.}
+%\textit{Given a set of component-based software systems and domain-specific design patterns for performance, model the dependence relationship between these patterns and execution contexts on the performance of these systems. This model must leverage the knowledge contained in the design patterns to build self-adaptive software systems that are able to regulate their performance, by allowing to plan and execute component-based reconfigurations at runtime.}
+
+
+\subsection{Challenges}
+\label{sec:Challenges}
+
+According to the stated problem, the challenges addressed by this thesis are related to the following questions:
+
+\renewcommand{\theenumi}{\thesubsection.\arabic{enumi}}
+\begin{enumerate}
+	\item How much the performance domain-specific design patterns influence the performance factors (e.g., throughput and latency) and how to model this influence?
+	      	
+	\item Which domain-specific design patterns are more adequate to address a specific context scenario from the quantitative point of view? 
+	
+	\item What is the relationship between domain-specific design patterns and specific context variables, and how can we model this relationship?
+	      	
+\end{enumerate}
+\renewcommand{\theenumi}{\thesubsection.\arabic{enumi}}
+
+
+\section{Objectives}
+\label{cha:Objectives}
+
+\subsection{General}
+
+The main objective of this thesis is to characterize the impact of context variables and domain-specific design patterns on performance factors of a software system.
+
+%The main objective of the proposed thesis is to conceive a model of the dependence relationship between performance factors, context variables and domain-specific design patterns, and integrate it into the adaptation mechanism of component-based self-adaptive systems to regulate their performance.
+
+\subsection{Specific}
+\renewcommand{\theenumi}{\thesubsection.\arabic{enumi}}
+\begin{enumerate}
+	\item To select a set of domain-specific design patterns that address performance.
+	\item To select performance factors and context variables in accordance to their impact and relevance in the performance of software systems.
+	\item To design experiments according to selected domain-specific design patterns, performance factors and context variables using a software application of study.
+	\item To execute the set of experiments designed.
+	\item To analyze and characterize the relations between (i) the selected domain-specific design patterns, (ii) the selected performance factors, and (iii) context variables.
+	\item To evaluate and compare the characterized results through experimentation with another software application.
+\end{enumerate}
+\renewcommand{\theenumi}{\thesubsection.\arabic{enumi}}
+
+
+\section{Methodology}
+In this thesis, we will use a mixed methods approach, as defined in \cite{creswell2009research}. Mixed methods combine quantitative and qualitative approaches according to aspects such as timing, weighting, mixing, and theorizing.
+
+To accomplish the main objective of this thesis, we need to collect experimental data from the execution of a systematic set of experiments on domain-specific design patterns, performance factors, and relevant context variables that affect software performance. Then, we will design and execute experiments that allow us to collect the results of experiments to test models of relationships between the elements previously collected. In this thesis, the first phase of data collection is assumed as qualitative and the second phase is assumed as quantitative data. This is a similar strategy to the sequential exploratory strategy defined in \cite{creswell2009research}, that is, a research where the first phase is strongly qualitative data collection and analysis, followed by a quantitative data phase.
+
+The steps to achieve the objectives proposed, based on the mixed methods approach, are the following:
+
+
+\begin{enumerate}
+	\item To identify relevant system performance factors in software systems.
+	\item To identify context variables that significantly influence the performance of software systems. \label{item:metho3}
+	\item To identify domain-specific design patterns for improving performance. \label{item:metho1}
+	\item To select relevant system platform factors in software engineering literature related to the selected domain-specific design patterns.
+	\item To select relevant context variables in software systems related to performance.
+	\item To select domain-specific design patterns to apply and analyze.
+	\item To design experiments to take measurements that make possible to characterize the impact of domain-specific design patterns and context variables on performance factors.		
+	\item To implement a case of study and to inject in it the measurements needed to characterize  the impact of context variables and domain-specific design patterns on performance factors.
+	\item To execute the set of experiments designed and implemented. \label{item:metho9}
+	\item To characterize and analyze the impact of domain-specific design patterns and context variables selected over performance.
+	\item To design and implement experiments to evaluate the characterized results through experimentation with other case of study.
+	\item To execute the set of experiments to evaluate the characterized results. \label{item:metho12}
+	\item To analyze the set of experiments results to evaluate the characterized results.
+\end{enumerate} 
+
+
+The steps \ref{item:metho1} and \ref{item:metho3} involve qualitative data collection. Step \ref{item:metho1} involves performing a systematic literature review (SLR). The step \ref{item:metho3} is not as formal as an SLR, but keywords, sources and search strings are defined to execute the search. 
+
+The steps \ref{item:metho9} and \ref{item:metho12} are of quantitative data collection. These steps execute the experiments constitute the main contribution of this thesis. 
+
+%\section{Expected Results}
+%	Following, the expected results of this thesis are presented.
+
+%	\begin{enumerate}
+%		\item Technical Report about Domain-Specific Design Patterns that address performance.
+%		\item Paper: Survey about Domain-Specific Design Patterns that address performance.
+%		\item Four domain-specific design patterns characterized.
+%		\item Performance factors, infrastructure variables, and context  variables characterized.
+%		\item Domain-Specific Language to specify context and domain-specific design patterns.
+%		\item Model that relate domain-specific design patterns with: (i) performance factors, (ii) infrastructure variables, and (iii) context variables. \label{item:result6}
+%		\item Implementations of case studies to analyze and evaluate the devised model in \ref{item:result6}.
+%		\item Model that relate domain-specific design patterns with the context for particular systems in the \qoscare{} framework. \label{item:result8}
+%		\item Implementations of case studies to analyze and evaluate the model of \ref{item:result8} in \qoscare{}.
+%		\item Paper: Reconfiguration of Self-Adaptive Systems Using \qoscare{} and the Relationship between Domain-Specific Design Patterns to Improve Performance and Context Variables. 
+%	\end{enumerate}
+\section{Thesis Organization}
+ This first chapter established which is the motivation to approach the selected problem of this thesis, the expected objectives and the used methodology to accomplish the objectives. In the second chapter we found the background needed to understand this thesis development. The third chapter deepen in the problem understanding. 
+ 
+ The fourth chapter starts with the solution strategy execution proposing an experiment design to accomplish this thesis objectives. The fifth chapter explain the experiments execution and in the sixth chapter the data collected in the above chapter is analyzed. 
+ 
+ The seventh chapter proposed a case of study to evaluate the knowledge gathered in the three above chapters.
+ 
+ Finally, we found the conclusions in the eighth chapter and the appendices to the end of this document.
+%\section{Contribution Summary}
+
+\section{Chapter Summary}
+This chapter shows the relevance of the problem to face through the motivation of this thesis, the problem context and definition, the challenges to overcome, the objectives to achieve and the methodology to reach the objectives proposed. 
+
+Additionally, this chapter explain the thesis organization to easy the reader your travel through this document and the contribution summary of this work.

@@ -1,0 +1,128 @@
+\documentclass[letterpaper,12pt]{report}
+
+\textheight=22cm \textwidth=16.5cm \hoffset=-2cm \voffset=-1cm
+
+\usepackage{inputenc} % set input encoding (not needed with XeLaTeX)
+\usepackage{longtable}
+\usepackage[table]{xcolor}
+\usepackage{color}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{epstopdf}
+\usepackage{hhline}
+\input{includes} % required packages
+\input{comments.inc}
+
+
+% ==========================================================================
+\begin{document}
+	
+	
+	% Title information
+	\begin{titlepage}
+		\begin{center}
+			
+			% Upper part of the page
+			~\\
+			
+			% Title
+			{ \Huge \textbf{The Impact of Domain-Specific Design Patterns on Performance Factors: An Experimental Analysis}
+			}\\[3cm]
+			
+			
+			\textsc{\Large Master Thesis}\\ [1cm]
+			
+			Presented in partial fulfillment to obtain the Title of \\
+			Master in Informatics and Telecommunications \\[3cm]
+			
+			by \\[0.5cm]
+			
+			\textsc{\Large Karen Lorena Lara L\'opez }\\[1cm]
+			
+			\large{Advisor:} Gabriel Tamura, PhD\\
+			
+			\vfill
+			
+			{\Large Department of Information and Communication Technologies}\\[0.3cm]
+			{\Large Faculty of Engineering}\\[0.5cm]
+			
+			\includegraphics[width=0.22\textwidth]{img/logo-icesi.png}\\[0.3cm]
+			
+			\large 2018\\
+			
+		\end{center}
+		
+	\end{titlepage}
+	
+	
+	\pagenumbering{roman}
+	
+	%Tablas de contenido
+	\tableofcontents
+	%\listoftables
+	%\listoffigures
+	%\pagebreak
+	
+	%Sections
+	\sloppy
+	
+	\abstract{Nowadays, there exists a huge number of interconnected computing devices in the world and people is increasingly dependent on them. This situation not only implies challenges for the software that manages these devices, but it also implies that if their growth rate is maintained then in the future there will not be enough system administrators to manage these devices and their software. Kephart and Chess \cite{autonomiccomputing} analyzed this situation and introduced the autonomic computing vision. This vision proposes systems that can manage themselves according to high-level system goals through autonomic capabilities. One of these capabilities is self-adaptation, which allows systems to respond to context changes that violate the satisfaction of system goals. These goals are usually represented as quality attributes, such as performance. To achieve the required level of satisfaction of quality attributes, engineers have developed several strategies, one of them based on design patterns that help fulfill the required quality attribute. In this thesis, we aim to leverage the knowledge engineers have encoded into domain specific design patterns in order to address context changes faced by self-adaptive systems. More concretely, we propose to model the relationship between context of variables that affect self-adaptive systems, and domain-specific design patterns that improve performance. To achieve this goal, we have identified the following challenges: (i) to model the dependency relationship between design patterns and performance factors; (ii) to model the dependency relationship between design patterns and context variables. We design and execute experiments with different case studies.}
+	
+	\pagenumbering{arabic}
+	
+	% =========================================================================
+	\chapter{Introduction}
+	\label{cha:Introduction}
+	\input{1-introduction}
+	
+	% =========================================================================
+	\chapter{State-of-the-Art Background}
+	\label{cha:background}
+	\input{2-background}
+	
+	% =========================================================================
+	\chapter{Modeling the Problem}
+	\label{cha:modelingProblem}
+	\input{3-problemModeling}
+	
+	% =========================================================================
+	\chapter{Design of Computational Experiments}
+	\label{cha:experimentDesign}
+	\input{4-experimentDesign}
+
+	% =========================================================================
+	\chapter{Experiments Execution}
+	\label{cha:expExecution}
+	\input{5-expExecution}
+
+	% =========================================================================
+	\chapter{Analysis of Computational Experiments}
+	\label{cha:experimentAnalysis}
+	\input{6-analysis}	
+	
+	% =========================================================================
+	\chapter{Evaluation}
+	\label{cha:evaluation}
+	\input{7-evaluation}
+
+	% =========================================================================
+	\chapter{Conclusions}
+	\label{cha:conclusions}
+	\input{8-conclusions}
+	
+	% =========================================================================
+	\chapter{Appendices}
+	\label{cha:appendices}
+	\input{9-appendices}
+		
+	%%%%%%%%%%%%%%
+	% BibTeX users 
+%   \bibliographystyle{bib/splncs}
+%	\bibliographystyle{alphaabbr}
+	\bibliographystyle{plainnat}
+	\bibliography{mit-proposal}
+	
+	%%%%%%%%%%%%%%
+\end{document}

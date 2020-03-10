@@ -1,0 +1,404 @@
+To have a better understanding of the problem statement defined in section \ref{sec:ProblemStatement} for this thesis, in this chapter we analyze and model it in detail.
+
+There are three main dimensions involved in the problem statement: (i) context variables, (ii) domain-specific design patterns, and (iii) performance factors. In sections \ref{sec:dsdpModel}, \ref{sec:pfModel}, \ref{sec:contextVariablesSearch} we detail each dimension respectively. In the last section we analyze how these dimensions interact between them and how we model the problem taking account each dimension and their interactions.
+
+\section{Context Variables}
+\label{sec:contextVariablesSearch}
+
+As introduced in section \ref{subsec:contextaware} the fulfillment of Quality Attributes and Service Level Agreements (SLAs) can be violated became of changes on context variables. To identify the most relevant context variables that affect the performance of software systems, we conducted two systematic searches. The first search was centered in extracting the context variables defined by the context section domain-specific design patterns identified in the systematic literature review described in section \ref{sec:SLR}. The second search was conducted through the search engine of the Engineering Village data base using the next search string.
+
+In this search string we define that the study areas of the fuzzy logic, ubiquitous computing, embedded systems, artificial intelligence and wireless sensor networks are excluded from our search due to these are areas that require too specific conditions to apply any pattern, therefore, to generalize a pattern or use their patterns in another contexts could be a not trivial problem.  \newline
+
+"((((((((((((((((((((((self-adaptive systems) WN ALL)) AND (context)))) AND (({ieee computer society} OR {springer verlag} OR {inst. of elec. and elec. eng. computer society} OR {institute of electrical and electronics engineers inc.} OR {elsevier} OR {elsevier inc.} OR {elsevier ltd}) WN PN)) AND (({ca} OR {ja} OR {cp}) WN DT)) NOT (({716} OR {921} OR {717}) WN CL)) NOT (({ubiquitous computing} OR {embedded systems} OR {artificial intelligence}) WN CV)) NOT ({portuguese} WN LA)) NOT (({fuzzy logic} OR {wireless sensor networks}) WN CV)) NOT ({461.9} WN CL)) NOT ({912} WN CL)) NOT (({913.1} OR {802.2} OR {802.3} OR {901.2}) WN CL)) NOT ({944} WN CL)) NOT (({711} OR {741.1} OR {902.2} OR {971} OR {913}) WN CL)) NOT (({461.6} OR {481.1} OR {741}) WN CL)) NOT (({901.1.1} OR {911}) WN CL)) NOT (({721} OR {911.2}) WN CL)) NOT (({401.1} OR {402} OR {405.2} OR {751.5} OR {811.1.1}) WN CL)) AND (({ca} OR {ja}) WN DT))" \newline
+
+The first search produced the domain-specific design patterns catalog presented in section \ref{sec:SLRResults} and this second search produced 87 papers, of which 32 passed the abstract filter and were fully read. The only characteristic to considerer when we read papers was the appearance of the text context variable, so, if a paper did not mention at least one context variable, it was rejected. After full reading, context variables was gathered from only 15 papers. Following we presented all context variables found.
+
+{\scriptsize 
+	\begin{longtable}{|p{1.7in}|p{4.5in}|}
+		\caption{Context Variables that affect the performance of software systems}\\
+		\hline
+		\centering\textbf{Context Variable}                 & \textbf{Definition} \\
+		\hline
+		\endfirsthead
+		\multicolumn{2}{c}%
+		{\tablename\ \thetable\ -- \textit{Continued from previous page}} \\
+		\hline
+		\centering\textbf{Context Variable}                 & \textbf{Definition} \\
+		\hline
+		\endhead
+		\hline \multicolumn{2}{r}{\textit{Continued on next page}} \\
+		\endfoot
+		\hline
+		\endlastfoot
+		Number of available CPU cores                       &                     
+		Nowadays CPUs have more than one core, which execute tasks
+		in parallel. Available CPU cores can affect directly system performance by executing several system tasks concurrently.
+		Therefore this is an important context variable.        \\ \hline
+		Number of available distributed task processors     &                     
+		This variable is similar to the number of available CPU cores, except it refers to physically distributed CPUs, that is, several system devices distributed and each one of these has their own set of CPU cores.           \\ \hline
+		Power Consumption                                    &                     
+		It refers to electric consumption of system devices used in the system architecture.            \\ \hline
+		Network Utilization                                 &                     
+		It can refer to two variables, (i) the amount (percentage) of network used by the deployed application, or (ii) the amount of network used by all applications deployed over the same network.           \\ \hline
+		CPU Clock Frequency                                    &                     
+		This variable amounts to the maximum number of CPU instructions executed per second. Thus, it affects directly performance of software execution in a single CPU.          \\ \hline
+		Addition of Resources at Runtime                    &                     
+		Ability of adding or removing devices to the system architecture or resources at current devices in use by the system.          \\ \hline
+		Number of service request                           &                     
+		The amount of user requests for system functionalities. This variable affects performance given that this amount represents the load of the software system. If the system has not enough resources to service the requests, the system can become too slow or fail overloaded.            \\ \hline
+		Number of Users                                     &                     
+		The amount of concurrent users that the application has in a given moment, related to the number of service requests.          \\ \hline
+		Bus Width                                           &                     
+		Amount of bits that can be transported at the same time through the data bus that communicates the CPU with the memory and I/O peripherals.          \\ \hline
+		Operating System                                    &                     
+		The specific way that the operating system uses to manage hardware resources and provides services to applications affects the performance of applications.          \\ \hline
+		Processor Utilization                               &                     
+		It can refer to two variables, (i) amount (percentage) of CPU used by the application deployed, or (ii) amount of CPU used by all applications deployed over the same device.           \\ \hline
+		Available RAM Memory                                 &                     
+		Availability of random access memory (RAM) to store both, the program and the data that are processed by the CPU. The more available memory has a processing node, the more computing power. Available RAM memory is an important context variable that affects software performance.             \\ \hline
+		Temperature                                         &                     
+		It refers to temperature CPU devices, when a device is overheated its performance could be adversely affected.           \\ \hline
+		Network Bandwidth                                   &                     
+		It refers to the bit-rate of transmission and reception of data over a network, usually expressed in bits per second.            \\ \hline
+		Task Buffer size (Queue)                            &                     
+		It refers to the maximum amount of tasks that a software component can remain waiting (on a queue) until attended.            \\ \hline
+		Type of execution task (Sequential or Concurrent)   &                     
+		It refers to dependencies between tasks. If there is a lot of dependency among tasks, then, it is too difficult to take advantage of concurrency, thus, affecting software performance.           \\ \hline
+		Batch Time Span                                     &                     
+		It refers to a time that a software component waits before starting next task. Time between tasks could allow to free computational resources and so the next task can take advantage of these resources. It could affect  applications performance.          \\ \hline
+		Synchronous or Asynchronous Communication Among Application Components          &                     
+		It refers to whether the application must wait for a response or not. If an application keeps occupied attending one request from start to end of request (synchronously), then, it can increase the time that an application needs to process one request. In contrast, if it receives all requests and  it responds each request whenever they been completely processed (asynchronously). However, if processing one request requires to synchronization constantly then it is better for the application performance to be synchronous.          \\ \hline
+		Batch Size (Coarse, fine, and medium)              &                     
+		It refers to task size for processing distribution. Deciding over batch size used to distribute work among processing units to complete a request can affect application performance. On the one hand, if batch size is too small, then, application does not take advantage of computational resources. On the other hand, if batch size is too big then computational resources could be overloaded.           \\ \hline
+		Centralized or Distributed Control mechanism        &                     
+		It refers to how is distributed the control mechanism, that is, using only one device or more than one for controlling the application. To have more than one controller could increase or reduce application latency to respond a request and therefore it can affect application performance.           \\ \hline
+		Heterogeneous or Homogeneous tasks                  &                     
+		It refers to task kind, when there is one or more kind of task. If there is only one kind of tasks, then it is more simple to add resources to reduce response time, otherwise, the architecture should describe one strategy to manage the different tasks looking to improve software performance. This variable can affect directly the scalability quality attribute being related to software performance because if requests  increase and the system can not scale, performance will be decreased.        \\ \hline
+		Shared Memory Architecture (UMA, NUMA, COMA, NORMA) &                     
+		It refers to how shared memory is accessed by software components. There are four architectures, (i) Uniform memory access (UMA), (ii) Non-uniform memory access (NUMA), (iii) Cache-only memory architecture (COMA), and (iv) No Remote Memory Access (NORMA). The way to access to memory can increase or decrease application latency, thus affecting software performance.           \\ \hline
+		Stateful/Stateless information                                &                     
+		It refers to whether software components manage computational states or not. Having state implies to keep information over each request, managing this information implies more complexity to software components and increases latency. Despite of a stateless system could have better performance than stateful systems, to resolve some software problems requires to maintain state.           \\ \hline
+		Communication protocol between components           &                     
+		It refers to communication protocols used in Service Component Architecture (SCA) or even in general distributed components communication. Self-Adaptive software systems are commonly based on SCA. There are different protocols, such as; Web Services, REST, RMI, WCF, CORBA, and Slice (ICE). Each protocol to communicate components implies a different overhead over transmitted data and therefore this context variable can affect performance.            \\ \hline
+		Communication time                                  &                     
+		It refers to the time that system components spend in communication with others. This variable can affect the time to service a request and software performance. It can be affected by variables such as network bandwidth, shared-memory architecture, communication protocol, or batch size. Therefore, this is an important context variable.          \\ \hline
+	\end{longtable}
+}
+
+
+\section{Domain-Specific Design Patterns}
+\label{sec:dsdpModel}
+
+To date considerable amount of design patterns have been published. For example, Gamma \etal{} \cite{Gamma:1995:DesignPatternsBook} classified design patterns in three types, (i) creational, (ii) structural, and (iii) behavioral, characterizing a total of 23 design patterns. However, in this thesis we are interested in domain-specific design patterns, in the domain of performance. To characterize them, we performed a Systematic Literature Review (SLR) \cite{keele2007guidelines}. 
+
+\subsection{The Systematic Literature Review (SLR)}
+\label{sec:SLR}
+To perform the SLR, we followed the steps defined in the methodology proposed by Kitchenham et al \cite{kitchenham2009systematic}, as follows:
+
+\subsubsection{Research Questions}
+\begin{enumerate}
+	\item Which are the domain-specific design patterns that have been proposed to improve the performance in a software system?
+	\item In what amount do these design patterns enhance the software performance?
+	\item Which are the metrics or methods used to measure the performance improvement obtained by the implementation of these design patterns?
+	\label{enum1}
+\end{enumerate}
+
+\subsubsection{Generating a search strategy for primary and secondary studies}
+
+The primary and secondary studies are searched through search strings in recognized sources. To generate the search strings we define keywords and then we select sources.\\
+
+We defined the keywords according to the research questions. First, the domain we are interested on for the design patterns is the quality attribute "Performance", hence, this is the first keyword. Moreover, the performance has sub-attributes such as throughput, scalability, and load balance, then these sub-attributes are added to the keywords. Second, we are focused on design patterns, therefore, design pattern is also a keyword. Third, the metrics and evaluations are important in our research questions, thus, performance metrics, quality metrics, quality attributes assessment, and quality attributes evaluation are included as keywords. Finally, the processing paradigm influences in the performance importance in the systems, thus, concurrency, distributed systems, distributed processing, and parallel systems also are keywords. Additionally, some synonyms are added.\\
+
+The sources are defined in accordance with three criteria: (i) source reputation, (ii) accessibility, and (iii) expert recommendation. Additionally, even though the relationship between design patterns and quality attributes has been widely investigated, for the practitioners are still difficult to find guides that allow them to make decisions about which design pattern improves the required quality attribute for a specific software system given that those are qualitative studies. Thus, to avoid the shallowness in our SLR we focus on the quality attribute \textbf{\textit{Performance}} and the design patterns that improve this attribute, hence the sources should be recognized by research communities software engineering. \\
+
+Additionally, the researchers adjust the search strings by making some initial searches for calibration  the sources.
+
+\begin{itemize}
+	\item Keywords: Performance, Throughput, Scalability, Design pattern, Load balance, Quality attributes, Quality improvement, performance metrics, quality metrics, concurrency, distributed systems, distributed processing, parallel systems, quality attributes assessment, quality attributes evaluation, reference models (for performance), architectural styles (for performance).
+	
+	\item Sources: Given of the wide spectrum of articles found in this topic, we decided to focus the search in the next sources:
+	
+	\begin{itemize}
+		\item ACM Digital Library
+		\item Springer- LNCS
+		\item IEEE
+		\item Elsevier
+	\end{itemize}
+	
+	The next subsection (\nameref{subsec:searchstrings}) limits the search results for these sources.
+	
+	\label{enum2}
+	
+\end{itemize}
+
+\subsubsection{Search Strings}
+\label{subsec:searchstrings}
+Search strings represent a valid combination of keywords for its use in editorial search-engines; the correctness of both keywords definition and search-string construction are fundamental to find relevant studies.
+
+The search strings used in the selected sources are listed below
+
+%\footnote{The considerations to transform the general search string to its equivalent in the different sources are detailed in chapter\ref{chap:search-and-filter}.}:
+
+\begin{itemize}
+	
+	\item General String (i.e., without editorial format)
+	
+	(performance OR concurrency OR throughput OR scalability OR "load balanc*") AND ("design pattern*") AND (distribut* OR parallel OR quality OR improvement OR measur* OR evaluat* OR assessment) AND publication-year$\geq$2006 \label{seastr:general} 
+	
+	\item IEEE Xplore
+	
+	((((((((performance) OR concurrency) OR throughput) OR scalability) OR "load balanc*") AND ("design pattern*") AND (((((((distributed) OR parallel) OR quality) OR improvement) OR measure) OR evaluation) OR assessment)))) \label{seastr:IEEE} 
+	
+	\item ACM
+	
+	(Abstract:performance or Abstract:concurrency or Abstract:throughput or Abstract:scalability or Abstract:"load balancing") and (Abstract:"design patterns") and (Abstract:distribut* or Abstract:parallel or Abstract:quality or Abstract:improvement or Abstract:measurament or Abstract:evaluation or Abstract:assessment or Abstract:"reference model" or Abstract:"architectural style" or Abstract:metrics) \label{seastr:ACM} 
+	
+	\item Springer
+	
+	(performance OR concurrency OR throughput OR scalability OR "load balanc*") AND ("design pattern*") AND (distribut* OR parallel OR quality OR improvement OR measur* OR evaluat* OR assessment OR "reference model*" OR "architectural style*" OR metric*) \label{seastr:Springer} 
+	
+	\item Elsevier
+	
+	pub-date$>$2005 and tak(performance OR concurrency OR throughput OR scalability OR "load balanc*") AND tak("design pattern") \label{seastr:Elsevier} 
+	
+\end{itemize}
+
+\subsubsection {Inclusion Criteria}
+\begin{itemize}
+	\item Published papers since 2006 (10 years seems to be reasonable spectrum of time)
+	\item Studies that contains experiments regarding design patterns for a specific domain that improve the performance in software systems.
+	\item Studies with theoretical models about the measurement of the performance in a software system.
+\end{itemize}
+\subsubsection {Control Articles And Documents}
+\begin{itemize}
+	\item Pattern-oriented software architecture \cite{Buschmann:1996:PSA}
+	\item Patterns for parallel programing \cite{Mattson:2004:PPP}
+\end{itemize}
+\subsubsection {Selection Procedure}
+This subsection illustrates the process performed to select the relevant results (i.e., papers) from the search. Special considerations from this process can be found in subsection \textbf{\emph{\nameref{subsub:searchandfilter}}}.
+
+\begin{itemize}
+	\item A first search is performed by the team, with the aim of both analyzing the results and refine the search criteria defined in previous steps.
+	\item The sources are distributed among team members.
+	\item Every member has to perform a individual re-search process in its assigned source. The quality assurance process is applied for every paper.
+	\item Relevance of resulting papers are evaluated based on abstract content and inclusion criteria.
+	\item Another member of the team performs a second evaluation of the paper.
+	\item Papers who received double-acceptance from members are immediately considered for full-text revision. In cases where there is no agreement, a third evaluator takes participation. 
+	\item Every member performs the strategy defined for data extraction in the abstract accepted papers.
+	\item The team carries out a general review of the most significant results and selects the papers for deep analysis (i.e., full-text review).
+	\item The information is synthesized in the dimensions of analysis. 
+\end{itemize}
+\subsubsection {Quality assurance process}
+
+To determine if a study is relevant for us, this should accomplish some of the next characteristics:
+
+\begin{itemize}
+	\item The article must have at least one design pattern or strategy that improve performance.
+	
+	\item The article should present experiments that support the performance improvement achieved when the design patterns or strategies are implemented.
+	
+	\item The article should present a mathematical model that allows to predict the performance improvement achieved when the design patterns or strategies are implemented. Additionally, the article should present experiments that support the real performance improvement.
+	
+	\item The patterns or strategies presented are focused to improve the performance directly.
+	
+	\item More than one article presents the same pattern or strategy.
+\end{itemize}
+
+%\begin{enumerate}
+%\item Experimental approaches
+%\begin{enumerate}
+%\item Experimental tables: How many data was experimented with?. How many experiments were conducted?
+%\item The document shows how the experimental results were synthesized in a mathematical model.
+%\end{enumerate}
+%\item Mathematical Model approaches
+%\begin{enumerate}
+%\item Characterize the evaluated models.
+%\item Experimentation with mathematical model .
+%\end{enumerate}
+%\end{enumerate}
+\subsubsection {Extraction data strategy}
+The following represent the characterization model applied for initial resulted papers.
+\begin{itemize}
+	\item Source (Editorial)
+	\item Classification
+	\item Authors and authors affiliations
+	\item Summary
+	\item Research questions
+	\item Publication year
+	\item Source type (Journal, magazine, book)
+	\item Studied patterns
+	\item Approach of the performance evaluation
+	\item Amount reference 
+\end{itemize}
+
+\subsubsection {Synthesis strategy: Analysis Dimensions}
+\begin{itemize}
+	\item Performance Problem and Type of Improvement Strategy: This dimension describes context, problem, and strategies (i.e., reference model, architectural style, design pattern, meta-model, framework, or algorithm) used by the authors for improving performance. This present the next sub-dimensions:
+	
+	\begin{itemize}
+		\item Named Strategies
+		\item Problem
+		\item Context
+	\end{itemize}
+	
+	\item Performance Target: This dimension is focus on which performance sub-attributes (i.e., throughput, latency, and response time) are improved and which measures are used for these sub-attributes. 
+	
+	\item Strategy: This dimension presents the strategies described by the article authors according to the next characteristics:
+	
+	\begin{itemize}
+		\item Name
+		\item Intent
+		\item Problem
+		\item Context
+		\item Forces
+		\item Structure
+		\item Behavior
+	\end{itemize}
+	
+	\item Mathematical model/analysis: If the article contains a mathematical model, this dimension presents its variables and its formulas.
+	
+	\item Experimental evaluation: This dimension presents the article experiments according the next characteristics:
+	\begin{itemize}
+		\item Case of Study
+		\item Application Domain
+		\item Experiment Setting (i.e., system deployment configuration, benchmark, scenarios, or data).
+		\item Results
+	\end{itemize}
+	\item Relationship between experimental evaluation and mathematical model (if any).
+\end{itemize}
+
+\subsubsection{The Search and Filter Process}
+\label{subsub:searchandfilter}
+The search process starts with the definition of the sources and keywords; once sources have been selected based on selection criteria and keywords are correctly joined to form a representative search string. We faced to transform the general search string (i.e., search string \#\ref{seastr:general}) to the different sources search-options and their interfaces. The differences among the sources forced us to both increase or decrease the stiffness of search strings.
+
+We present the most significant considerations and issues that we faced in search process.
+
+\begin{itemize}
+	\item Elsevier
+	
+	The search engine of Elsevier is called \textit{ScienceDirect}. ScienceDirect presents two options for advanced search; these are \textit{Advanced search}, and \textit{Expert search}. For the purpose of the current research, we decided to use the Expert search, which allow us to represent our general search string with few modifications. However, due to the results of the original search were few (i.e., less than 30), the stiffness of the search string had to be decreased. After some iterations, we agree to use query string \#\ref{seastr:Elsevier}.
+	
+	\item Springer
+	
+	Springer advanced search restricts the reach of our search significantly; first, Springer does not present a query search mode as ScienceDirect expert search. Because of this, we were forced to limit the search to the field \textit{Where the title contains}. This evidently, produces a high number of initial results. Second, In order to select relevant results was necessary to use filters that can only be added in a step-by-step form using \textit{Refine your search} option. In summary, the process performed in Springer was:
+	\begin{itemize}
+		\item The search string \#\ref{seastr:Springer} is typed in the field “where the title contains”.
+		\item In the field \textit{Show documents published} set: 2006 between 2014.
+		\item Add discipline filter: Computer Science.
+	\end{itemize}
+	
+	It is important to mention that, given the fact that Springer search was limited to title search, relevant results could be omitted (but also irrelevant results could be considered) in comparison with other sources that allows the combination of title, abstract, and keywords in a single search.
+	
+	\item ACM and IEEE Xplore
+	
+	ACM and IEEE sources show the most complete advanced search mode in comparison with the previous sources; they bring the possibility to represent the exactly original query string with a few format modifications. The query strings used for ACM and IEEE was query string \#\ref{seastr:ACM} and \#\ref{seastr:IEEE}, respectively. Even though, both sources require that publication-year filters are added manually (i.e., after get results) the process is very simple and effective.
+	
+\end{itemize}
+
+
+The filter process, that is refinement of results, starts with the 248 resulting papers from previous stage (i.e., search process), hereinafter known as initial search stage. In total, the filter process is composed by three iterative stages: (i) Initial Search, (ii) Abstract Accepted, and (iii) Full-Text Accepted. The general aim of each stage is to filter the irrelevant papers from current research. 
+
+\begin{itemize}
+	\item Initial Search
+	
+	In this stage, resulting papers from all sources are collected and distributed among researchers. As we mention before, 248 papers result from search process.
+	
+	\item Abstract Accepted
+	
+	In this stage, the papers are evaluated by the researchers based on the content of the abstract. If the paper fulfills the inclusion criteria, it receives the approbation from the researcher. However, a paper is only accepted in this stage (i.e., considered for the next stage) if two researchers agreed in the evaluation. It is important to mention that, some papers could not expose clearly the inclusion criteria in the abstract section; however some relevant information is detected in the same. Papers that meet previous condition are also accepted. 
+	
+	At the end of this stage, the 59 resulting papers are again distributed among researchers.
+	
+	\item Full-Text Accepted 
+	
+	In this stage, the papers are studied in depth with the purpose of finding its relevance for the current technical report. Researchers look for papers that fulfill inclusion criteria and quality assurance statements.
+	
+	At the end of this stage, only 20 papers were finally accepted, representing the starting point for the current document.
+	
+\end{itemize}
+
+The resulting papers from last stage produce a snowball process. It consists on to select the most relevant references of the accepted papers with the aim of emphases or gather extra-information. The snowball process produced 15 new papers, nonetheless after applying the previous filters only 6 papers remained, for a total of 26 papers. Figure \ref{fig:filter-process} summarizes the filter process results.
+
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=17cm]{fig/filter-process.eps}
+	\caption{Filter-Process Stage Results}
+	\label{fig:filter-process}
+\end{figure}
+
+% =============================================================================
+
+\subsection{SLR Results}
+\label{sec:SLRResults}
+The results of SLR were sorted according to their relevance and we develop a template to analyze each pattern through the next characteristics: (i) Intent, (ii) Problem, (iii) Context, (iv) Forces, (v) Structure, and (vi) Behavior.
+
+
+\begin{description}
+	\item [Intent] 	The intent is a short statement that summarizes what is the purpose of the design pattern, its rationale, and what particular design issue it address [Ref]. Optionally, The intent could include a brief explanation about how the design pattern solves the problem, and in which context. The intent allows practitioners to make decisions about the design pattern applicability.
+	\item [Problem] Describes the specific problem addressed by the pattern. The problem is usually exposed with a proper scenario that exemplifies how the pattern is useful.
+	\item [Context] The context establishes the set of conditions and the environment under which the problem appears for the pattern to be applied effectively.
+	\item [Forces] Forces are generalized criteria justifying using and implementing a design pattern. Forces are generally hard to measure and conflicting between them. They are expected to occur repeatedly in the design pattern's context, and to resolved themselves under certain configuration (i.e., the pattern) [C. Alexander]. Forces can focus in different relevant aspects of patterns, for example, correctness, structure or construction. \\
+		
+%	[1] http://www.cs.unc.edu/~stotts/723/patterns/forces.html"
+	\item [Structure] The structure describes the elements that compose the solution proposed by the design pattern, their relationships, and responsibilities. The structure description does not represent a specific implementation because the structure of the design pattern is intended to be a template. The structure is expressed through a class diagram conforming to the UML specification.
+	\item [Behavior] The behavior describes the relationships and collaborations between elements defined in the pattern structure. The behavior is defined through a sequence diagram conforming to the UML specification.
+\end{description}
+
+Following are described the twelve more relevant design patterns for performance that were found in the SLR.
+
+\input{SLR-Designpatterns}
+
+
+\section{Performance Factors}
+\label{sec:pfModel}
+	Software performance is usually measured through one or more subfactor measurements (i.e., throughput,   latency, deadline, jitter, load balance, resource usage, capacity, and   success rate). To identify performance factors, we considered two phases, (i) we performed a literature review, finding 33 papers, and (ii) we surveyed performance factors from publications by Software Engineering Institute (SEI). Following we present the identified performance factors.\\
+\\
+{\scriptsize 
+\footnote{Note: The tally column makes reference to the papers amount that mention the specific performance factor.}
+\begin{longtable}[c]{|p{0.9in}|c|p{2.3in}|p{2.3in}|c}
+	\caption{Performance Factors}\\
+	\hhline{|-|-|-|-|}
+	\label{tab:performanceFactors}
+	\centering\textbf{Performance Factor}     & \textbf{Tally} & \centering\textbf{Performance Factor Definition}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           & \centering\textbf{SEI Definition}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               &   \\
+	\hhline{|-|-|-|-|}
+	\endfirsthead
+	\multicolumn{4}{c}%
+	{\tablename\ \thetable\ -- \textit{Continued from previous page}} \\
+	\hhline{|-|-|-|-|}
+	\centering\textbf{Performance Factor}     & \textbf{Tally} & \centering\textbf{Performance Factor Definition}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           & \centering\textbf{SEI Definition}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               &   \\
+	\hhline{|-|-|-|-|}
+	\endhead
+	\hhline{|-|-|-|-|} \multicolumn{4}{r}{\textit{Continued on next page}} \\
+	\endfoot
+	\hhline{|-|-|-|-|}
+	\endlastfoot
+	\centering	Throughput                     & 9              & Given   a time interval, throughput is defined as the number of events that are completely processed within that interval. However, the interval can have   subintervals in which throughput behavior is different to the global   interval. For instance, if the system throughput is 30 transactions per   minute, therefore, it is performed 0.5 transactions per second. However, in reality the system can perform 1 transaction per second during the first 30 seconds and 0 transactions per second in the remaining time of the interval. In addition, events involved in throughput measures can be messages, packages, requests,   rendered frames, among others. & Throughput   refers to the number of event responses that have been completed over a given   observation interval {[}Lazowska 84, p. 41{]}. This definition suggests that it   is not sufficient to just specify a processing rate, but that one or more   observation intervals should also be specified. For example, a system that   can process 120 transactions every hour might not guarantee that 2   transactions will be processed every minute. Perhaps no transactions are   processed during the first 30 minutes and all of the transactions are   processed during the remaining 30 minutes.                           &   \\ \hhline{|-|-|-|-|}
+	\centering	Latency                        & 8              & Given a request, latency is defined as the response time to completely process it. Expected latency can be specified according to an   interval (i.e., the minimum and the maximum expected latency).                                                                                                                                                                                                                                                                                                                                                                                                                                              & Latency   refers to a time interval during which the response to an event is completely executed. The time interval defines a response window given by a starting   time (minimum latency) and an ending time (maximum latency). These can either   be specified as absolute times (time of day, for example) or offsets from an   event which occurred at some specified time. The ending time is also known as   a deadline.                                 &   \\ \hhline{|-|-|-|-|}
+	\centering	Load Balance                   & 2              & Given a requests set and an available resource set, load balance is defined as how equitable is the distribution of processing requests among available resources.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               & \centering -                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    &   \\ \hhline{|-|-|-|-|}
+	\centering	Resource utilization           & 2     & Given a set of system resources and a time interval, resource utilization is defined as the usage percentage of a resource within the time interval. The resources can be CPU,   memory, hard disk, network, among others.                                                                                                                                                                                                                                                                                                                                                                                                                                                                         &   \centering  
+	-                                                                                               & \\ \hhline{|-|-|-|-|}
+	\centering	Success rate (or failure rate) & 1              & Given a request set and a time interval, success rate is defined as the percentage of successfully processed requests in the time interval. Based on success rate, it is possible to define fail rate (fails caused by system fail, overhead, among other causes) as 1-success rate.                                                                                                                                                                                                                                                                                                                                                                   & \centering -                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    &   \\ \hhline{|-|-|-|-|} 
+	\centering	Jitter                         & 1              & Given   a set of latency measurements,  jitter is defined as variation among latency measurements.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   & \centering -                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    &   \\ \hhline{|-|-|-|-|}
+	\centering	Modes                          & 0              & \centering -                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               & It   is not uncommon for systems to have different sets of requirements for   different phases of execution. For example, avionics systems could have different requirements for the take-off phase than for the cruising phase. These different phases are referred as modes. A mode can be characterized by the   state of the demand being placed on the system and the state of the system   (that is, the configuration of resources used to satisfy the demand).     Two commonly encountered modes are reduced capacity and overload. A system   might have to operate with reduced capacity if resources cease to function   properly. A system might have to sacrifice timing requirements of less   important events during periods of overload. &   \\ \hhline{|-|-|-|-|}
+	\centering	Capacity or Load                       & 0     & Given a set of available system resources, capacity is defined as the maximum amount of work  that the system can perform with its available resources. Often, capacity   is measured in terms of the maximum system throughput without violating maximum specified latency. In particular, the network capacity is also know   as bandwidth.                                                                                      & Capacity is a   measure of the amount of work a system can perform. Capacity is usually   defined in terms of throughput, and has several possible meanings {[}Jain 91,   p. 39{]}:     The maximum achievable throughput under ideal workload conditions. That is,   the maximum number of events per unit time that can be achieved if you could   pick the theoretically ideal set of events. For networks this is called   bandwidth, which is usually expressed in megabits per second.     However, often there is also a response time requirement that accompanies   the throughput requirement (as mentioned above). Therefore, a more practical   definition is:     The maximum achievable throughput without violating specified latency   requirements. Jain refers to this definition as usable capacity {[}Jain 91{]}. For real-time   systems, throughput is not as important as predictably meeting latency   requirements.
+	& \\ \hhline{|-|-|-|-|}
+	
+\end{longtable}
+}
+\section{Modeling the Problem}
+In previous sections (\ref{sec:dsdpModel}, \ref{sec:pfModel}, \ref{sec:contextVariablesSearch}) we describe in detail each of the variables identified for the problem defined in section \ref{sec:ProblemStatement}. In this section we analyze the problem and their components with the aim to determine a strategy to solve the stated problem in this thesis.
+
+Domain specific design patterns describe characteristics that allow to make decisions about whether a pattern can be applied to solve a specific problem. Among these characteristics we find: (i) intent (ii) problem, (iii) context, (iv) forces, (v) structure and (vi) behavior (section \ref{sec:SLRResults}). Based on these characteristics a software architect could  apply a pattern in his solution design. However, these characteristics do not describe how the pattern should be implemented neither how implementing a specific pattern can improve system quality attributes, specifically performance and its factors. Decisions related to how a pattern should be implemented introduce new context variables such as the ones described in section \ref{sec:contextVariablesSearch} that can affect system performance. 
+
+Given that deciding to implement a specific pattern under specifics context conditions could affect significantly the system performance, it is required to collect information about how to select the most adequate pattern for each case. If this knowledge would be explicit, it would be possible to take maximum advantage of design patterns proposed. Therefore, in order to decide when to implement a specific pattern under which specific context conditions, it is necessary to explore how each context condition to affect the performance in a quantitatively way. This exploration implies to collect measurements on a variety of context configurations. Moreover, this data collection must be performed carefully, systematically to be trustworthy. 
+
+Additionally, in self-adaptive software systems this knowledge could be used to analyze and plan control actions that allow to software system to accomplish with performance service level agreements.
+
+However, to gather this data and transform it in a knowledge base is not a trivial task, because of there are many variables involved and it is not possible to generalize information obtained from some tests. Gather this knowledge require a systematic process that allow to replicate information obtained in different contexts (study cases).
+
+
+\section{Chapter Summary}
+
+In this chapter we examined each of the most significant variables involved in the problem stated for this thesis. In the problem modeling, we have identified why solving this problem is not trivial. Each variable of the problem can take many values. In this chapter we collected relevant values of each variable using mainly systematic searches (that is, these searches can be replicated). Despite of searches results are bibliographic material from other authors, we consider our contribution the collection and analysis of these bibliographic material.
+
+In the next chapter we propose the design of computational experiments as the approach to solve our stated problem statement.
