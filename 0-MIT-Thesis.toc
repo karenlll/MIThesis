@@ -180,30 +180,30 @@
 \contentsline {subsection}{\numberline {6.2.2}File Size Analysis}{128}{subsection.6.2.2}
 \contentsline {subsection}{\numberline {6.2.3}Processing Nodes Analysis}{129}{subsection.6.2.3}
 \contentsline {subsection}{\numberline {6.2.4}Communication Protocol Analysis}{130}{subsection.6.2.4}
-\contentsline {subsection}{\numberline {6.2.5}Memory Structure Analysis}{130}{subsection.6.2.5}
+\contentsline {subsection}{\numberline {6.2.5}Memory Structure Analysis}{132}{subsection.6.2.5}
 \contentsline {subsection}{\numberline {6.2.6}Bandwidth Analysis}{133}{subsection.6.2.6}
-\contentsline {subsection}{\numberline {6.2.7}General Design Patterns Analysis}{133}{subsection.6.2.7}
-\contentsline {subsection}{\numberline {6.2.8}Analysis of Communication Time and CPU Usage }{133}{subsection.6.2.8}
-\contentsline {section}{\numberline {6.3}Throughput Experiments Results}{133}{section.6.3}
-\contentsline {section}{\numberline {6.4}Chapter Summary}{133}{section.6.4}
-\contentsline {chapter}{\numberline {7}Evaluation}{135}{chapter.7}
-\contentsline {section}{\numberline {7.1}Experiment Design}{136}{section.7.1}
-\contentsline {subsection}{\numberline {7.1.1}Case of Study: Carvajal XML }{136}{subsection.7.1.1}
-\contentsline {subsection}{\numberline {7.1.2}Selection of Specific Values of Domain-Specific Design Patterns according to the Case of Study}{136}{subsection.7.1.2}
-\contentsline {subsection}{\numberline {7.1.3}Variable Measurement and Monitoring}{136}{subsection.7.1.3}
-\contentsline {subsection}{\numberline {7.1.4}Benchmark}{136}{subsection.7.1.4}
-\contentsline {section}{\numberline {7.2}Experiment Execution}{136}{section.7.2}
-\contentsline {subsection}{\numberline {7.2.1}Configuration and Control of Experiments}{136}{subsection.7.2.1}
-\contentsline {subsection}{\numberline {7.2.2}Software Deployment Configuration}{136}{subsection.7.2.2}
-\contentsline {subsection}{\numberline {7.2.3}Preparatory Experiments}{136}{subsection.7.2.3}
-\contentsline {subsection}{\numberline {7.2.4}Control Tests}{136}{subsection.7.2.4}
-\contentsline {section}{\numberline {7.3}Result Analysis}{136}{section.7.3}
-\contentsline {subsection}{\numberline {7.3.1}Latency Experiments Results}{136}{subsection.7.3.1}
-\contentsline {subsection}{\numberline {7.3.2}Throughput Experiments Results}{136}{subsection.7.3.2}
-\contentsline {section}{\numberline {7.4}Comparison between the Study Cases}{136}{section.7.4}
-\contentsline {section}{\numberline {7.5}Chapter Summary}{136}{section.7.5}
-\contentsline {chapter}{\numberline {8}Conclusions}{137}{chapter.8}
-\contentsline {chapter}{\numberline {9}Appendices}{138}{chapter.9}
-\contentsline {section}{\numberline {9.1}Appendix A - Operating System Processes Configuration Script}{138}{section.9.1}
-\contentsline {section}{\numberline {9.2}Appendix B - RabbitMQ Configuration}{141}{section.9.2}
-\contentsline {section}{\numberline {9.3}Appendix C - Java Virtual Machine (JVM) Configuration}{142}{section.9.3}
+\contentsline {subsection}{\numberline {6.2.7}General Design Patterns Analysis}{134}{subsection.6.2.7}
+\contentsline {subsection}{\numberline {6.2.8}Analysis of Communication Time and CPU Usage }{134}{subsection.6.2.8}
+\contentsline {section}{\numberline {6.3}Throughput Experiments Results}{134}{section.6.3}
+\contentsline {section}{\numberline {6.4}Chapter Summary}{134}{section.6.4}
+\contentsline {chapter}{\numberline {7}Evaluation}{136}{chapter.7}
+\contentsline {section}{\numberline {7.1}Experiment Design}{137}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}Case of Study: Carvajal XML }{137}{subsection.7.1.1}
+\contentsline {subsection}{\numberline {7.1.2}Selection of Specific Values of Domain-Specific Design Patterns according to the Case of Study}{137}{subsection.7.1.2}
+\contentsline {subsection}{\numberline {7.1.3}Variable Measurement and Monitoring}{137}{subsection.7.1.3}
+\contentsline {subsection}{\numberline {7.1.4}Benchmark}{137}{subsection.7.1.4}
+\contentsline {section}{\numberline {7.2}Experiment Execution}{137}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}Configuration and Control of Experiments}{137}{subsection.7.2.1}
+\contentsline {subsection}{\numberline {7.2.2}Software Deployment Configuration}{137}{subsection.7.2.2}
+\contentsline {subsection}{\numberline {7.2.3}Preparatory Experiments}{137}{subsection.7.2.3}
+\contentsline {subsection}{\numberline {7.2.4}Control Tests}{137}{subsection.7.2.4}
+\contentsline {section}{\numberline {7.3}Result Analysis}{137}{section.7.3}
+\contentsline {subsection}{\numberline {7.3.1}Latency Experiments Results}{137}{subsection.7.3.1}
+\contentsline {subsection}{\numberline {7.3.2}Throughput Experiments Results}{137}{subsection.7.3.2}
+\contentsline {section}{\numberline {7.4}Comparison between the Study Cases}{137}{section.7.4}
+\contentsline {section}{\numberline {7.5}Chapter Summary}{137}{section.7.5}
+\contentsline {chapter}{\numberline {8}Conclusions}{138}{chapter.8}
+\contentsline {chapter}{\numberline {9}Appendices}{139}{chapter.9}
+\contentsline {section}{\numberline {9.1}Appendix A - Operating System Processes Configuration Script}{139}{section.9.1}
+\contentsline {section}{\numberline {9.2}Appendix B - RabbitMQ Configuration}{142}{section.9.2}
+\contentsline {section}{\numberline {9.3}Appendix C - Java Virtual Machine (JVM) Configuration}{143}{section.9.3}

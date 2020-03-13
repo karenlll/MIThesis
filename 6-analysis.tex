@@ -659,26 +659,32 @@ We relate this behavior to communication time behavior. Table \ref{tab:communica
 	\end{figure}
 
 \subsection{Communication Protocol Analysis}
-According to the chart Ice is the best communication protocol among the studied protocols. The protocols Rest and RMI were implemented over the FraSCAti middleware and this middleware could be a factor that influence this result. 
+According to the chart \ref{fig:betterTimesCommunicationProtocol} Ice is the best communication protocol among the studied protocols. The protocols Rest and RMI were implemented over the FraSCAti middleware and this middleware could be a factor that influence this result. 
+
+Currently, Rest is a very used protocol due to it allows us to inter-operate among different software systems, but, if you are searching for more performance for your application you should evaluate to use another alternative such as Ice. \\
 %Make Graphics comparisonCommunicationProtocols.eps betterTimesCommunicationProtocol.eps
-\begin{figure}
+
+If we compare the performance of communication protocols in pairs such as in the chart \ref{fig:comparisonCommunicationProtocols}, we can observe that if we only compare Rest vs Rmi, Rest has a better performance in 60\% times. This says to us that although Rmi in the whole experiment has a bigger amount of test with more performance (10,34\%), Rest could have better performance than RMI if we have only these two options.
+\begin{figure}[H]
 	\centering
 	\includegraphics[trim=0.5cm 19cm 1cm 1cm]{fig/betterTimesCommunicationProtocol.eps}
 	\caption{Percentage of the Better Times Achieved by Each Communication Protocol}
 	\label{fig:betterTimesCommunicationProtocol}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
 	\centering
 	\includegraphics[trim=0.5cm 19cm 1cm 1cm]{fig/comparisonCommunicationProtocols.eps}
 	\caption{Comparison Between Communication Protocols}
 	\label{fig:comparisonCommunicationProtocols}
 \end{figure}
 
-
-
 \subsection{Memory Structure Analysis}
 \label{subsec:memoryAnalysis}
+
+When we start the memory analysis the first conclusion that is evident is that UMA is the best memory configuration if we are searching for the best performance. UMA has pros y cons at the same that NORMA, but the more important consideration is the bottleneck that this configuration could have. Table \ref{tab:memoryAverage} shows the percentage of times that UMA was better than NORMA. When Ice is the communication protocol UMA always is better than NORMA in more than 50\% of cases.  
+
+In Rest and RMI, UMA is better than NORMA in more than 50\% of cases only for the Fork-Join and Leader/Followers design patterns and in more than 40\% of times for the Original Strategy Variation and the Fork-Join Java Library. It looks like the last strategies could generate a bottleneck before the other strategies.
 
 % Please add the following required packages to your document preamble:
 % \usepackage{multirow}
