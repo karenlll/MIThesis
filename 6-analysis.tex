@@ -350,6 +350,7 @@ This design pattern shows the same difference between the UMA and NORMA configur
 \section{Latency Experiments Results}
 
 \subsection{Consolidated Data of the Experiments Results of Controllable Variables}
+\label{sebsec:consolidatedData}
 
 Tables \ref{tab:processOriginalStrategy }, \ref{tab:processSeparationMerge}, \ref{tab:processForkJoinlibrary}, \ref{tab:processDistributedForkJoin}, and \ref{tab:processLeaderFollowers} show the experiments average processing time measured in milliseconds. For each experiments was sorted 10 files of the same size. We calculate average time for the 10 files and consolidate this information discriminating by domain-specific design pattern, communication protocol, memory structure, available nodes, and file size. Taking these tables as base we analyze each controllable variable in following sections.
 
@@ -682,14 +683,12 @@ If we compare the performance of communication protocols in pairs such as in the
 \subsection{Memory Structure Analysis}
 \label{subsec:memoryAnalysis}
 
-When we start the memory analysis the first conclusion that is evident is that UMA is the best memory configuration if we are searching for the best performance. UMA has pros y cons at the same that NORMA, but the more important consideration is the bottleneck that this configuration could have. Table \ref{tab:memoryAverage} shows the percentage of times that UMA was better than NORMA. When Ice is the communication protocol UMA always is better than NORMA in more than 50\% of cases.  
-
-In Rest and RMI, UMA is better than NORMA in more than 50\% of cases only for the Fork-Join and Leader/Followers design patterns and in more than 40\% of times for the Original Strategy Variation and the Fork-Join Java Library. It looks like the last strategies could generate a bottleneck before the other strategies.
+When we start the memory analysis the first conclusion that is evident is that UMA is the best memory configuration if we are searching for the best performance. UMA has pros y cons at the same that NORMA, but the more important consideration is the bottleneck that this configuration could have. Table \ref{tab:memoryAverage} shows the percentage of times that UMA was better than NORMA. When Ice is the communication protocol UMA always is better than NORMA in more than 60\% of cases.  
 
 % Please add the following required packages to your document preamble:
 % \usepackage{multirow}
 % \usepackage{graphicx}
-\begin{table}[]
+\begin{table}[H]
 	\centering
 	\caption{Average of the Total Time Percentage of the Uma Memory Structure Respect to the Norma Memory Structure.}
 	\label{tab:memoryAverage}
@@ -713,8 +712,12 @@ In Rest and RMI, UMA is better than NORMA in more than 50\% of cases only for th
 %	}
 \end{table}
 
+In Rest and RMI, UMA is better than NORMA in more than 60\% of cases only for the Fork-Join and Leader/Followers design patterns and in more than 40\% of times for the Original Strategy Variation and the Fork-Join Java Library. It looks like the last strategies could generate a bottleneck before the other strategies. This behaviour could be justified due to the Fork-Join and the Leader-Followers design patterns send the tasks to their processing units and these can process from that moment (i.e. a structure more horizontal), but another design patterns use a structure more hierarchical.
 
-\begin{table}[]
+
+Due to the consistent behavior observed in this variable, we try to generate a statistical model that can predict its behavior. We try a linear regression and the ANOVA, in the tables \ref {tab:regressionStatistics} and \ref {tab:regressionStatisticsData} we summarize the results obtained. First, we can see that based on the coefficient of determination (R2) and the adjusted coefficient of determination (adjusted R2) this model is not the best to represent the behavior of memory structure. These coefficients of determination are indicators between the range 1-0, the closer to 1 the better the model, and we have 0,425 and 0,423 respectively. Second, we have multifactorial ANOVA. This model considers the effect of each studied variable and according to the P-value indicator, this is a good model to predict the structure memory variable. The P-value is used to validate the hypothesis proposed, the proposed hypothesis says that for each variable, it is significant to construct the model of the memory structure. If the calculated P-value of the variable is less than 0,05 so, the variable is accepted for the model.
+
+\begin{table}[H]
 	\centering
 	\caption{Regression Statistics}
 	\label{tab:regressionStatistics}
@@ -728,7 +731,7 @@ In Rest and RMI, UMA is better than NORMA in more than 50\% of cases only for th
 	\end{tabular}
 \end{table}
 
-\begin{table}[]
+\begin{table}[H]
 	\centering
 	\caption{Regression Statistics Data}
 	\label{tab:regressionStatisticsData}
@@ -744,6 +747,9 @@ In Rest and RMI, UMA is better than NORMA in more than 50\% of cases only for th
 		\end{tabular}%
 	}
 \end{table}
+
+Thus, the formula that predicts the memory structure behavior is showed in the equation \ref{eq:memory}.
+
 \begin{equation}
 \label{eq:memory}
 \resizebox{.92\hsize}{!}{$Uma Respect Norma = 0,384230933 - 6,91905547282634E^{-09}(fs) - 0,00714139220840687(n) + 0,0568020397510634(dp) + 0,0769943910761448(cp)$}
@@ -754,6 +760,9 @@ In Rest and RMI, UMA is better than NORMA in more than 50\% of cases only for th
 % Please add the following required packages to your document preamble:
 % \usepackage{multirow}
 % \usepackage{graphicx}
+
+The bandwidth variable was tested using two values, 100MB and 1GB. Table \ref{tab:consolidatedData100MB} summarizes the times that each one of these tests takes with a configuration of 100MB. When we compare these tests with the same configuration executed at 1GB (reference section \ref{sebsec:consolidatedData}) we can verify that the relation between them is approximately 10 times. Table \ref{tab:calculatedRelation} summarizes this information. 
+
 \begin{table}[H]
 	\label{tab:consolidatedData100MB}
 	\fontsize{16}{36}\selectfont
@@ -787,11 +796,11 @@ In Rest and RMI, UMA is better than NORMA in more than 50\% of cases only for th
 % Please add the following required packages to your document preamble:
 % \usepackage{multirow}
 % \usepackage{graphicx}
-\begin{table}[]
+\begin{table}[H]
 	\fontsize{12}{24}\selectfont
 	\centering
-	\caption{My caption}
-	\label{my-label}
+	\caption{Calculated relation among the Experiments with Bandwidth Configuration of 100MB and 1GB}
+	\label{tab:calculatedRelation}
 	\resizebox{\textwidth}{!}{%
 		\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|l|l|}
 			\hline
@@ -809,19 +818,69 @@ In Rest and RMI, UMA is better than NORMA in more than 50\% of cases only for th
 			7.400.000 & 11,95 & 10,36 & 12,54 & 9,77 & 12,81 & 15,95 & 14,99 & 8,21 & 9,78 & 10,10 & 8,50 & 11,83 & 12,42 & 7,86 & 5,95 & 12,21 & 17,04 & 16,26 & 10,50 & 11,07 & 12,20 \\ \hline
 			8.200.000 & 9,97 & 10,58 & 11,26 & 8,73 & 12,45 & 16,21 & 15,36 & 7,05 & 9,75 & 10,14 & 8,59 & 11,66 & 12,67 & 7,75 & 5,91 & 12,57 & 15,03 & 16,30 & 9,30 & 10,12 & 11,95 \\ \hline
 			9.000.000 & 10,41 & 10,93 & 13,29 & 8,69 & 11,38 & 12,66 & 13,72 & 8,00 & 8,91 & 10,47 & 9,37 & 11,71 & 12,54 & 7,41 & 5,58 & 11,72 & 16,83 & 16,85 & 9,40 & 10,93 & 12,02 \\ \hline
-			9.800.000 & 12,51 & 11,28 & 12,35 &  & 10,76 & 13,68 & 13,29 & 8,98 & 8,84 & 9,16 & 8,49 & 11,48 & 12,55 & 7,72 & 5,63 & 12,64 & 15,41 & 15,41 & 10,04 & 10,38 & 11,24 \\ \hline
+			9.800.000 & 12,51 & 11,28 & 12,35 & 11,8 & 10,76 & 13,68 & 13,29 & 8,98 & 8,84 & 9,16 & 8,49 & 11,48 & 12,55 & 7,72 & 5,63 & 12,64 & 15,41 & 15,41 & 10,04 & 10,38 & 11,24 \\ \hline
 		\end{tabular}%
 	}
 \end{table}
+
+
 \subsection{General Design Patterns Analysis}
 \label{subsec:designPatternsAnalysis}
+
+The table \ref{tab:designPatternsCom} summarizes the times that each design pattern has the best processing time. The design pattern with more best processing times is the Fork/Join Java library, it has 275 times. The worse design pattern is the Fork/Join Design Pattern, it has 18 times.
+
+This result is very interesting due to the worse result was gotten with the distributed version of the Fork/Join Java Library. We can think that we should improve the code implementation or the strategy used to extrapolate the design pattern to a distributed environment. That is why we analyze the results gotten discriminated against by each studied variable.
+
+% Please add the following required packages to your document preamble:
+% \usepackage{multirow}
+\begin{table}[H]
+\centering
+	\caption{Design Patterns Comparision}
+	\label{tab:designPatternsCom}
+	\resizebox{\textwidth}{!}{%
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{1}{|c|}{\multirow{2}{*}{\textbf{Design Patterns}}} &
+  \multirow{2}{*}{\textbf{Total Count}} &
+  \multicolumn{2}{c|}{\textbf{Memory Structure}} &
+  \multicolumn{3}{c|}{\textbf{Communication Protocols}} &
+  \multicolumn{5}{c|}{\textbf{Processing Nodes}} &
+  \multicolumn{7}{c|}{\textbf{File Size}} \\ \cline{3-19} 
+\multicolumn{1}{|c|}{} &
+   &
+  \textbf{Norma} &
+  \textbf{Uma} &
+  \textbf{Ice} &
+  \textbf{Rmi} &
+  \textbf{Rest} &
+  \textbf{1} &
+  \textbf{2} &
+  \textbf{4} &
+  \textbf{8} &
+  \textbf{16} &
+  \textbf{1'8 - 2'6} &
+  \textbf{3'0 - 3'8} &
+  \textbf{4'2 - 5'0} &
+  \textbf{5'4 - 6'2} &
+  \textbf{6'6 - 7'4} &
+  \textbf{7'8 - 8'6} &
+  \textbf{9'0 - 9'8} \\ \hline
+\begin{tabular}[c]{@{}c@{}}Original Strategy\\Variation\end{tabular}   & 134 & 69  & 65  & 46  & 50  & 38  & 8   & 9   & 35  & 47  & 35  & 27 & 32 & 11 & 20 & 14 & 17 & 12 \\ \hline
+\begin{tabular}[c]{@{}c@{}}Fork/Join\\Java library\end{tabular}    & 275 & 130 & 145 & 134 & 81  & 60  & 61  & 85  & 67  & 45  & 17  & 18 & 32 & 39 & 48 & 44 & 50 & 45 \\ \hline
+\begin{tabular}[c]{@{}c@{}}Fork/Join\\Design Pattern\end{tabular}   & 18  & 18  & 0   & 0   & 0   & 18  & 0   & 0   & 0   & 2   & 16  & 3  & 4  & 4  & 2  & 2  & 2  & 1  \\ \hline
+\begin{tabular}[c]{@{}c@{}}Leader-Followers\\Design Pattern\end{tabular}  & 112 & 98  & 14  & 19  & 51  & 42  & 14  & 13  & 20  & 29  & 36  & 16 & 9  & 22 & 10 & 20 & 12 & 23 \\ \hline
+\begin{tabular}[c]{@{}c@{}}Original Strategy\end{tabular}    & 91  & 0   & 91  & 11  & 28  & 52  & 43  & 19  & 4   & 3   & 22  & 26 & 13 & 14 & 10 & 10 & 9  & 9  \\ \hline
+Total & 630 & 315 & 315 & 210 & 210 & 210 & 126 & 126 & 126 & 126 & 126 & 90 & 90 & 90 & 90 & 90 & 90 & 90 \\ \hline
+\end{tabular}%
+}
+\end{table}
 
 \subsection{Analysis of Communication Time and CPU Usage }
 
 % Please add the following required packages to your document preamble:
 % \usepackage{multirow}
 % \usepackage{graphicx}
-\begin{table}[]
+\begin{table}[H]
 	\centering
 	\caption{Communication Time Percentage on Total Processing Time}
 	\label{tab:communicationTimePercentage}
