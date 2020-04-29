@@ -831,6 +831,10 @@ The table \ref{tab:designPatternsCom} summarizes the times that each design patt
 
 This result is very interesting due to the worse result was gotten with the distributed version of the Fork/Join Java Library. We can think that we should improve the code implementation or the strategy used to extrapolate the design pattern to a distributed environment. That is why we analyze the results gotten discriminated against by each studied variable.
 
+The first thing that we can observe is that of the 18 cases when Fork/Join distributed has the best time that occurs on the Rest communication protocol. Additionally, 16 cases occur in the 16 node processing configuration and the other two in the 8 node processing configuration. The 18 cases are distributed in a uniform way among the file sizes tested.
+
+Thus, we think that the Fork Join Library is able to take advantage of the distribution strategy for a little processing nodes amount, and the Fork/Join design pattern strategy proposed is more stable (a behavior more linear) so, it allows to take advantage when we have more processing nodes available. However, when we have more processing nodes, the Leader-Followers design pattern can take more advantage of the nodes than the Fork/Join design pattern getting better processing times.
+
 % Please add the following required packages to your document preamble:
 % \usepackage{multirow}
 \begin{table}[H]
