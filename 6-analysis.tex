@@ -831,9 +831,19 @@ The table \ref{tab:designPatternsCom} summarizes the times that each design patt
 
 This result is very interesting due to the worse result was gotten with the distributed version of the Fork/Join Java Library. We can think that we should improve the code implementation or the strategy used to extrapolate the design pattern to a distributed environment. That is why we analyze the results gotten discriminated against by each studied variable.
 
-The first thing that we can observe is that of the 18 cases when Fork/Join distributed has the best time that occurs on the Rest communication protocol. Additionally, 16 cases occur in the 16 node processing configuration and the other two in the 8 node processing configuration. The 18 cases are distributed in a uniform way among the file sizes tested.
+The first thing that we can observe is that of the 18 cases when Fork/Join distributed has the best time that occurs on the Rest communication protocol and NORMA memory structure. Additionally, 16 cases occur in the 16 node processing configuration and the other two in the 8 node processing configuration. The 18 cases are distributed in a uniform way among the file sizes tested.
 
 Thus, we think that the Fork Join Library is able to take advantage of the distribution strategy for a little processing nodes amount, and the Fork/Join design pattern strategy proposed is more stable (a behavior more linear) so, it allows to take advantage when we have more processing nodes available. However, when we have more processing nodes, the Leader-Followers design pattern can take more advantage of the nodes than the Fork/Join design pattern getting better processing times.
+
+Another fact that call our attention is that 79\% of times strategies associated with the original strategy (original strategy, Original Strategy Variation, and Fork/Join Java library) get the best processing time. This fact implies that the original strategy proposed by Juan Carlos Muñoz is a good way to distribute processing.
+
+Finally, if we analyze the information from each studied variable, we found that:
+\begin{itemize}
+	\item The memory structure seems does not influence strongly on the original strategy variation and fork/join java library, however, in the original strategy the NORMA memory structure does not allow that it takes advantage of the distribution (see section \ref{}). Leader-Followers and Fork/Join design patterns have better results in the NORMA memory structure. It suggests that the original strategy variation and fork/join java library are good options when you need to distribute the processing.
+	\item  Analyzing the communication protocol, we can evidence that the fork/join java library is who takes more advantage of the ice communication protocol. the original strategy variation has a similar behavior among the communication protocols. Leader-Followers takes more advantage of the RMI communication protocol, and Fork/Join takes more advantage of the Rest communication protocol. Both Leader-Followers and Fork/Join design patterns can not take much advantage of the Ice communication protocol.
+	\item Talking about the processing nodes, the Leader-Followers and Fork/Join design patterns seems to have better results when more processing nodes are available. The other strategies have not uniform behavior, such as we mentioned before. That is why despite these strategies give us the best results adding new processing nodes could have a contrary result of the expected.
+	\item Respect to the file size we see that the behavior is uniform, so, this variable could not affect the design patterns.
+\end{itemize}
 
 % Please add the following required packages to your document preamble:
 % \usepackage{multirow}
