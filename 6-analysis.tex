@@ -899,43 +899,115 @@ Total & 630 & 315 & 315 & 210 & 210 & 210 & 126 & 126 & 126 & 126 & 126 & 90 & 9
 	\caption{Communication Time Percentage on Total Processing Time}
 	\label{tab:communicationTimePercentage}
 	\resizebox{\textwidth}{!}{%
-		\begin{tabular}{|c|c|c|c|c|c|c|c|}
+		\begin{tabular}{|c|c|c|c|c|c|c|}
 			\hline
-			\multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}MEMORY \\ STRUCTURE\end{tabular}} & \multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}COMMUNICATION\\  PROTOCOL\end{tabular}} & \multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}AVAILABLE\\  NODES\end{tabular}} & \multicolumn{5}{c|}{DESIGN PATTERN (\%)} \\ \cline{4-8} 
-			&  &  & \begin{tabular}[c]{@{}c@{}}Original \\ Strategy\end{tabular} & \begin{tabular}[c]{@{}c@{}}Fork-Join \\ Design Pattern\end{tabular} & \begin{tabular}[c]{@{}c@{}}Original \\ Strategy \\ Variation\end{tabular} & \begin{tabular}[c]{@{}c@{}}Fork/Join \\ Java library\end{tabular} & \begin{tabular}[c]{@{}c@{}}Leader-Followers\\ Design Pattern\end{tabular} \\ \hline
-			\multirow{15}{*}{NORMA} & \multirow{5}{*}{ICE} & 1 & \multirow{15}{*}{-} & 8,22\% & 29,34\% & 32,66\% & 43,45\% \\ \cline{3-3} \cline{5-8} 
-			&  & 2 &  & 15,85\% & 38,59\% & 43,69\% & 44,00\% \\ \cline{3-3} \cline{5-8} 
-			&  & 4 &  & 31,45\% & 50,88\% & 50,98\% & 44,48\% \\ \cline{3-3} \cline{5-8} 
-			&  & 8 &  & 41,75\% & 57,95\% & 57,30\% & 44,73\% \\ \cline{3-3} \cline{5-8} 
-			&  & 16 &  & 49,06\% & 61,91\% & 61,92\% & 45,02\% \\ \cline{2-3} \cline{5-8} 
-			& \multirow{5}{*}{RMI} & 1 &  & 37,80\% & 42,47\% & 45,86\% & 57,98\% \\ \cline{3-3} \cline{5-8} 
-			&  & 2 &  & 51,27\% & 54,06\% & 58,07\% & 57,41\% \\ \cline{3-3} \cline{5-8} 
-			&  & 4 &  & 64,60\% & 61,62\% & 62,91\% & 56,82\% \\ \cline{3-3} \cline{5-8} 
-			&  & 8 &  & 66,72\% & 68,03\% & 64,79\% & 56,24\% \\ \cline{3-3} \cline{5-8} 
-			&  & 16 &  & 71,20\% & 72,98\% & 70,87\% & 55,32\% \\ \cline{2-3} \cline{5-8} 
-			& \multirow{5}{*}{REST} & 1 &  & 34,83\% & 46,57\% & 49,50\% & 43,51\% \\ \cline{3-3} \cline{5-8} 
-			&  & 2 &  & 50,05\% & 60,85\% & 59,29\% & 42,80\% \\ \cline{3-3} \cline{5-8} 
-			&  & 4 &  & 64,06\% & 65,41\% & 63,77\% & 42,04\% \\ \cline{3-3} \cline{5-8} 
-			&  & 8 &  & 69,40\% & 69,94\% & 66,80\% & 41,79\% \\ \cline{3-3} \cline{5-8} 
-			&  & 16 &  & - & 67,89\% & 65,79\% & - \\ \hline
-			\multirow{14}{*}{UMA} & \multirow{5}{*}{ICE} & 1 & 17,61\% & 37,21\% & 30,35\% & 38,39\% & 60,16\% \\ \cline{3-8} 
-			&  & 2 & 46,64\% & 38,41\% & 36,15\% & 38,10\% & 69,82\% \\ \cline{3-8} 
-			&  & 4 & 51,38\% & 38,78\% & 41,91\% & 41,63\% & 69,53\% \\ \cline{3-8} 
-			&  & 8 & 54,79\% & 34,34\% & 44,65\% & 44,43\% & 69,37\% \\ \cline{3-8} 
-			&  & 16 & 65,89\% & 38,61\% & 42,08\% & 43,27\% & 68,34\% \\ \cline{2-8} 
-			& \multirow{5}{*}{RMI} & 1 & 42,42\% & 51,94\% & 43,89\% & 49,76\% & 75,76\% \\ \cline{3-8} 
-			&  & 2 & 60,91\% & 57,85\% & 54,89\% & 51,91\% & 75,67\% \\ \cline{3-8} 
-			&  & 4 & 70,66\% & 62,37\% & 64,93\% & 58,71\% & 75,26\% \\ \cline{3-8} 
-			&  & 8 & 74,73\% & 67,63\% & 67,05\% & 64,07\% & 74,98\% \\ \cline{3-8} 
-			&  & 16 & 77,88\% & 77,04\% & 66,74\% & 64,00\% & 74,53\% \\ \cline{2-8} 
-			& \multirow{4}{*}{REST} & 1 & 40,49\% & 48,27\% & 28,85\% & 32,91\% & 44,84\% \\ \cline{3-8} 
-			&  & 2 & 61,77\% & 54,80\% & 36,10\% & 36,60\% & 45,97\% \\ \cline{3-8} 
-			&  & 4 & 73,99\% & 59,91\% & 41,66\% & 41,52\% & 46,55\% \\ \cline{3-8} 
-			&  & 8 & 82,17\% & 65,78\% & 45,16\% & 42,42\% & 47,37\% \\ \hline
+			\multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}MEMORY \\ STRUCTURE\end{tabular}} & \multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}COMMUNICATION\\  PROTOCOL\end{tabular}} & \multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}AVAILABLE\\  NODES\end{tabular}} & \multicolumn{4}{c|}{DESIGN PATTERN (\%)} \\ \cline{4-7} 
+			&  &  & \begin{tabular}[c]{@{}c@{}}Original \\ Strategy\end{tabular} & \begin{tabular}[c]{@{}c@{}}Fork-Join \\ Design Pattern\end{tabular} & \begin{tabular}[c]{@{}c@{}}Original \\ Strategy \\ Variation\end{tabular} & \begin{tabular}[c]{@{}c@{}}Fork/Join \\ Java library\end{tabular} \\ \hline
+			\multirow{15}{*}{NORMA} & \multirow{5}{*}{ICE} & 1 & \multirow{15}{*}{-} & 8,22\% & 29,34\% & 32,66\%  \\ \cline{3-3} \cline{5-7} 
+			&  & 2 &  & 15,85\% & 38,59\% & 43,69\%  \\ \cline{3-3} \cline{5-7} 
+			&  & 4 &  & 31,45\% & 50,88\% & 50,98\% \\ \cline{3-3} \cline{5-7} 
+			&  & 8 &  & 41,75\% & 57,95\% & 57,30\% \\ \cline{3-3} \cline{5-7} 
+			&  & 16 &  & 49,06\% & 61,91\% & 61,92\%  \\ \cline{2-3} \cline{5-7} 
+			& \multirow{5}{*}{RMI} & 1 &  & 37,80\% & 42,47\% & 45,86\%  \\ \cline{3-3} \cline{5-7} 
+			&  & 2 &  & 51,27\% & 54,06\% & 58,07\%   \\ \cline{3-3} \cline{5-7} 
+			&  & 4 &  & 64,60\% & 61,62\% & 62,91\% \\ \cline{3-3} \cline{5-7} 
+			&  & 8 &  & 66,72\% & 68,03\% & 64,79\%  \\ \cline{3-3} \cline{5-7} 
+			&  & 16 &  & 71,20\% & 72,98\% & 70,87\% \\ \cline{2-3} \cline{5-7} 
+			& \multirow{5}{*}{REST} & 1 &  & 34,83\% & 46,57\% & 49,50\% \\ \cline{3-3} \cline{5-7} 
+			&  & 2 &  & 50,05\% & 60,85\% & 59,29\%  \\ \cline{3-3} \cline{5-7} 
+			&  & 4 &  & 64,06\% & 65,41\% & 63,77\% \\ \cline{3-3} \cline{5-7} 
+			&  & 8 &  & 69,40\% & 69,94\% & 66,80\%  \\ \cline{3-3} \cline{5-7} 
+			&  & 16 &  & - & 67,89\% & 65,79\%  \\ \hline
+			\multirow{14}{*}{UMA} & \multirow{5}{*}{ICE} & 1 & 17,61\% & 37,21\% & 30,35\% & 38,39\%  \\ \cline{3-7} 
+			&  & 2 & 46,64\% & 38,41\% & 36,15\% & 38,10\%  \\ \cline{3-7} 
+			&  & 4 & 51,38\% & 38,78\% & 41,91\% & 41,63\%  \\ \cline{3-7} 
+			&  & 8 & 54,79\% & 34,34\% & 44,65\% & 44,43\%  \\ \cline{3-7} 
+			&  & 16 & 65,89\% & 38,61\% & 42,08\% & 43,27\%  \\ \cline{2-7} 
+			& \multirow{5}{*}{RMI} & 1 & 42,42\% & 51,94\% & 43,89\% & 49,76\%  \\ \cline{3-7} 
+			&  & 2 & 60,91\% & 57,85\% & 54,89\% & 51,91\% \\ \cline{3-7} 
+			&  & 4 & 70,66\% & 62,37\% & 64,93\% & 58,71\% \\ \cline{3-7} 
+			&  & 8 & 74,73\% & 67,63\% & 67,05\% & 64,07\%  \\ \cline{3-7} 
+			&  & 16 & 77,88\% & 77,04\% & 66,74\% & 64,00\%  \\ \cline{2-7} 
+			& \multirow{4}{*}{REST} & 1 & 40,49\% & 48,27\% & 28,85\% & 32,91\% \\ \cline{3-7} 
+			&  & 2 & 61,77\% & 54,80\% & 36,10\% & 36,60\%  \\ \cline{3-7} 
+			&  & 4 & 73,99\% & 59,91\% & 41,66\% & 41,52\%  \\ \cline{3-7} 
+			&  & 8 & 82,17\% & 65,78\% & 45,16\% & 42,42\%  \\ \hline
 		\end{tabular}%
 	}
 \end{table}
 
 \section{Throughput Experiments Results}
+
+\begin{landscape}
+\begin{table}[H]
+	\centering
+	\caption{Communication Time Percentage on Total Processing Time}
+	\label{tab:Latency}
+	\resizebox*{1.4\textwidth}{!}{
+	\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+		\hline
+		\multicolumn{1}{|c|}{\textbf{\begin{tabular}[c]{@{}c@{}}File\\ Size\end{tabular}}} & \multicolumn{3}{c|}{\textbf{\begin{tabular}[c]{@{}c@{}}Original Strategy\\ UMA-REST\end{tabular}}} & \multicolumn{4}{c|}{\textbf{\begin{tabular}[c]{@{}c@{}}Original Strategy\\ UMA-ICE\end{tabular}}} & \multicolumn{4}{c|}{\textbf{\begin{tabular}[c]{@{}c@{}}Fork Join\\ UMA-ICE\end{tabular}}} & \multicolumn{4}{c|}{\textbf{\begin{tabular}[c]{@{}c@{}}Original Strategy \\ Variation\\ UMA-ICE\end{tabular}}} & \multicolumn{4}{c|}{\textbf{\begin{tabular}[c]{@{}c@{}}Original Strategy\\ UMA-RMI\end{tabular}}} & \multicolumn{4}{c|}{\textbf{\begin{tabular}[c]{@{}c@{}}Fork Join\\ NORMA-ICE\end{tabular}}} & \multicolumn{3}{c|}{\textbf{\begin{tabular}[c]{@{}c@{}}Fork Join\\ NORMA-REST\end{tabular}}} & \multicolumn{4}{c|}{\textbf{\begin{tabular}[c]{@{}c@{}}Fork Join\\ NORMA-RMI\end{tabular}}} \\ \hline
+		1,800,000 & 2386.1 & 2424.1 & 2545.0 & 1839.0 & 1744.5 & 1705.6 & 2162.2 & 2638.6 & 2443.4 & 2362.1 & 2518.7 & 2464.2 & 2163.9 & 2104.1 & 2327.8 & 2390.8 & 2538.9 & 2768.1 & 2986 & 3409.5 & 3631.5 & 3545.8 & 3932.6 & 5453 & 5715.6 & 5798.6 & 5102.4 & 4630.5 & 5478.6 & 5127.2 \\ \hline
+		2,600,000 & 3286.0 & 3328.0 & 3722.0 & 2588.4 & 2639.5 & 2367.3 & 2294.5 & 3095.6 & 2806.6 & 2703.6 & 2860.3 & 3058.1 & 2603.1 & 2521.0 & 2662.7 & 3633.4 & 3734.3 & 3945.7 & 4301.8 & 5003.5 & 4607.7 & 5179.6 & 4854 & 7178.7 & 7328 & 9483.4 & 7382 & 7125.9 & 7117.9 & 8534.5 \\ \hline
+		3,400,000 & 4216.1 & 4354.4 & 4794.4 & 3952.1 & 3687.2 & 3714.4 & 3785.0 & 3795.0 & 3262.9 & 3054.4 & 3488.1 & 3740.0 & 3072.9 & 2976.5 & 3137.2 & 4693.1 & 4763.5 & 5087.5 & 5434.9 & 5432.7 & 6154.9 & 5242.8 & 6393.1 & 9092.3 & 9626.2 & 11527.1 & 8913.3 & 8484.5 & 8954.7 & 10795.7 \\ \hline
+		4,200,000 & 5567.6 & 5429.2 & 5901.3 & 4830.3 & 4505.2 & 4416.1 & 4639.2 & 4240.3 & 3657.0 & 4086.0 & 4522.3 & 4399.3 & 3639.1 & 3577.2 & 4692.9 & 5827 & 5831.7 & 6190.2 & 6449.4 & 6483.3 & 6718.5 & 6746.7 & 7485.8 & 10980.1 & 13102.4 & 13172 & 12161.1 & 12368 & 13089.4 & 13409.1 \\ \hline
+		5,000,000 & 6402.6 & 6434.1 & 6421.7 & 5720.2 & 5304.1 & 5263.3 & 5375.5 & 4764.2 & 4044.7 & 4502.3 & 4769.5 & 5718.5 & 4990.8 & 4821.3 & 5114.5 & 7281.8 & 7271 & 7669.6 & 7944.3 & 7309.2 & 7634 & 8434.1 & 8939 & 13064.8 & 14642.5 & 15828.2 & 15807.5 & 15141.1 & 16405.6 & 16975.8 \\ \hline
+		5,800,000 & 7726.6 & 7898.2 & 6965.0 & 6837.6 & 6206.0 & 5934.8 & 6045.2 & 5882.0 & 5283.7 & 5049.0 & 5275.3 & 6944.2 & 5459.9 & 5255.7 & 5630.3 & 8878.3 & 8649.4 & 9172 & 9427.1 & 8206.3 & 7782.8 & 9450.5 & 10378.9 & 14911.7 & 18321.9 & 17350 & 18406.1 & 18662.9 & 19049.1 & 19655.9 \\ \hline
+		6,600,000 & 9064.1 & 8878.7 & 8973.9 & 7621.0 & 6886.9 & 6686.5 & 7058.9 & 6325.3 & 5576.4 & 5365.8 & 5728.7 & 7222.6 & 5895.7 & 5660.8 & 6113.1 & 9987.6 & 9875 & 10266.2 & 10600.6 & 9045.4 & 8666.7 & 10220.2 & 11267.2 & 17217.6 & 20069.3 & 22010.4 & 21719.2 & 21294.1 & 22079.8 & 22415.7 \\ \hline
+		7,400,000 & 11205.8 & 9267.1 & 10295.5 & 8510.6 & 7754.8 & 7372.7 & 7691.9 & 6743.6 & 5963.6 & 5674.4 & 6270.0 & 7865.8 & 6360.5 & 6071.7 & 6553.4 & 11072.8 & 11208.2 & 11503.3 & 11995.1 & 10034.7 & 9388.8 & 10916.9 & 12316.8 & 22263.2 & 25330.8 & 24969.8 & 25350.9 & 24078.9 & 25421.3 & 25097.8 \\ \hline
+		8,200,000 & 12040.7 & 11528.6 & 11403.7 & 9630.6 & 8512.3 & 8077.6 & 8277.1 & 8039.3 & 6345.8 & 6118.1 & 7286.4 & 9118.9 & 6795.0 & 6402.3 & 7784.0 & 12486.2 & 12639.4 & 12559.6 & 13493.9 & 11548.6 & 10210.3 & 11950.8 & 14079.2 & 27287.9 & 29121.1 & 27956.5 & 27983.1 & 26813.5 & 28168.9 & 27670.1 \\ \hline
+		9,000,000 & 14221.2 & 11399.5 & 12061.6 & 10189.8 & 9305.3 & 8864.7 & 9333.5 & 8414.8 & 6744.4 & 6448.3 & 7519.6 & 10150.9 & 8215.3 & 7117.3 & 8592.5 & 14754.8 & 14989 & 15359.8 & 15590.4 & 13282.4 & 14085.3 & 14233.5 & 15619.5 & 28988.4 & 28583.6 & 30874.1 & 33137.2 & 31312 & 32911.8 & 32750.7 \\ \hline
+		9,800,000 & 14586.2 & 13704.6 & 14133.9 & 11219.4 & 10069.0 & 9521.5 & 9998.2 & 8981.5 & 7020.9 & 7565.6 & 8000.0 & 10785.7 & 8712.0 & 8299.0 & 8626.6 & 16185.8 & 16540.6 & 16798.6 & 17022.9 & 14249.7 & 14494.4 & 16286.2 & 16838.8 & 29668.8 & 32250.9 & 35096.1 & 36150.5 & 35500.8 & 36006.9 & 35865.7 \\ \hline
+	\end{tabular}
+}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Communication Time Percentage on Total Processing Time}
+	\label{tab:fileCounts}
+	\resizebox*{1.4\textwidth}{!}{
+	\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+		\hline
+		\multicolumn{1}{|c|}{\textbf{\begin{tabular}[c]{@{}c@{}}File\\ Size\end{tabular}}} & \multicolumn{3}{c|}{\textbf{\begin{tabular}[c]{@{}c@{}}Original Strategy\\ UMA-REST\end{tabular}}} & \multicolumn{4}{c|}{\textbf{\begin{tabular}[c]{@{}c@{}}Original Strategy\\ UMA-ICE\end{tabular}}} & \multicolumn{4}{c|}{\textbf{\begin{tabular}[c]{@{}c@{}}Fork Join\\ UMA-ICE\end{tabular}}} & \multicolumn{4}{c|}{\textbf{\begin{tabular}[c]{@{}c@{}}Original Strategy \\ Variation\\ UMA-ICE\end{tabular}}} & \multicolumn{4}{c|}{\textbf{\begin{tabular}[c]{@{}c@{}}Original Strategy\\ UMA-RMI\end{tabular}}} & \multicolumn{4}{c|}{\textbf{\begin{tabular}[c]{@{}c@{}}Fork Join\\ NORMA-ICE\end{tabular}}} & \multicolumn{3}{c|}{\textbf{\begin{tabular}[c]{@{}c@{}}Fork Join\\ NORMA-REST\end{tabular}}} & \multicolumn{4}{c|}{\textbf{\begin{tabular}[c]{@{}c@{}}Fork Join\\ NORMA-RMI\end{tabular}}} \\ \hline
+		1,800,000 & 500.0 & 500.0 & 480.0 & 650.0 & 700.0 & 700.0 & 560.0 & 450.0 & 500.0 & 520.0 & 480.0 & 500.0 & 560.0 & 560.0 & 520.0 & 500 & 470 & 430 & 400 & 340 & 340 & 340 & 310 & 220 & 220 & 210 & 260 & 260 & 220 & 220 \\ \hline
+		2,600,000 & 370.0 & 370.0 & 320.0 & 470.0 & 450.0 & 500.0 & 520.0 & 390.0 & 430.0 & 430.0 & 430.0 & 390.0 & 470.0 & 480.0 & 450.0 & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - \\ \hline
+		3,400,000 & 280.0 & 280.0 & 250.0 & 300.0 & 330.0 & 320.0 & 320.0 & 320.0 & 370.0 & 390.0 & 340.0 & 320.0 & 390.0 & 390.0 & 390.0 & 250 & 250 & 230 & 230 & 230 & 190 & 230 & 190 & 130 & 110 & 110 & 130 & 130 & 130 & 110 \\ \hline
+		4,200,000 & 220.0 & 220.0 & 200.0 & 250.0 & 370.0 & 270.0 & 270.0 & 280.0 & 330.0 & 300.0 & 270.0 & 270.0 & 330.0 & 340.0 & 270.0 & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - \\ \hline
+		5,000,000 & 190.0 & 190.0 & 190.0 & 210.0 & 230.0 & 230.0 & 220.0 & 250.0 & 300.0 & 270.0 & 250.0 & 210.0 & 250.0 & 250.0 & 230.0 & 160 & 160 & 160 & 140 & 160 & 160 & 140 & 140 & 80 & 80 & 80 & 80 & 80 & 80 & 80 \\ \hline
+		5,800,000 & 160.0 & 150.0 & 170.0 & 180.0 & 190.0 & 200.0 & 200.0 & 200.0 & 230.0 & 250.0 & 230.0 & 170.0 & 220.0 & 230.0 & 210.0 & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - \\ \hline
+		6,600,000 & 130.0 & 140.0 & 130.0 & 160.0 & 170.0 & 180.0 & 170.0 & 190.0 & 220.0 & 220.0 & 210.0 & 170.0 & 200.0 & 210.0 & 200.0 & 120 & 120 & 120 & 120 & 140 & 140 & 120 & 120 & 60 & 60 & 60 & 60 & 60 & 60 & 60 \\ \hline
+		7,400,000 & 110.0 & 130.0 & 120.0 & 140.0 & 150.0 & 160.0 & 160.0 & 180.0 & 200.0 & 210.0 & 190.0 & 150.0 & 190.0 & 200.0 & 180.0 & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - \\ \hline
+		8,200,000 & 110.0 & 110.0 & 110.0 & 120.0 & 140.0 & 150.0 & 150.0 & 150.0 & 190.0 & 200.0 & 160.0 & 130.0 & 180.0 & 190.0 & 150.0 & 90 & 90 & 90 & 90 & 100 & 100 & 100 & 90 & 40 & 40 & 40 & 40 & 40 & 40 & 40 \\ \hline
+		9,000,000 & 90.0 & 110.0 & 110.0 & 120.0 & 130.0 & 140.0 & 130.0 & 140.0 & 180.0 & 190.0 & 160.0 & 120.0 & 150.0 & 170.0 & 140.0 & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - \\ \hline
+		9,800,000 & 90.0 & 90.0 & 90.0 & 110.0 & 120.0 & 130.0 & 120.0 & 130.0 & 170.0 & 160.0 & 150.0 & 110.0 & 140.0 & 140.0 & 140.0 & 80 & 80 & 80 & 80 & 80 & 80 & 80 & 80 & 30 & 30 & 30 & 30 & 30 & 30 & 30 \\ \hline
+	\end{tabular}
+}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Communication Time Percentage on Total Processing Time}
+	\label{tab:minutes}
+	\resizebox*{1.4\textwidth}{!}{
+	\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|}
+		\hline
+		\multicolumn{1}{|c|}{\textbf{\begin{tabular}[c]{@{}c@{}}File\\ Size\end{tabular}}} & \multicolumn{3}{c|}{\textbf{\begin{tabular}[c]{@{}c@{}}Original Strategy\\ UMA-REST\end{tabular}}} & \multicolumn{4}{c|}{\textbf{\begin{tabular}[c]{@{}c@{}}Original Strategy\\ UMA-ICE\end{tabular}}} & \multicolumn{4}{c|}{\textbf{\begin{tabular}[c]{@{}c@{}}Fork Join\\ UMA-ICE\end{tabular}}} & \multicolumn{4}{c|}{\textbf{\begin{tabular}[c]{@{}c@{}}Original Strategy \\ Variation\\ UMA-ICE\end{tabular}}} & \multicolumn{4}{c|}{\textbf{\begin{tabular}[c]{@{}c@{}}Original Strategy\\ UMA-RMI\end{tabular}}} & \multicolumn{4}{c|}{\textbf{\begin{tabular}[c]{@{}c@{}}Fork Join\\ NORMA-ICE\end{tabular}}} & \multicolumn{3}{c|}{\textbf{\begin{tabular}[c]{@{}c@{}}Fork Join\\ NORMA-REST\end{tabular}}} & \multicolumn{4}{c|}{\textbf{\begin{tabular}[c]{@{}c@{}}Fork Join\\ NORMA-RMI\end{tabular}}} \\ \hline
+		1,800,000 & 19.9 & 20.2 & 20.4 & 19.9 & 20.4 & 19.9 & 20.2 & 19.8 & 20.4 & 20.5 & 20.1 & 20.5 & 20.2 & 19.6 & 20.2 & 19.9 & 19.9 & 19.8 & 19.9 & 19.3 & 20.6 & 20.1 & 20.3 & 20.0 & 21.0 & 20.3 & 22.1 & 20.1 & 20.1 & 18.8 \\ \hline
+		2,600,000 & 20.3 & 20.5 & 19.9 & 20.3 & 19.8 & 19.7 & 19.9 & 20.1 & 20.1 & 19.4 & 20.5 & 19.9 & 20.4 & 20.2 & 20.0 & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} \\ \hline
+		3,400,000 & 19.7 & 20.3 & 20.0 & 19.8 & 20.3 & 19.8 & 20.2 & 20.2 & 20.1 & 19.9 & 19.8 & 19.9 & 20.0 & 19.3 & 20.4 & 19.6 & 19.8 & 19.5 & 20.8 & 20.8 & 19.5 & 20.1 & 20.2 & 19.7 & 17.6 & 21.1 & 19.3 & 18.4 & 19.4 & 19.8 \\ \hline
+		4,200,000 & 20.4 & 19.9 & 19.7 & 20.1 & 27.8 & 19.9 & 20.9 & 19.8 & 20.1 & 20.4 & 20.4 & 19.8 & 20.0 & 20.3 & 21.1 & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} \\ \hline
+		5,000,000 & 20.3 & 20.4 & 20.3 & 20.0 & 20.3 & 20.2 & 19.7 & 19.9 & 20.2 & 20.3 & 19.9 & 20.0 & 20.8 & 20.1 & 19.6 & 19.4 & 19.4 & 20.5 & 18.5 & 19.5 & 20.4 & 19.7 & 20.9 & 17.4 & 19.5 & 21.1 & 21.1 & 20.2 & 21.9 & 22.6 \\ \hline
+		5,800,000 & 20.6 & 19.7 & 19.7 & 20.5 & 19.7 & 19.8 & 20.2 & 19.6 & 20.3 & 21.0 & 20.2 & 19.7 & 20.0 & 20.1 & 19.7 & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} \\ \hline
+		6,600,000 & 19.6 & 20.7 & 19.4 & 20.3 & 19.5 & 20.1 & 20.0 & 20.0 & 20.4 & 19.7 & 20.1 & 20.5 & 19.7 & 19.8 & 20.4 & 20.0 & 19.8 & 20.5 & 21.2 & 21.1 & 20.2 & 20.4 & 22.5 & 17.2 & 20.1 & 22.0 & 21.7 & 21.3 & 22.1 & 22.4 \\ \hline
+		7,400,000 & 20.5 & 20.1 & 20.6 & 19.9 & 19.4 & 19.7 & 20.5 & 20.2 & 19.9 & 19.9 & 19.9 & 19.7 & 20.1 & 20.2 & 19.7 & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} \\ \hline
+		8,200,000 & 22.1 & 21.1 & 20.9 & 19.3 & 19.9 & 20.2 & 20.7 & 20.1 & 20.1 & 20.4 & 19.4 & 19.8 & 20.4 & 20.3 & 19.5 & 18.7 & 19.0 & 18.8 & 20.2 & 19.2 & 17.0 & 19.9 & 21.1 & 18.2 & 19.4 & 18.6 & 18.7 & 17.9 & 18.8 & 18.4 \\ \hline
+		9,000,000 & 21.3 & 20.9 & 22.1 & 20.4 & 20.2 & 20.7 & 20.2 & 19.6 & 20.2 & 20.4 & 20.1 & 20.3 & 20.5 & 20.2 & 20.0 & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} \\ \hline
+		9,800,000 & 21.9 & 20.6 & 21.2 & 20.6 & 20.1 & 20.6 & 20.0 & 19.5 & 19.9 & 20.2 & 20.0 & 19.8 & 20.3 & 19.4 & 20.1 & 21.6 & 22.1 & 22.4 & 22.7 & 19.0 & 19.3 & 21.7 & 22.5 & 14.8 & 16.1 & 17.5 & 18.1 & 17.8 & 18.0 & 17.9 \\ \hline
+	\end{tabular}
+}
+\end{table}
+
+\end{landscape}
 
 \section{Chapter Summary}
