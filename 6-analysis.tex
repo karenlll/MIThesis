@@ -147,7 +147,7 @@ Third, figure \ref{fig:originalStrategyBehaviorIce} corresponding to the experim
 	\item File size: 2'600.0000 Lines.
 \end{itemize}
 
-Throughout all configurations of the JC sorting strategy, we observe that the distribution phase of the main distributor includes, (i) the read phase time, (ii) the sort phase time, (iii) the merge phase time, and (iv) the communication phase time (i.e., the communication time among the distribution components). This is caused because each distributor that makes distribution must wait until all file parts that it distributed returned to it (already sorted) and it can merge them.
+Throughput all configurations of the JC sorting strategy, we observe that the distribution phase of the main distributor includes, (i) the read phase time, (ii) the sort phase time, (iii) the merge phase time, and (iv) the communication phase time (i.e., the communication time among the distribution components). This is caused because each distributor that makes distribution must wait until all file parts that it distributed returned to it (already sorted) and it can merge them.
 
 The communication phase time above mentioned does not include the communication time between the first distributor and the control component when the sorted file is returned to the control component. Additionally, the communication time between the control component and the writer component when the sorted file is sent to be written is neither included. These times and the communication among the distribution components to return the sorted file to be merged take a huge part of the total time because in the UMA configuration these are the communications with more data traveling through the network.
 
@@ -891,6 +891,20 @@ Total & 630 & 315 & 315 & 210 & 210 & 210 & 126 & 126 & 126 & 126 & 126 & 90 & 9
 
 \subsection{Analysis of Communication Time and CPU Usage }
 
+On one hand, the data related to the CPU usage does not give us results that allow us to observe how this variable is affected by the others, however, we can observe that the CPU usage is incremented as the file size to process is incremented too.
+
+On another hand, the table \ref{tab:communicationTimePercentage} summarizes the percentage of the communication time required to process a file. The communication time comes to be relevant in distributed environments due to in this architecture is needed to distribute the request and merge the result. In this specific case, to sort the files, there is more than one phase involved, this is the reason why we decided to execute this analysis based on the time percentage required to process a file over the total time required to process the file.
+
+The first conclusion is that depends on the configuration selected, the communication time can take between 10\% and 80\% of total time to process a file showing the relevant of this variable in distributed environments. Additionally, we can observe that even we use one processing node there is a percentage of communication time, it is caused because according our proposed architectures the controller node must to send the required data to the processing node. 
+
+Another conclusion is that we validate one of our hypothesis, this is that as we increase the processing nodes amount, the percentage required by the communication time is increased too. However, there is not a linear relationship between the percentage of time increased by each processing node. It is possible to observe that the increase from 1 to 2 processing nodes, and from 2 to 4 nodes is greater than from 8 to 16 nodes, therefore, we concluded that the increasing trend is less every time, like if there is a limit. We think that as we close to this limit, adding new processing nodes does not improve the total processing time.
+
+In addition, the communication time percentage has a strong relationship with the memory structure. The NORMA structure memory has a greater increase range than the UMA memory structure, it can be observed because no matter the design pattern always NORMA structure memory has a less communication time percentage when less processing nodes has the processing, but, when the processing nodes increase, it has a greater increase in the communication time percentage too than the UMA structure. For example, we can compare the ICE-NORMA and the ICE-UMA configurations (excluding the original strategy ICE-UMA configuration due to it has no data for the ICE-NORMA configuration), in this comparison we can observe that in the configurations ICE-NORMA the communication time percentage increases between 30\% and 40\% from one processing node until sixteen processing nodes, in contrast with the ICE-UMA configuration that only increases a 10\%. These observations allow us to conclude that with a little number of processing nodes the NORMA memory structure could be a good selection, but if we need more processing nodes, we should think of the UMA memory structure as the best option.
+
+Finally, the table \ref{tab:communicationTimePercentage} shows that the ICE and REST communication protocols have a better behaviour than the RMI communication protocol.
+
+
+
 % Please add the following required packages to your document preamble:
 % \usepackage{multirow}
 % \usepackage{graphicx}
@@ -938,11 +952,35 @@ Total & 630 & 315 & 315 & 210 & 210 & 210 & 126 & 126 & 126 & 126 & 126 & 90 & 9
 
 \section{Throughput Experiments Results}
 
+The main objective of this section is to validate the results found on the latency experiments and contrast their results. To execute the experiments to analyse in this section, we selected the eight best configurations in the latency experiments, this decision was taken due to this thesis scope. Additionally, we propose execute twice times the experiments to have a validation between them.
+
+The configuration of these experiments is summarized next.
+
+\begin{itemize}
+	\item During twenty minutes the Jmeter software will send requests to sort. 
+	\item We use 11 file sizes, from 1'800.000 lines to 9'800.000 with increases of 800.000 lines.
+	\item We use the next eight best configurations of design patterns, communication protocol, and memory structure. These were selected according to the minor processing time achieved.
+		\begin{itemize}
+			\item Original Strategy UMA-REST
+			\item Original Strategy UMA-ICE
+			\item Original Strategy UMA-RMI
+			\item Original Strategy  Variation UMA-ICE
+			\item Fork Join UMA-ICE
+			\item Fork Join NORMA-ICE
+			\item Fork Join NORMA-REST
+			\item Fork Join NORMA-RMI
+		\end{itemize}
+\end{itemize}
+
+While we execute the analysis test by test, we may conclude that the results between each test and itself in its second execution are consistent. The table \ref{tab:filesAmountThroughput} summarizes the number of files processed, this number is an average between the twice executions of each experiment. However, to summarize the latency results of each file was not an easy task, due to the latency varies between the reference value for one file processed and 10 times its values. For example, the Original Strategy UMA-REST, for a file of 1'800.000 lines has a reference latency value of 2386.1 milliseconds. In the throughput experiments, we found that 500 files were processed during the twenty minutes, in average we can calculate the latency of 2400 milliseconds, this value is closed to the reference value, however, when we detailed the latency of each file, we found that the latency can take from 2263 milliseconds until 28654.5 milliseconds, it is approximately 10 times the reference value. 
+
+Table \ref{tab:AssociatedLatency} summarizes the reference latency for the configurations used in the throughput experiments. Additionally, the table \ref{tab:filesAmountThroughput} contains the amount of files processed in each experiment. Using the tables mentioned before is possible to calculate the results of the table \ref{tab:CalculatedTestTime}. This table shows the time calculated in minutes that each experiment would require to process the number of files processed. We found that the average of the times of that table is 20.1 minutes, it has a range of 14.8 to 27.8 minutes. 
+
 \begin{landscape}
 \begin{table}[H]
 	\centering
-	\caption{Communication Time Percentage on Total Processing Time}
-	\label{tab:Latency}
+	\caption{Associated Latency (Time in milliseconds to process a file)}
+	\label{tab:AssociatedLatency}
 	\resizebox*{1.4\textwidth}{!}{
 	\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
 		\hline
@@ -964,8 +1002,8 @@ Total & 630 & 315 & 315 & 210 & 210 & 210 & 126 & 126 & 126 & 126 & 126 & 90 & 9
 
 \begin{table}[H]
 	\centering
-	\caption{Communication Time Percentage on Total Processing Time}
-	\label{tab:fileCounts}
+	\caption{Files Amount Processed in Twenty Minutes}
+	\label{tab:filesAmountThroughput}
 	\resizebox*{1.4\textwidth}{!}{
 	\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
 		\hline
@@ -987,8 +1025,8 @@ Total & 630 & 315 & 315 & 210 & 210 & 210 & 126 & 126 & 126 & 126 & 126 & 90 & 9
 
 \begin{table}[H]
 	\centering
-	\caption{Communication Time Percentage on Total Processing Time}
-	\label{tab:minutes}
+	\caption{Calculated Test Time according to the Files Processed by the Associated Latency (Minutes)}
+	\label{tab:CalculatedTestTime}
 	\resizebox*{1.4\textwidth}{!}{
 	\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|}
 		\hline
