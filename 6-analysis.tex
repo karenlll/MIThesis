@@ -1230,6 +1230,7 @@ After implementing all experiment cycles mentioned before, the students summariz
 	\item In cycle one, where all experiments were executed on a monolithic configuration, the design pattern reactor shows an improvement in comparison with the base, however, the producer/consumer pattern takes more time than the base.
 	\item Due to memory consumption, some experiments could not be executed on the FraSCAti middleware.
 	\item In cycle two, where the experiments were executed on distributed environments both design patterns, producer/consumer and reactor show improvements.
+
 \end{itemize}
 
 %carvajalResults
@@ -1239,6 +1240,13 @@ After implementing all experiment cycles mentioned before, the students summariz
 	\caption{Results of Case of Study: Carvajal XML Files Processing }
 	\label{fig:carvajalResults}
 \end{figure}
+
+\begin{itemize}
+	\item As the processing is growing we can evidence that the producer/consumer design pattern begins to have better behaviour than the reactor design pattern. This is due to the reactor design pattern could have some idle components because all of their components are specialized.
+	\item Comparing the results of the experiments where the variation was the middleware, we can observe that Ice has better performance than the WCF and FraSCAti.
+	\item We can observe that despite we increase in the processing nodes, each time the improvement is less until there is a point where we do not have an improvement.
+\end{itemize}
+
 
 \subsection{Comparison}
 
