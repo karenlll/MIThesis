@@ -357,7 +357,7 @@ Tables \ref{tab:processOriginalStrategy }, \ref{tab:processSeparationMerge}, \re
 According to table \ref{tab:benchmarks} we should execute 3150 experiments in the bandwidth configuration of 1GB, however, due to the thesis scope we reduce to 2561 experiments. 53,48\% of the excluded experiments correspond to the configuration of the NORMA memory structure. Due to distribution can not be leveraged in this configuration, we decide that these experiments should not be executed (see section \ref{subsec:memoryAnalysis}). 35,99\% of the excluded experiments correspond to the configuration of 16 available nodes. This decision was taken because we observe that this configuration did not improve the performance of the experiments (see section \ref{subsec:processingNodesAnalysis}).
 % The 10.53\% of the excluded experiments were not executed due to previous to execute experiments of the configuration of Leader / Followers - UMA shows that this pattern had not the best results (see section \ref{}). 
 
-The experiments of the bandwidth configuration of 100MB took too much time, therefore, taking into account the thesis scope we decide to execute just 231 experiments. These experiments were executed to verify that there is a factor of approximately 10 between the bandwidth configurations of 1GB and 100Mb. The experiments were executed in the four best configurations and four complementary configurations (see section \ref{subsec:bandwidthAnalysis}). Table \ref{tab:consolidatedData100MB} summarizes the average time of the experiments in 100MB configuration.
+The experiments of the bandwidth configuration of 100MB took too much time, therefore, taking into account the thesis scope we decide to execute just 231 experiments. These experiments were executed to verify that there is a factor of approximately 10 between the bandwidth configurations of 1GB and 100Mb. The experiments were executed in the four best configurations and four complementary configurations (see section \ref{subsec:bandwidthAnalysis}). Table \ref{tab:bandwidthConsolidated} summarizes the average time of the experiments in 100MB configuration.
 
 The missing rate of experiments was 0.078\% because only two experiments of 2561 were failed.
 
@@ -761,15 +761,13 @@ Thus, the formula that predicts the memory structure behavior is showed in the e
 % \usepackage{multirow}
 % \usepackage{graphicx}
 
-The bandwidth variable was tested using two values, 100MB and 1GB. Table \ref{tab:consolidatedData100MB} summarizes the times that each one of these tests takes with a configuration of 100MB. When we compare these tests with the same configuration executed at 1GB (reference section \ref{sebsec:consolidatedData}) we can verify that the relation between them is approximately 10 times. Table \ref{tab:calculatedRelation} summarizes this information. 
+The bandwidth variable was tested using two values, 100MB and 1GB. Table \ref{tab:bandwidthConsolidated} summarizes the times that each one of these tests takes with a configuration of 100MB. When we compare these tests with the same configuration executed at 1GB (reference section \ref{sebsec:consolidatedData}) we can verify that the relation between them is approximately 10 times. Table \ref{tab:calculatedRelation} summarizes this information. 
 
 \begin{table}[H]
-	\label{tab:consolidatedData100MB}
 	\fontsize{16}{36}\selectfont
 	\centering
-	\begin{center}
-		\caption{Consolidated Data of the Experiments with Bandwidth Configuration of 100MB}
-	\end{center}
+	\caption{Consolidated Data of the Experiments with Bandwidth Configuration of 100MB}
+	\label{tab:bandwidthConsolidated}
 	\resizebox{\textwidth}{!}{%
 		\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
 			\hline
@@ -839,7 +837,7 @@ Another fact that call our attention is that 79\% of times strategies associated
 
 Finally, if we analyze the information from each studied variable, we found that:
 \begin{itemize}
-	\item The memory structure seems does not influence strongly on the original strategy variation and fork/join java library, however, in the original strategy the NORMA memory structure does not allow that it takes advantage of the distribution (see section \ref{}). Leader-Followers and Fork/Join design patterns have better results in the NORMA memory structure. It suggests that the original strategy variation and fork/join java library are good options when you need to distribute the processing.
+	\item The memory structure seems does not influence strongly on the original strategy variation and fork/join java library, however, in the original strategy the NORMA memory structure does not allow that it takes advantage of the distribution (see section \ref{sebsec:consolidatedData}). Leader-Followers and Fork/Join design patterns have better results in the NORMA memory structure. It suggests that the original strategy variation and fork/join java library are good options when you need to distribute the processing.
 	\item  Analyzing the communication protocol, we can evidence that the fork/join java library is who takes more advantage of the ice communication protocol. the original strategy variation has a similar behavior among the communication protocols. Leader-Followers takes more advantage of the RMI communication protocol, and Fork/Join takes more advantage of the Rest communication protocol. Both Leader-Followers and Fork/Join design patterns can not take much advantage of the Ice communication protocol.
 	\item Talking about the processing nodes, the Leader-Followers and Fork/Join design patterns seems to have better results when more processing nodes are available. The other strategies have not uniform behavior, such as we mentioned before. That is why despite these strategies give us the best results adding new processing nodes could have a contrary result of the expected.
 	\item Respect to the file size we see that the behavior is uniform, so, this variable could not affect the design patterns.
@@ -1048,4 +1046,201 @@ Table \ref{tab:AssociatedLatency} summarizes the reference latency for the confi
 
 \end{landscape}
 
+\section{Validation - Case of Study : Carvajal XML}
+To Validate our conclusions we used a degree thesis developed in our research group with our collaborative work.  The students Fernando Cordoba and Richard Mejia worked over a study case based on a local company with a specific performance problem. The company Carvajal T\&S is very important in our region, they have an important project with the national governing where there are many pollsters reporting data to a central server. These pollsters go too far away places where sometimes they do not have an internet connection, so, the application will send the information to the central server when the device gets an internet connection. The information is sent on XML files, due to this kind of files are highly structured and the information could be reported on a big batch the central server should be very efficient to process the information. This company has identified that the current throughput is between two and three files processed in one minute for files with an average size of 3MB. However, they require to improve their processing time. Currently, the core processing is based on database store procedures.
+
+The students proposed to analyze the problem from different variables that could affect the performance system. These variables included the application of the design patterns of the specific domain (focused on performance), programming language, middlewares for distributed processing, and XML parsers. They proposed to execute an experiment set to validate their hypotheses. We will use their results to validate the conclusions generated from our analysis from the sorting study case.
+
+\subsection{Benchmark}
+
+The test design of our students is based on experiments cycles, each cycle directs the next cycle, with the aim of answer the questions that arise from the analysis of the current cycle. They selected the next variables the application of the design patterns of the specific domain (focused on performance), programming language, middlewares for distributed processing. The table \ref{tab:variablesCarvajal} summarizes the possible values for each variable. Additionally, the table \ref{tab:benchmarkCarvajal} summarizes the experiments cycles.
+
+\begin{table}[H]
+	\centering
+	\caption{Variables Carvajal XML Files Processing Study Case}
+	\label{tab:variablesCarvajal}
+	\resizebox*{0.5\textwidth}{!}{
+	\begin{tabular}{|l|l|}
+		\hline
+		\multicolumn{1}{|c|}{\textbf{Variable}} & \multicolumn{1}{c|}{\textbf{Values}}                           \\ \hline
+		Desing Pattern & \begin{tabular}[c]{@{}l@{}}Producer/Consumer\\ Reactor\end{tabular} \\ \hline
+		Middleware                              & \begin{tabular}[c]{@{}l@{}}FraSCAti\\  Ice\\  WCF\end{tabular} \\ \hline
+		Programming Language                    & \begin{tabular}[c]{@{}l@{}}Java\\  C\#\end{tabular}            \\ \hline
+	\end{tabular}
+}
+\end{table}
+
+% Please add the following required packages to your document preamble:
+% \usepackage{multirow}
+\begin{table}[H]
+	\centering
+	\caption{Case of Study: Carvajal XML Files Processing - Benchmark}
+	\label{tab:benchmarkCarvajal}
+	\resizebox*{\textwidth}{!}{
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		\textbf{Distribution} &
+		\textbf{Iterations} &
+		\textbf{Request} &
+		\textbf{Observations} \\ \hline
+		\multicolumn{4}{|c|}{\textbf{Base Test}} \\ \hline
+		\multirow{3}{*}{Monolitic} &
+		\multirow{3}{*}{1} &
+		20 requests with XML   files of 1MB &
+		\multirow{3}{*}{} \\ \cline{3-3}
+		&
+		&
+		20 requests with XML files of 1MB &
+		\\ \cline{3-3}
+		&
+		&
+		20 requests with XML files of 1MB &
+		\\ \hline
+		\multicolumn{4}{|c|}{\textbf{Execution Cycle 1}} \\ \hline
+		\multirow{9}{*}{Monolitic} &
+		\multirow{3}{*}{1} &
+		1 request with XML   file of 1MB - 5 executions &
+		\multirow{9}{*}{\begin{tabular}[c]{@{}c@{}}This configuration will be executed variating \\ the programming language (java, C\#), \\ the design pattern (Reactor,   Producer/Consumer),\\  and the middleware (Ice, FraSCAti, WCF)\end{tabular}} \\ \cline{3-3}
+		&
+		&
+		1 request with XML file of 5MB - 5 executions &
+		\\ \cline{3-3}
+		&
+		&
+		1 request with XML file of 10MB - 5 executions &
+		\\ \cline{2-3}
+		&
+		\multirow{3}{*}{2} &
+		5 requests with XML   file of 1MB - 5 executions &
+		\\ \cline{3-3}
+		&
+		&
+		5 requests with XML file of 5MB - 5 executions &
+		\\ \cline{3-3}
+		&
+		&
+		5 requests with XML file of 10MB - 5 executions &
+		\\ \cline{2-3}
+		&
+		3 &
+		10 requests with XML   file of 10MB - 2 executions &
+		\\ \cline{2-3}
+		&
+		4 &
+		20 requests with XML   file of 1MB - 3 executions &
+		\\ \cline{2-3}
+		&
+		5 &
+		50 requests with XML   file of 1MB - 1 executions &
+		\\ \hline
+		\multicolumn{4}{|c|}{\textbf{Execution Cycle 2}} \\ \hline
+		\multirow{9}{*}{Distributed} &
+		\multirow{3}{*}{1} &
+		1 request with XML   file of 1MB - 5 executions &
+		\multirow{9}{*}{\begin{tabular}[c]{@{}c@{}}This   configuration will be executed variating\\  the programming language (java, C\#), \\   the design pattern (Reactor, Producer/Consumer),\\  and the middleware (Ice,   FraSCAti, WCF)\end{tabular}} \\ \cline{3-3}
+		&
+		&
+		1 request with XML file of 5MB - 5 executions &
+		\\ \cline{3-3}
+		&
+		&
+		1 request with XML file of 10MB - 5 executions &
+		\\ \cline{2-3}
+		&
+		\multirow{3}{*}{2} &
+		5 requests with XML   file of 1MB - 5 executions &
+		\\ \cline{3-3}
+		&
+		&
+		5 requests with XML file of 5MB - 5 executions &
+		\\ \cline{3-3}
+		&
+		&
+		5 requests with XML file of 10MB - 5 executions &
+		\\ \cline{2-3}
+		&
+		3 &
+		10 requests with XML   file of 10MB - 2 executions &
+		\\ \cline{2-3}
+		&
+		4 &
+		20 requests with XML   file of 1MB - 3 executions &
+		\\ \cline{2-3}
+		&
+		5 &
+		50 requests with XML   file of 1MB - 1 executions &
+		\\ \hline
+		\multicolumn{4}{|c|}{\textbf{Execution Cycle 3}} \\ \hline
+		\multirow{3}{*}{Monolitic} &
+		1 &
+		20 requests with XML   file of 1MB - 3 executions &
+		\multirow{6}{*}{\begin{tabular}[c]{@{}c@{}}This   configuration will be executed variating\\  the programming language (java, C\#),  \\  the design pattern (Reactor, Producer/Consumer),\\  and the middleware (Ice,   FraSCAti, WCF)\end{tabular}} \\ \cline{2-3}
+		&
+		2 &
+		50 requests with XML   file of 1MB - 1 executions &
+		\\ \cline{2-3}
+		&
+		3 &
+		150 requests with   ramdom XML file - 1 executions &
+		\\ \cline{1-3}
+		\multirow{3}{*}{Distributed} &
+		1 &
+		20 requests with XML   file of 1MB - 3 executions &
+		\\ \cline{2-3}
+		&
+		2 &
+		50 requests with XML   file of 1MB - 1 executions &
+		\\ \cline{2-3}
+		&
+		3 &
+		150 requests with   ramdom XML file - 1 executions &
+		\\ \hline
+		\multicolumn{4}{|c|}{\textbf{Execution Cycle 4}} \\ \hline
+		\multirow{3}{*}{Distributed} &
+		1 &
+		20 requests with XML   file of 1MB - 3 executions &
+		\multirow{3}{*}{\begin{tabular}[c]{@{}c@{}}Configuration   FraSCAti - \\ Producer/Consumer -Java\\  (48 consumer - 12 nodes)\end{tabular}} \\ \cline{2-3}
+		&
+		2 &
+		50 requests with XML   file of 1MB - 1 executions &
+		\\ \cline{2-3}
+		&
+		3 &
+		80 requests with XML   file of 5MB - 1 executions &
+		\\ \hline
+		\multicolumn{4}{|c|}{\textbf{Execution Cycle 5}} \\ \hline
+		\multirow{2}{*}{Distributed} &
+		1 &
+		20 requests with XML   file of 1MB - 3 executions &
+		\multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}Configuration   FraSCAti -\\  Producer/Consumer -Java\\  (96 consumer - 12 nodes)\end{tabular}} \\ \cline{2-3}
+		&
+		2 &
+		80 requests with XML   file of 5MB - 1 executions &
+		\\ \hline
+	\end{tabular}
+	}
+\end{table}
+
+\subsection{Results Analysis}
+
+After implementing all experiment cycles mentioned before, the students summarized the results and analyzed the results. The figure \ref{fig:carvajalResults} summarizes their results. Next, we will highlight some of their results. 
+
+\begin{itemize}
+	\item In the base experiment, where the aim was simulating the current company environment, the average processing time for a file of size 1MB is 31,83 seconds. This is consistent with the expected processing time.
+	\item In cycle one, where all experiments were executed on a monolithic configuration, the design pattern reactor shows an improvement in comparison with the base, however, the producer/consumer pattern takes more time than the base.
+	\item Due to memory consumption, some experiments could not be executed on the FraSCAti middleware.
+	\item In cycle two, where the experiments were executed on distributed environments both design patterns, producer/consumer and reactor show improvements.
+\end{itemize}
+
+%carvajalResults
+\begin{figure}[H]
+	\centering
+	\includegraphics[trim=0.5cm 0cm -5cm 0cm, scale=0.8]{fig/carvajalResults.png}
+	\caption{Results of Case of Study: Carvajal XML Files Processing }
+	\label{fig:carvajalResults}
+\end{figure}
+
+\subsection{Comparison}
+
 \section{Chapter Summary}
+In this chapter, we characterized the behaviour of the sorting solutions according to the different design patterns studied, this characterization allowed us understand all phases involved in the sorting solutions proposed. Additionally, we analysed the latency experiments results focus on each one studied context variable. Among them, the file size, the processing nodes amount, the communication protocols, the memory structures, the bandwidth, the design patterns, the communication time, and the CPU usage. Finally, we validated the latency result contrasting them with the throughput experiments results.
