@@ -1,0 +1,99 @@
+\section{Appendix A - Operating System Processes Configuration Script}
+\label{sec:appendA}
+\begin{verbatim}
+#!/bin/sh
+#systemctl list-unit-files --type=service --state=enabled
+
+#chkconfig service (off, stop, start, restart)
+#systemctl (stop, start, restart, status) service
+
+#off services, stop service
+systemctl stop abrt-ccpp.service
+systemctl stop abrt-oops.service
+systemctl stop abrt-vmcore.service
+systemctl stop abrt-xorg.service
+chkconfig atd off
+systemctl stop atd.service
+#accounts-daemon.service???
+systemctl stop avahi-daemon.service
+chkconfig avahi-daemon off
+systemctl stop bluetooth.service
+chkconfig bluetooth off
+systemctl stop crond.service
+chkconfig crond off
+systemctl stop cups.service
+chkconfig cups off
+systemctl stop dbus-org.bluez.service
+chkconfig dbus-org.bluez off
+systemctl stop dbus-org.freedesktop.Avahi.service
+systemctl stop dbus-org.freedesktop.ModemManager1.service
+systemctl stop dbus-org.freedesktop.nm-dispatcher.service
+systemctl stop dmraid-activation.service
+chkconfig dmraid-activation off
+systemctl stop getty@.service
+chkconfig getty@ off
+systemctl stop libvirtd.service
+chkconfig libvirtd off
+systemctl stop lvm2-monitor.service
+systemctl stop mcelog.service
+systemctl stop mdmonitor.service
+systemctl stop ModemManager.service
+chkconfig ModemManager off
+systemctl stop multipathd.service
+chkconfig multipathd off
+systemctl stop phc2sys.service
+systemctl disable phc2sys.service
+systemctl stop vmtoolsd.service
+chkconfig vmtoolsd off
+systemctl stop vsftpd.service
+chkconfig vsftpd off
+
+#kill processes
+killall abrt-applet
+killall at-spi2-registryd
+killall at-spi-bus-launcher
+killall caribou
+killall evolution-alarm-notify
+killall gconfd-2
+killall gnome-keyring-daemon
+killall gnome-software
+killall gsd-printer
+killall gvfs-afc-volume-monitor
+killall gvfsd-metadata
+killall gvfsd-trash
+killall gvfs-goa-volume-monitor
+killall gvfs-gphoto2-volume-monitor
+killall gvfs-mtp-volume-monitor
+killall gvfs-udisks2-volume-monitor
+killall gvfs-mtp-volume-monitor
+killall gvfs-udisks2-volume-monitor
+killall obexd
+killall pulseaudio
+killall seapplet
+killall systemd
+killall tracker-extract
+killall tracker-miner-apps
+killall tracker-miner-fs
+killall tracker-miner-user-guides
+killall tracker-store
+
+\end{verbatim}
+
+\clearpage
+\section{Appendix B - RabbitMQ Configuration}
+\label{sec:appendB}
+To configure RabbitMQ you must follow these steps:
+\begin{itemize}
+	\item Install RabbitMQ-Server.
+	\item Enable the RabbitMQ manage plugin through command \textit{"rabbitmq-plugins enable rabbitmq\_management"}.
+	\item Create probes configured in source code and the queues required by PaSCAni.
+	\item Ensure accessibility from all processing nodes. To accomplish this step, you must copy file \textit{"rabbitmq.config"} in path \textit{"/etc/rabbitmq/"}.
+	\item Publish 5672 TCP port used by RabbitMQ in all processing nodes.
+\end{itemize}
+
+\clearpage
+\section{Appendix C - Java Virtual Machine (JVM) Configuration}
+\label{sec:appendC}
+The Java Virtual Machine memory is configured to 6 GB through the next command \\
+
+\textbf{\textit{"export \_JAVA\_OPTIONS="-Xms6g -Xmx6g" "}}.
