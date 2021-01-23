@@ -893,7 +893,7 @@ On one hand, the data related to the CPU usage does not give us results that all
 
 On another hand, the table \ref{tab:communicationTimePercentage} summarizes the percentage of the communication time required to process a file. The communication time comes to be relevant in distributed environments due to in this architecture is needed to distribute the request and merge the result. In this specific case, to sort the files, there is more than one phase involved, this is the reason why we decided to execute this analysis based on the time percentage required to process a file over the total time required to process the file.
 
-The first conclusion is that depends on the configuration selected, the communication time can take between 10\% and 80\% of total time to process a file showing the relevant of this variable in distributed environments. Additionally, we can observe that even we use one processing node there is a percentage of communication time, it is caused because according our proposed architectures the controller node must to send the required data to the processing node. 
+The first conclusion is that depends on the configuration selected, the communication time can take between 10\% and 80\% of the total time to process a file showing the relevance of this variable in distributed environments. Additionally, we can observe that even we use one processing node there is a percentage of communication time, is caused because according to our proposed architectures the controller node must send the required data to the processing node. 
 
 Another conclusion is that we validate one of our hypothesis, this is that as we increase the processing nodes amount, the percentage required by the communication time is increased too. However, there is not a linear relationship between the percentage of time increased by each processing node. It is possible to observe that the increase from 1 to 2 processing nodes, and from 2 to 4 nodes is greater than from 8 to 16 nodes, therefore, we concluded that the increasing trend is less every time, like if there is a limit. We think that as we close to this limit, adding new processing nodes does not improve the total processing time.
 
@@ -1249,6 +1249,15 @@ After implementing all experiment cycles mentioned before, the students summariz
 
 
 \subsection{Comparison}
+
+Thanks to the measures taken by the degree students, we can compare their results with our results and validate our results.
+
+The first comparable result is regarding the number of processing nodes used. In both cases, we can observe that in a distributed environment adding new processing nodes no guarantee that the performance could be improved. We think that this behaviour is consistent due to each time that we adding a new processing node, we are introducing latency on account of the distribution and merge time required to send the workload to each processing node and summarize the final processing result. So, the improvement percentage is less when we have more processing nodes, this situation makes us think that there is a limit where despite adding more processing nodes, we could not a performance improvement, conversely, we could get worse performance.
+
+The second comparable result is regarding the communication protocol. In the thesis of our degree students, they used different middleware, these middleware were responsible by the communication protocol. The middleware used were FraSCAti (RMI communication protocol), Ice (Ice communication protocol), and WCF. We instead used FraSCAti (RMI communication protocol), Ice (Ice communication protocol), and FraSCAti (REST communication protocol). We found that in both cases the Ice middleware gets the better results. This situation suggests that we should execute new experiments in the future to study the Ice middleware to know why it is not very popular in the industry.
+
+The last comparable point that we found between our works talking about the relationship that there is between the latency and the throughput. In both cases, we evidence that the throughput could be calculated based on the latency, however, in a throughput gap the latency could vary until 10 times among the processing requests.
+
 
 \section{Chapter Summary}
 In this chapter, we characterized the behaviour of the sorting solutions according to the different design patterns studied, this characterization allowed us understand all phases involved in the sorting solutions proposed. Additionally, we analysed the latency experiments results focus on each one studied context variable. Among them, the file size, the processing nodes amount, the communication protocols, the memory structures, the bandwidth, the design patterns, the communication time, and the CPU usage. Finally, we validated the latency result contrasting them with the throughput experiments results.
